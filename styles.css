@@ -20,7 +20,7 @@ nav ul {
 }
 
 nav ul li {
-    float: left;
+    float: center;
 }
 
 nav ul li a {

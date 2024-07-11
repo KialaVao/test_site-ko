@@ -60,7 +60,7 @@ img {
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
 
-.left-image {
+.centered-image {
     display: block;
     margin-left: auto;
     margin-right: auto;

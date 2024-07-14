@@ -1,19 +1,8 @@
-/*body {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: left;
-}*/
-
-body {
-    background-image: url("../resources/img/eglise-saint-etienne-de-rennes.jpg"); /* Chemin vers votre image de fond */
-    background-size: cover; /* Couvre toute la page */
-    background-position: center; /* Centre l'image */
-    background-repeat: no-repeat; /* Empêche la répétition de l'image */
-    height: 100vh; /* Assure que l'image couvre toute la hauteur de la fenêtre */
-    margin: 0; /* Supprime les marges par défaut */
-    font-family: Arial, sans-serif; /* Police pour le texte */
-    color: white; /* Couleur du texte pour le contraste */
 }
 
 header {

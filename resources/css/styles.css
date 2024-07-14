@@ -19,9 +19,9 @@ nav ul {
     overflow: hidden;
 }
 
-nav ul li {
+/*nav ul li {
     float: left;
-}
+} */
 
 nav ul li a {
     display: block;
@@ -70,4 +70,16 @@ img {
 .image-container img {
     float: left;
     margin-right: 5px; /* Espace entre l'image et le texte */
+}
+
+
+.margin-container {
+    width: 50%; /* Largeur du conteneur */
+    margin: 0 auto; /* Marges automatiques à gauche et à droite */
+    text-align: center; /* Centre le texte à l'intérieur du conteneur */
+}
+
+.margin-container a {
+    display: inline-block;
+    margin: 0 10px; /* Espacement entre les liens */
 }

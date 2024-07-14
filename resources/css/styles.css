@@ -72,7 +72,7 @@ img {
 }
 
 .margin-container {
-    width: 200%; /* Largeur du conteneur */
+    width: 100%; /* Largeur du conteneur */
     margin: 0 auto; /* Marges automatiques à gauche et à droite */
     text-align: center; /* Centre le texte à l'intérieur du conteneur */
 }

@@ -48,7 +48,7 @@ img {
 }
 
 .image-container img {
-    float: center;
+    float: left;
     margin-right: 5px; /* Espace entre l'image et le texte */
 }
 

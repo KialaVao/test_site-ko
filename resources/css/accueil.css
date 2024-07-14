@@ -48,6 +48,11 @@ img {
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
 
+.image-container img {
+    float: left;
+    margin-right: 5px; /* Espace entre l'image et le texte */
+}
+
 .margin-container {
     width: 150%; /* Largeur du conteneur */
     margin: 0 auto; /* Marges automatiques à gauche et à droite */

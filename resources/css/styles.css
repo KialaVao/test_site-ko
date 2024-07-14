@@ -78,7 +78,8 @@ img {
 }
 
 .margin-container a {
-    display: inline-block;
+    /*display: inline-block;*/
+    display: block;
     color: white;
     margin: 0 10px; /* Espacement entre les liens */
 }

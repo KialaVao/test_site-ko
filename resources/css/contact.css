@@ -46,6 +46,7 @@ img {
     border-radius: 4px;
     padding: 5px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
 
 .image-container img {
     float: left;

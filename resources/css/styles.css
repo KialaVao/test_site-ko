@@ -44,12 +44,13 @@ img {
     margin: 0 auto;
     border: 2px solid #ddd;
     border-radius: 4px;
-    padding: 50px;
+    padding: 5px;
 }
 
 .image-container img {
     float: left;
-    margin-right: 5px; /* Espace entre l'image et le texte */
+    margin-right: 50px; /* Espace entre l'image et le texte */
+    /*margin-left: 10px; */
 }
 
 .margin-container {

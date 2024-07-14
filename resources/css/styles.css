@@ -56,22 +56,22 @@ img {
     margin: 0 auto;
     border: 2px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
+    padding: 25px;
     /*box-shadow: 2px 2px 12px rgba(0,0,0,0.2);*/
 }
 
-image-container img {
+.image-container img {
     float: left;
     margin-right: 5px; /* Espace entre l'image et le texte */
 }
 
-margin-container {
+.margin-container {
     width: 150%; /* Largeur du conteneur */
     margin: 0 auto; /* Marges automatiques à gauche et à droite */
     text-align: center; /* Centre le texte à l'intérieur du conteneur */
 }
 
-margin-container a {
+.margin-container a {
     display: inline-block;
     color: white;
     margin: 0 10px; /* Espacement entre les liens */

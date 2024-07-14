@@ -60,12 +60,6 @@ img {
     /*box-shadow: 2px 2px 12px rgba(0,0,0,0.2);*/
 }
 
-/*.centered-image {
-    display: block;
-    margin-left: 0%;
-    margin-right: 0%;
-    width: 7%; /* Ajustez cette valeur selon vos besoins } */
-
 .image-container img {
     float: left;
     margin-right: 5px; /* Espace entre l'image et le texte */

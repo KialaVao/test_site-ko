@@ -62,8 +62,8 @@ img {
 
 .centered-image {
     display: block;
-    margin-left: 10%;
-    margin-right: auto;
+    margin-left: 0%;
+    margin-right: 75%;
     width: 3%; /* Ajustez cette valeur selon vos besoins */
 }
 

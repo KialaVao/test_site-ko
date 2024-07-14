@@ -20,6 +20,19 @@ nav ul {
     overflow: hidden;
 }
 
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
 nav ul li a:hover {
     background-color: #111;
 }

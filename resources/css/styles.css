@@ -65,7 +65,7 @@ img {
 }
 
 .social-media-icons {
-    text-align: center;
+    text-align: right;
     margin-top: 20px;
 }
 
@@ -77,5 +77,5 @@ img {
 }
 
 .social-media-icons a:hover {
-    color: #0073e6; /* Couleur au survol */
+    color: white; /* Couleur au survol */
 }

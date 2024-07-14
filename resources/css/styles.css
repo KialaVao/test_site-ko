@@ -21,7 +21,7 @@ nav ul {
 
 /*nav ul li {
     float: left;
-} */
+} 
 
 nav ul li a {
     display: block;
@@ -29,10 +29,10 @@ nav ul li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
+} */
 
 nav ul li a:hover {
-    background-color: #111;
+    background-color: #111; 
 }
 
 main {
@@ -72,12 +72,13 @@ img {
 }
 
 .margin-container {
-    width: 100%; /* Largeur du conteneur */
+    width: 200%; /* Largeur du conteneur */
     margin: 0 auto; /* Marges automatiques à gauche et à droite */
     text-align: center; /* Centre le texte à l'intérieur du conteneur */
 }
 
 .margin-container a {
     display: inline-block;
+    color: white;
     margin: 0 10px; /* Espacement entre les liens */
 }

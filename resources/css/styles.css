@@ -44,7 +44,7 @@ img {
     margin: 0 auto;
     border: 2px solid #ddd;
     border-radius: 4px;
-    padding: 25px;
+    padding: 5px;
     /*box-shadow: 2px 2px 12px rgba(0,0,0,0.2);*/
 }
 
@@ -54,7 +54,7 @@ img {
 }
 
 .margin-container {
-    width: 150%; /* Largeur du conteneur */
+    width: 125%; /* Largeur du conteneur */
     margin: 0 auto; /* Marges automatiques à gauche et à droite */
     text-align: center; /* Centre le texte à l'intérieur du conteneur */
 }

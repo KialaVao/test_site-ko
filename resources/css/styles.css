@@ -50,7 +50,7 @@ footer {
 }
 
 img {
-    max-width: 3%;
+    max-width: 7%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -63,10 +63,11 @@ img {
 .centered-image {
     display: block;
     margin-left: 0%;
-    margin-right: 75%;
-    width: 3%; /* Ajustez cette valeur selon vos besoins */
+    margin-right: 0%;
+    width: 7%; /* Ajustez cette valeur selon vos besoins */
 }
 
-/*#object-position-1 {
-    object-position: 10px;
-}*/
+.image-container img {
+    float: left;
+    margin-right: 15px; /* Espace entre l'image et le texte */
+}

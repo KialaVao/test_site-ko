@@ -50,7 +50,7 @@ footer {
 }
 
 img {
-    max-width: 7%;
+    max-width: 5%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -64,7 +64,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 7%; /* Ajustez cette valeur selon vos besoins */
+    width: 5%; /* Ajustez cette valeur selon vos besoins */
 }
 
 /*#object-position-1 {

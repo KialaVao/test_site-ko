@@ -71,11 +71,11 @@ img {
 
 .social-media-icons a {
     text-decoration: none;
-    color: #000; /* Couleur des icônes */
+    color: white; /* Couleur des icônes */
     margin: 0 10px; /* Espacement entre les icônes */
     font-size: 2em; /* Taille des icônes */
 }
 
 .social-media-icons a:hover {
-    color: white; /* Couleur au survol */
+    color: blue; /* Couleur au survol */
 }

@@ -65,3 +65,19 @@ img {
     color: white;
     margin: 0 10px; /* Espacement entre les liens */
 }
+
+.social-media-icons {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    color: white; /* Couleur des icônes */
+    margin: 0 10px; /* Espacement entre les icônes */
+    font-size: 2em; /* Taille des icônes */
+}
+
+.social-media-icons a:hover {
+    color: blue; /* Couleur au survol */
+}

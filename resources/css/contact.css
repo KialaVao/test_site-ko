@@ -73,7 +73,7 @@ img {
 
 .social-media-icons a {
     text-decoration: none;
-    color: white; /* Couleur des icônes */
+    color: black; /* Couleur des icônes */
     margin: 0 10px; /* Espacement entre les icônes */
     font-size: 2em; /* Taille des icônes */
 }

@@ -1,3 +1,4 @@
+/* Reset some styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -9,6 +10,7 @@ header {
     color: white;
     padding: 1em;
     text-align: center;
+    position: relative;
 }
 
 nav ul {
@@ -16,7 +18,8 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center the nav items */
 }
 
 nav ul li {
@@ -33,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #111;
+    background-color: #111; 
 }
 
 main {
@@ -50,20 +53,10 @@ footer {
     bottom: 0;
 }
 
-img {
-    max-width: 10%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-}
-
 header .image-container {
     position: absolute;
     top: 75%;
-    left: 150px;
+    left: 50px;
     transform: translateY(-50%);
 }
 
@@ -73,29 +66,29 @@ header .image-container img {
 }
 
 .margin-container {
-    width: 100%; /* Largeur du conteneur */
-    margin: 0 auto; /* Marges automatiques à gauche et à droite */
-    text-align: center; /* Centre le texte à l'intérieur du conteneur */
+    width: 100%; /* Full width */
+    margin: 0 auto; /* Centered horizontally */
+    text-align: center; /* Center the links */
 }
 
 .margin-container a {
     display: inline-block;
     color: white;
-    margin: 0 10px; /* Espacement entre les liens */
+    margin: 0 10px; /* Spacing between links */
 }
 
 .social-media-icons {
-    text-align: right;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 0;
 }
 
 .social-media-icons a {
     text-decoration: none;
-    color: white; /* Couleur des icônes */
-    margin: 0 10px; /* Espacement entre les icônes */
-    font-size: 2em; /* Taille des icônes */
+    color: white; /* Icon color */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 2em; /* Icon size */
 }
 
 .social-media-icons a:hover {
-    color: blue; /* Couleur au survol */
+    color: blue; /* Hover color */
 }

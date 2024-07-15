@@ -35,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #111;
+    background-color: #111; 
 }
 
 main {
@@ -77,8 +77,8 @@ header .image-container img {
 }
 
 .social-media-icons {
-    text-align: right;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 0;
 }
 
 .social-media-icons a {

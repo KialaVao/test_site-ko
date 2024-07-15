@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: left;
 }
 
 header {
@@ -36,7 +35,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #111;
+    background-color: #111; 
 }
 
 main {
@@ -78,13 +77,13 @@ header .image-container img {
 }
 
 .social-media-icons {
-    text-align: right;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 0;
 }
 
 .social-media-icons a {
     text-decoration: none;
-    color: black; /* Couleur des icônes */
+    color: white; /* Couleur des icônes */
     margin: 0 10px; /* Espacement entre les icônes */
     font-size: 2em; /* Taille des icônes */
 }

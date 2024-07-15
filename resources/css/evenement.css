@@ -9,6 +9,7 @@ header {
     color: white;
     padding: 1em;
     text-align: center;
+    position: relative;
 }
 
 nav ul {
@@ -16,7 +17,8 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Center the nav items */
 }
 
 nav ul li {
@@ -48,17 +50,6 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-}
-
-img {
-    max-width: 7%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border: 2px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
 
 header .image-container {

@@ -91,3 +91,14 @@ header .image-container img {
 .social-media-icons a:hover {
     color: blue; /* Couleur au survol */
 }
+
+.image-container {
+    text-align: center; /* Center align the text and image within the container */
+}
+
+.image {
+    max-width: 25%; /* Ensure the image fits within its container */
+    height: auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

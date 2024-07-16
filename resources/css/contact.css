@@ -93,7 +93,7 @@ header .image-container img {
 }
 
 .image-container {
-    text-align: center; /* Center align the text and image within the container */
+    text-align: left; /* Center align the text and image within the container */
 }
 
 .image {

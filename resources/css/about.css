@@ -143,10 +143,10 @@ header .image-container img {
     flex: 1; /* Ensure both items take equal space */
 }
 
-.content-row .text-block2,
+/*.content-row .text-block2,
 .content-row .image-container {
-    flex: 1; /* Ensure both items take equal space */
-}
+    flex: 1; /* Ensure both items take equal space 
+}*/
 
 .content-row .image-container {
     max-width: 75%; /* Ensure the image container does not exceed 45% width */

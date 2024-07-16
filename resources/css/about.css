@@ -133,5 +133,5 @@ header .image-container img {
 }
 
 .content-row .image-container {
-    max-width: 45%; /* Ensure the image container does not exceed 45% width */
+    max-width: 100%; /* Ensure the image container does not exceed 45% width */
 }

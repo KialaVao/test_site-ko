@@ -98,9 +98,11 @@ header .image-container img {
 }
 
 .image {
-    max-width: 45%;
+    max-width: 30%; /* Adjust the percentage as necessary */
     height: auto;
     border: 2px solid black;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block; /* Ensures the image takes the specified max-width */
+    margin-left: 0; /* Aligns the image to the left */
 }

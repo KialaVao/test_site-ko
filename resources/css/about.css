@@ -109,6 +109,7 @@ header .image-container img {
 
 /* Style for the text block */
 .text-block {
+    text-align: right;
     max-width: 600px; /* Set a max-width for the text block */
     margin: 0 auto 20px auto; /* Center the block and add bottom margin */
     padding: 10px; /* Add some padding */

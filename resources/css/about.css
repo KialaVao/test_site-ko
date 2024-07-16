@@ -122,7 +122,7 @@ header .image-container img {
 .text-block2 {
     text-align: center;
     max-width: 600px; /* Set a max-width for the text block */
-    margin: 0px auto 0px auto; /* Center the block and add bottom margin */
+    margin: 10px auto 0px auto; /* Center the block and add bottom margin */
     padding: 5px; /* Add some padding */
     background-color: white; /* Optional: Add a background color */
     border: 1px solid white; /* Optional: Add a border */

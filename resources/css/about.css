@@ -143,8 +143,8 @@ header .image-container img {
     flex: 1; /* Ensure both items take equal space */
 }
 
-.content-row .image-container,
-.content-row .text-block2, {
+.content-row .text-block2,
+.content-row .image-container {
     flex: 1; /* Ensure both items take equal space */
 }
 

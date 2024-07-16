@@ -92,3 +92,15 @@ header .image-container img {
 .social-media-icons a:hover {
     color: blue; /* Hover color */
 }
+
+.image-container {
+    text-align: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

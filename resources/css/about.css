@@ -1,22 +1,17 @@
-/* Styles généraux */
+/* Reset some styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f0f0; /* Optionally set a background color for the body */
-    display: flex;
-    justify-content: center; /* Center the main container horizontally */
-    align-items: center; /* Center the main container vertically */
-    height: 100vh; /* Full viewport height */
 }
 
 header {
-    background: linear-gradient(white ,#77B5FE);
+    /*background-color: #77B5FE;*/
+    background: linear-gradient(#77B5FE, white);
     color: white;
     padding: 1em;
     text-align: center;
     position: relative;
-    width: 100%; /* Full width */
 }
 
 nav ul {
@@ -47,14 +42,10 @@ nav ul li a:hover {
 
 main {
     padding: 1em;
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    width: 100%;
-    flex-direction: column; /* Align children vertically */
 }
 
 footer {
+    /*background-color: #77B5FE;*/
     background: linear-gradient(white ,#77B5FE);
     color: white;
     text-align: center;
@@ -95,10 +86,10 @@ header .image-container img {
 
 .social-media-icons a {
     text-decoration: none;
-    color: white; /* Default icon color */
+    color: white; /* Icon color */
     margin: 0 10px; /* Spacing between icons */
     font-size: 2em; /* Icon size */
-}
+} 
 
 /* Couleurs spécifiques aux réseaux sociaux */
 .social-icon.facebook {
@@ -127,7 +118,6 @@ header .image-container img {
     height: auto;
     border: 2px solid black;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for the text block */

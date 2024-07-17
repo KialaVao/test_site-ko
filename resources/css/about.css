@@ -41,7 +41,8 @@ nav ul li a:hover {
 }
 
 main {
-    padding: 1em;
+   /* padding: 1em; */
+    padding-top: 25%;
 }
 
 footer {

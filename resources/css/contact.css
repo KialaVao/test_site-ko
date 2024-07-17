@@ -132,9 +132,9 @@ header .image-container img {
 .content-row {
     display: flex;
     align-items: flex-start; /* Align items at the start (top) */
-   /* justify-content: space-between; /* Adjust space between items */
-    justify-content: 0%; /* Adjust space between items */
-    gap: 0px; /* Space between items */
+    justify-content: space-between; /* Adjust space between items */
+    /*justify-content: 10%; /* Adjust space between items */
+    gap: 5px; /* Space between items */
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
 }
 

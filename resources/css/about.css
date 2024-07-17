@@ -84,12 +84,12 @@ header .image-container img {
     margin-top: 0;
 }
 
-/*.social-media-icons a {
+.social-media-icons a {
     text-decoration: none;
     color: white; /* Icon color */
     margin: 0 10px; /* Spacing between icons */
-    font-size: 2em; /* Icon size 
-} */
+    font-size: 2em; /* Icon size */
+} 
 
 /* Couleurs spécifiques aux réseaux sociaux */
 .social-icon.facebook {

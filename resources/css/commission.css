@@ -83,11 +83,25 @@ header .image-container img {
 
 .social-media-icons a {
     text-decoration: none;
-    color: white; /* Couleur des icônes */
-    margin: 0 10px; /* Espacement entre les icônes */
-    font-size: 2em; /* Taille des icônes */
+    color: white; /* Icon color */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 2em; /* Icon size */
+} 
+
+/* Couleurs spécifiques aux réseaux sociaux */
+.social-icon.facebook {
+    color: #3b5998; /* Facebook blue */
 }
 
-.social-media-icons a:hover {
-    color: blue; /* Couleur au survol */
+.social-icon.instagram {
+    color: #E1306C; /* Instagram pink */
+}
+
+/* Hover effects */
+.social-icon.facebook:hover {
+    color: #2d4373; /* Darker Facebook blue */
+}
+
+.social-icon.instagram:hover {
+    color: #C13584; /* Darker Instagram pink */
 }

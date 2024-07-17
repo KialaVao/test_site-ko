@@ -87,8 +87,22 @@ header .image-container img {
     color: white; /* Icon color */
     margin: 0 10px; /* Spacing between icons */
     font-size: 2em; /* Icon size */
+} 
+
+/* Couleurs spécifiques aux réseaux sociaux */
+.social-icon.facebook {
+    color: #3b5998; /* Facebook blue */
 }
 
-.social-media-icons a:hover {
-    color: blue; /* Hover color */
+.social-icon.instagram {
+    color: #E1306C; /* Instagram pink */
+}
+
+/* Hover effects */
+.social-icon.facebook:hover {
+    color: #2d4373; /* Darker Facebook blue */
+}
+
+.social-icon.instagram:hover {
+    color: #C13584; /* Darker Instagram pink */
 }

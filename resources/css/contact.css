@@ -103,7 +103,7 @@ header .image-container {
 }
 
 .image {
-    max-width: 50%; /* Ensure the image fits within its container */
+    max-width: 40%; /* Ensure the image fits within its container */
     height: auto;
     border: 2px solid black;
     border-radius: 8px;
@@ -131,4 +131,16 @@ header .image-container {
     flex: 1; /* Ensure items take equal space */
     min-width: 200px; /* Ensure a minimum width for each item */
     margin-bottom: 10px; /* Add bottom margin for spacing when items wrap */
+}
+
+.map-container {
+    text-align: center; /* Center align the map */
+    margin-top: 20px; /* Add some space above the map */
+}
+
+.map-container iframe {
+    width: 100%; /* Ensure the map takes full width */
+    height: 450px; /* Set the height of the map */
+    border: 0; /* Remove border */
+    border-radius: 8px; /* Add rounded corners */
 }

@@ -1,28 +1,31 @@
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var calendarEl = document.getElementById('calendar');
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-            initialView: 'dayGridMonth',
-            events: function(fetchInfo, successCallback, failureCallback) {
-                fetch('https://api.liturgical.com/saints') // Remplacez par l'URL de votre API
-                    .then(response => response.json())
-                    .then(data => {
-                        var events = data.map(event => {
-                            return {
-                                title: event.saint,
-                                start: event.date
-                            };
-                        });
-                        successCallback(events);
-                    })
-                    .catch(error => {
-                        failureCallback(error);
-                    });
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        events: [
+            {
+                title: 'Messe mensuelle',
+                start: '2024-07-21T10:30:00',
+                end: '2024-07-21T12:00:00',
+                description: 'Messe tous les 3èmes dimanches du mois'
             },
-            eventClick: function(info) {
-                alert(info.event.title + "\n" + info.event.start.toISOString());
+            {
+                title: 'Saint Antoine',
+                start: '2024-07-01'
+            },
+            {
+                title: 'Saint Pierre',
+                start: '2024-07-02'
+            },
+            {
+                title: 'Saint Paul',
+                start: '2024-07-03'
             }
-        });
-        calendar.render();
+            // Ajoutez plus d'événements ici
+        ],
+        eventClick: function(info) {
+            alert(info.event.title + "\n" + info.event.start.toISOString());
+        }
     });
-</script>
+    calendar.render();
+});

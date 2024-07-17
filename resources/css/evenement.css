@@ -18,7 +18,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center the nav items */
 }
 
 nav ul li {
@@ -60,20 +60,20 @@ header .image-container {
 }
 
 header .image-container img {
-    max-width: 100px;
+    max-width: 100px; /* Adjust as necessary */
     height: auto;
 }
 
 .margin-container {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+    width: 100%; /* Largeur du conteneur */
+    margin: 0 auto; /* Marges automatiques à gauche et à droite */
+    text-align: center; /* Centre le texte à l'intérieur du conteneur */
 }
 
 .margin-container a {
     display: inline-block;
     color: white;
-    margin: 0 10px;
+    margin: 0 10px; /* Espacement entre les liens */
 }
 
 .social-media-icons {
@@ -83,64 +83,25 @@ header .image-container img {
 
 .social-media-icons a {
     text-decoration: none;
-    color: white;
-    margin: 0 10px;
-    font-size: 2em;
-}
+    color: white; /* Icon color */
+    margin: 0 10px; /* Spacing between icons */
+    font-size: 2em; /* Icon size */
+} 
 
+/* Couleurs spécifiques aux réseaux sociaux */
 .social-icon.facebook {
-    color: #3b5998;
+    color: #3b5998; /* Facebook blue */
 }
 
 .social-icon.instagram {
-    color: #E1306C;
+    color: #E1306C; /* Instagram pink */
 }
 
+/* Hover effects */
 .social-icon.facebook:hover {
-    color: #2d4373;
+    color: #2d4373; /* Darker Facebook blue */
 }
 
 .social-icon.instagram:hover {
-    color: #C13584;
-}
-
-/* Styles pour le calendrier FullCalendar */
-#calendar {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.fc-toolbar-title {
-    font-size: 1.5em;
-}
-
-.fc-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.fc-button:hover {
-    background-color: #45a049;
-}
-
-.fc-daygrid-event {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 2px 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.fc-daygrid-event:hover {
-    background-color: #45a049;
+    color: #C13584; /* Darker Instagram pink */
 }

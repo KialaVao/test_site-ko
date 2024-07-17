@@ -31,15 +31,14 @@
             <h2>Evenements</h2>
             <p>Ceci est la page à propos de notre site web. Vous pouvez ajouter des informations sur vous ou votre organisation ici.</p>
 
-                <section>
-                    <h3>Calendrier des événements</h3>
-                    <div id="calendar"></div>
-                </section>
+            <section>
+                <h3>Calendrier des événements</h3>
+                <div id="calendar"></div>
+            </section>
                 
-                <h3>Actualités</h3>
+            <h3>Actualités</h3>
                 
-                <h3>Galérie de photos</h3>
-
+            <h3>Galerie de photos</h3>
         </section>
     </main>
     <footer>
@@ -58,11 +57,17 @@
                 initialView: 'dayGridMonth',
                 events: [
                     {
-                        title: 'Messe mensuelle',
-                        start: '2024-07-21T10:30:00',
-                        end: '2024-07-21T12:00:00',
-                        description: 'Messe tous les 3èmes dimanches du mois'
-                    }
+                        title: 'Saint Antoine',
+                        start: '2024-07-01'
+                    },
+                    {
+                        title: 'Saint Pierre',
+                        start: '2024-07-02'
+                    },
+                    {
+                        title: 'Saint Paul',
+                        start: '2024-07-03'
+                    },
                     // Ajoutez plus d'événements ici
                 ],
                 eventClick: function(info) {

@@ -49,7 +49,38 @@
         <p>&copy; 2024 KTO Malagasy Rennes. Tous droits réservés.</p>
     </footer>
 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script>
+    <script src="../resources/js/calendrar1.js"></script>  Inclure le fichier JavaScript externe -->
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script>
-    <script src="../resources/js/calendrar1.js"></script> <!-- Inclure le fichier JavaScript externe -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: [
+                    {
+                        title: 'Saint Antoine',
+                        start: '2024-07-01'
+                    },
+                    {
+                        title: 'Saint Pierre',
+                        start: '2024-07-02'
+                    },
+                    {
+                        title: 'Saint Paul',
+                        start: '2024-07-03'
+                    },
+                    // Ajoutez plus d'événements ici
+                ],
+                eventClick: function(info) {
+                    alert(info.event.title + "\n" + info.event.start.toISOString());
+                }
+            });
+            calendar.render();
+        });
+    </script>
+
 </body>
 </html>

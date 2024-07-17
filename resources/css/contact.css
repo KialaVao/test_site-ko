@@ -138,6 +138,6 @@ header .image-container img {
 
 .content-row > div {
     flex: 1; /* Ensure items take equal space */
-    min-width: 300px; /* Ensure a minimum width for each item */
+    min-width: 100px; /* Ensure a minimum width for each item */
     margin-bottom: 20px; /* Add bottom margin for spacing when items wrap */
 }

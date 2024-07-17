@@ -76,8 +76,8 @@ header .image-container {
 .social-media-icons a {
     text-decoration: none;
     color: white; /* Icon color */
-    margin: 10px; /* Spacing between icons */
-    font-size: 3em; /* Icon size */
+    margin: 5px; /* Spacing between icons */
+    font-size: 2em; /* Icon size */
 } 
 
 /* Couleurs spécifiques aux réseaux sociaux */
@@ -140,7 +140,7 @@ header .image-container {
 
 .map-container iframe {
     width: 100%; /* Ensure the map takes full width */
-    height: 450px; /* Set the height of the map */
+    height: 250px; /* Set the height of the map */
     border: 0; /* Remove border */
     border-radius: 8px; /* Add rounded corners */
 }

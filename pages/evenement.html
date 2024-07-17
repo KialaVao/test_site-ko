@@ -35,9 +35,9 @@
                 <h3>Calendrier des événements</h3>
                 <div id="calendar"></div>
             </section>
-                
+            
             <h3>Actualités</h3>
-                
+            
             <h3>Galerie de photos</h3>
         </section>
     </main>
@@ -50,32 +50,6 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.0/main.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth',
-                events: [
-                    {
-                        title: 'Saint Antoine',
-                        start: '2024-07-01'
-                    },
-                    {
-                        title: 'Saint Pierre',
-                        start: '2024-07-02'
-                    },
-                    {
-                        title: 'Saint Paul',
-                        start: '2024-07-03'
-                    },
-                    // Ajoutez plus d'événements ici
-                ],
-                eventClick: function(info) {
-                    alert(info.event.title + "\n" + info.event.start.toISOString());
-                }
-            });
-            calendar.render();
-        });
-    </script>
+    <script src="../resources/js/calendar.js"></script> <!-- Inclure le fichier JavaScript externe -->
 </body>
 </html>

@@ -112,7 +112,7 @@ header .image-container img {
 }
 
 .image {
-    max-width: 50%; /* Ensure the image fits within its container */
+    max-width: 25%; /* Ensure the image fits within its container */
     height: auto;
     border: 2px solid black;
     border-radius: 8px;

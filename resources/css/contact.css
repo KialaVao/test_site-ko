@@ -85,7 +85,7 @@ header .image-container img {
 .social-media-icons a {
     text-decoration: none;
     color: white; /* Icon color */
-    margin: 0 10px; /* Spacing between icons */
+    margin: 0 5px; /* Spacing between icons */
     font-size: 2em; /* Icon size */
 } 
 

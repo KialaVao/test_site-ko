@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -33,26 +34,6 @@
             <section>
                 <h3>Calendrier des événements</h3>
                 <div id="calendar"></div>
-
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
-                <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                        var calendarEl = document.getElementById('calendar');
-                        var calendar = new FullCalendar.Calendar(calendarEl, {
-                            initialView: 'dayGridMonth',
-                            locale: 'fr',
-                            events: [
-                                {
-                                    title: 'Messe',
-                                    start: '2024-09-15'
-                                },
-                                // Ajoutez d'autres événements ici
-                            ]
-                        });
-                        calendar.render();
-                    });
-                </script>
-                
             </section>
             
             <h3>Actualités</h3>

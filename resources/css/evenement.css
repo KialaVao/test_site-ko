@@ -105,3 +105,16 @@ header .image-container img {
 .social-icon.instagram:hover {
     color: #C13584; /* Darker Instagram pink */
 } 
+
+table {
+    width: 30%;
+    height: 300px;
+    margin: auto;
+    border-collapse: collapse;
+  }
+  
+  td {
+    width: 14.28%;
+    border: 1px solid #999;
+    text-align: center;
+  }

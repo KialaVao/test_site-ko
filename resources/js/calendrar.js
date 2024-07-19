@@ -1,4 +1,4 @@
-function setStyle(id,style,value)
+/*function setStyle(id,style,value)
 {
     id.style[style] = value;
 }
@@ -76,4 +76,37 @@ function calendrier()
     document.write('</tbody></table>');
     opacite(document.getElementById('cal_body'),70);
     return true;
-}
+} */
+
+    function GenerateTable(month, year) {
+        let table = '<table>';
+     
+        let date = new Date(year, month, 1);
+        let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        let daysInMonth = new Date(year, month+1, 0).getDate();
+    
+        table += '<tr>';
+        for (let day of days) {
+            table += `<th>${day}</th>`;
+        }
+        table += '</tr>';
+    
+        let i = 0;
+        while (date.getMonth() === month) {
+            if(i % 7 === 0) {
+                table += '<tr>';
+            }
+    
+            table += `<td>${(date.getDate() < 10)? '0'+ date.getDate() :date.getDate()}</td>`;
+            if(i % 7 === 6) {
+                table += '</tr>';
+            }
+    
+            date.setDate(date.getDate() + 1);
+            ++i;
+        }
+    
+        table += '</table>';
+    
+        return table;
+    }

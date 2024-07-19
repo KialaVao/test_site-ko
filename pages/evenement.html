@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -53,4 +53,34 @@
             <p>&copy; 2024 KTO Malagasy Rennes. Tous droits réservés.</p>
         </footer>
     </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendrier avec événements</title>
+    <link rel="stylesheet" href="../resources/css/event.css">
+</head>
+<body>
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevMonth">Précédent</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextMonth">Suivant</button>
+        </div>
+        <div class="calendar" id="calendar"></div>
+    </div>
+    <div class="event-form">
+        <h3>Ajouter un événement</h3>
+        <form id="eventForm">
+            <input type="date" id="eventDate" required>
+            <input type="text" id="eventTitle" placeholder="Titre de l'événement" required>
+            <button type="submit">Ajouter</button>
+        </form>
+    </div>
+
+    <script src="../resources/js/calendrar.js"></script>
+</body>
 </html>

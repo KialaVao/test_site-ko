@@ -1,4 +1,4 @@
-function setStyle(id,style,value)
+/*function setStyle(id,style,value)
 {
     id.style[style] = value;
 }
@@ -76,4 +76,78 @@ function calendrier()
     document.write('</tbody></table>');
     opacite(document.getElementById('cal_body'),70);
     return true;
-} 
+} */
+
+    const calendar = document.getElementById('calendar');
+    const monthYear = document.getElementById('monthYear');
+    const prevMonthBtn = document.getElementById('prevMonth');
+    const nextMonthBtn = document.getElementById('nextMonth');
+    const eventForm = document.getElementById('eventForm');
+    const eventDate = document.getElementById('eventDate');
+    const eventTitle = document.getElementById('eventTitle');
+    
+    let currentMonth = new Date().getMonth();
+    let currentYear = new Date().getFullYear();
+    let events = {};
+    
+    function renderCalendar(month, year) {
+        calendar.innerHTML = '';
+        monthYear.textContent = new Date(year, month).toLocaleString('fr-FR', { month: 'long', year: 'numeric' });
+    
+        const firstDay = new Date(year, month, 1).getDay();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+    
+        for (let i = 0; i < firstDay; i++) {
+            const emptyCell = document.createElement('div');
+            calendar.appendChild(emptyCell);
+        }
+    
+        for (let day = 1; day <= daysInMonth; day++) {
+            const dayCell = document.createElement('div');
+            dayCell.textContent = day;
+            dayCell.className = 'day';
+            const eventDateKey = `${year}-${month + 1}-${day}`;
+    
+            if (events[eventDateKey]) {
+                dayCell.classList.add('event');
+            }
+    
+            dayCell.addEventListener('click', () => {
+                const event = events[eventDateKey];
+                if (event) {
+                    alert(`Événement : ${event.title}`);
+                }
+            });
+    
+            calendar.appendChild(dayCell);
+        }
+    }
+    
+    function changeMonth(direction) {
+        currentMonth += direction;
+        if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+        } else if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear++;
+        }
+        renderCalendar(currentMonth, currentYear);
+    }
+    
+    eventForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const date = new Date(eventDate.value);
+        const title = eventTitle.value;
+        const eventDateKey = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+    
+        events[eventDateKey] = { title };
+        renderCalendar(currentMonth, currentYear);
+        eventForm.reset();
+    });
+    
+    prevMonthBtn.addEventListener('click', () => changeMonth(-1));
+    nextMonthBtn.addEventListener('click', () => changeMonth(1));
+    
+    renderCalendar(currentMonth, currentYear);
+    

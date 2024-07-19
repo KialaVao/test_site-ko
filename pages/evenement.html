@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <!--<html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Evenements</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css">
-    <link rel="stylesheet" href="../resources/css/evenement.css">
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css">
+    <link rel="stylesheet" href="../resources/css/evenement.css"> -->
+
+
+    <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="../resources/css/calendrier.css" />
+    <script type="text/javascript" src="../resources/js/calendrar.js"></script>
+
 </head>
 <body>
     <header>
@@ -48,52 +56,24 @@
         </div>
         <p>&copy; 2024 KTO Malagasy Rennes. Tous droits réservés.</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth',
-                locale: 'fr',
-                events: [
-                    {
-                        title: 'Messe',
-                        start: '2024-09-15'
-                    },
-                    // Ajoutez d'autres événements ici
-                ]
-            });
-            calendar.render();
-        });
+
+    <script type="text/javascript">
+            calendrier();
     </script>
 </body>
-</html> -->
-
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> -->
-<!-- <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Calendrier javascript</title>
-    <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="../resources/css/calendrier.css" />
-    <script type="text/javascript" src="../resources/js/calendrar.js"></script>
-    </head>
-    <body>
-    <script type="text/javascript">
-        calendrier();
-    </script>
-    </body>
-</html> -->
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Evenements </title>
-        <link rel="stylesheet" href="../resources/css/evenement.css">
-    </head>
-    <body>
-         <div id="calendar"></div>
-    
-        <!--<script src="calendar.js"></script>-->
-        <script type="text/javascript" src="../resources/js/calendrar.js"></script>
-    </body>
 </html>
+
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Calendrier javascript</title>
+        <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="../resources/css/calendrier.css" />
+        <script type="text/javascript" src="../resources/js/calendrar.js"></script>
+    </head>
+        <body>
+        <script type="text/javascript">
+            calendrier();
+        </script>
+    </body>
+</html> -->

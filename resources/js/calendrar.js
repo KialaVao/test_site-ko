@@ -76,4 +76,4 @@ function calendrier()
     document.write('</tbody></table>');
     opacite(document.getElementById('cal_body'),70);
     return true;
-}
+} 

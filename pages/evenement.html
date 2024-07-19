@@ -11,6 +11,7 @@
         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css">
         <link rel="stylesheet" href="../resources/css/evenement.css"> -->
 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
         <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="../resources/css/calendrier.css" />
         <script type="text/javascript" src="../resources/js/calendrar.js"></script>
@@ -40,7 +41,10 @@
 
                 <section>
                     <h3>Calendrier des événements</h3>
-                    <div id="calendar"></div>
+                    <!--<div id="calendar"></div>--> 
+                    <script type="text/javascript">
+                        calendrier();
+                    </script>
                 </section>
                 
                 <h3>Actualités</h3>
@@ -49,6 +53,7 @@
                 <h3>Galerie de photos</h3>
             </section>
         </main>
+
         <footer>
             <div class="social-media-icons">
                 <a href="https://www.facebook.com/people/KTO-Malagasy-Rennes" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
@@ -56,10 +61,6 @@
             </div>
             <p>&copy; 2024 KTO Malagasy Rennes. Tous droits réservés.</p>
         </footer>
-
-        <script type="text/javascript">
-                calendrier();
-        </script>
     </body>
 </html>
 

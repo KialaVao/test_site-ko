@@ -40,7 +40,6 @@ nav ul li a:hover {
 
 main {
     padding: 1em;
-
     display: flex;
     justify-content: center; /* Centrer horizontalement */
     flex-grow: 1;
@@ -136,6 +135,7 @@ header .image-container img {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
+    align-items: center;
 }
 
 .day {

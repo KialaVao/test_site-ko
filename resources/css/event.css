@@ -13,7 +13,7 @@ body {
 .calendar-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center; */
     margin-bottom: 10px;
 }
 
@@ -21,7 +21,6 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
-    align-items: center;
 }
 
 .day {

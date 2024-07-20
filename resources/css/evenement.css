@@ -136,6 +136,7 @@ header .image-container img {
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
     align-items: center;
+    justify-content: center; /* Centrer horizontalement */
 }
 
 .day {

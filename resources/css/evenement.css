@@ -174,8 +174,8 @@ header .image-container img {
 
 /* Flexbox styles */
 .content-row {
-    width: 500px;
-    height: 500px;
+    width: 100px;
+    height: 100px;
     display: flex;
     align-items: center; /* Center items vertically */
     justify-content: flex-start; /* Align items to the start */

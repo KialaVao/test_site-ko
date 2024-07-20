@@ -182,9 +182,9 @@ header .image-container img {
 
 .content-row > div {
     flex: 1; /* Ensure items take equal space */
-    min-width: 10px; /* Ensure a minimum width for each item */
+    min-width: 200px; /* Ensure a minimum width for each item */
     margin-bottom: 10px; /* Add bottom margin for spacing when items wrap */
-}
+} 
 
 .map-container {
     text-align: center; /* Center align the map */

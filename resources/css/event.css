@@ -11,7 +11,7 @@ main {
     padding: 1em;
     display: flex;
     justify-content: center; /* Centrer horizontalement */
-    align-items: center; /* Centrer verticalement */
+    /*align-items: center; /* Centrer verticalement */
     flex-grow: 1;
     flex-direction: column;
 }

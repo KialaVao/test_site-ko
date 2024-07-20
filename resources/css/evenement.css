@@ -169,7 +169,7 @@ header .image-container img {
     background-color: white; /* Optional: Add a background color */
     border: 1px solid white; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
-    text-align: right;
+    text-align: center;
 }
 
 /* Flexbox styles */

@@ -6,7 +6,6 @@
     <title>Evenements</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="../resources/css/evenement.css">
-    <!--<link rel="stylesheet" href="../resources/css/event.css">-->
 </head>
 <body>
     <header>
@@ -31,23 +30,30 @@
     <main>
         <h2>Evenements</h2>
             <section>
-            <h3>Calendrier des nos événements</h3>
-            <div class="calendar-container">
-                <div class="calendar-header">
-                    <button id="prevMonth">Précédent</button>
-                    <h2 id="monthYear"></h2>
-                    <button id="nextMonth">Suivant</button>
+                <div class="content-row">
+                    <h3>Calendrier des nos événements</h3>
+
+                    <div class="text-block">
+                        <div class="calendar-container">
+                            <div class="calendar-header">
+                                <button id="prevMonth">Précédent</button>
+                                <h2 id="monthYear"></h2>
+                                <button id="nextMonth">Suivant</button>
+                            </div>
+                            <div class="calendar" id="calendar"></div>
+                        </div>
+                        
+                        <script src="../resources/js/calendrar.js"></script>
+                     <!-- </section>
+                    <section> -->
+                        <h3>Actualités</h3>
+                        <p> Notre prochaine messe sera le 15 Septembre 2024 </p>
+                    <!--</section>
+                    <section> -->
+                        <h3>Galerie de photos</h3>
+                    <!-- </section> -->
+                    </div>
                 </div>
-                <div class="calendar" id="calendar"></div>
-            </div>
-            <script src="../resources/js/calendrar.js"></script>
-        </section>
-        <section>
-            <h3>Actualités</h3>
-            <p> Notre prochaine messe sera le 15 Septembre 2024 </p>
-        </section>
-        <section>
-            <h3>Galerie de photos</h3>
         </section>
     </main>
 

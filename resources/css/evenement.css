@@ -127,7 +127,7 @@ header .image-container img {
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
+    gap: 2px;
     align-items: center;
     justify-content: center; /* Centrer horizontalement */
 }
@@ -139,7 +139,6 @@ header .image-container img {
     align-items: center;
     justify-content: center;
     background-color: white;
-    /* border: 1px solid #ddd; */
     cursor: pointer;
     position: relative;
 }

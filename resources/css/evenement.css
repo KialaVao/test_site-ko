@@ -43,7 +43,6 @@ main {
     justify-content: center; /* Centrer horizontalement */
     flex-grow: 1;
     flex-direction: column;
-
 }
 
 footer {

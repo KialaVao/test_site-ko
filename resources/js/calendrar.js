@@ -41,7 +41,6 @@ function renderCalendar(month, year) {
             dayCell.classList.add('event');
             dayCell.title = catholicEvents[eventDateKey];
         }
-
         calendar.appendChild(dayCell);
     }
 }

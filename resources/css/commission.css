@@ -141,3 +141,9 @@ header .image-container img {
     border: 0; /* Remove border */
     border-radius: 8px; /* Add rounded corners */
 }
+
+.clipart {
+    width: 100px; /* Adjust the size as needed */
+    height: auto;
+    margin: 10px 0; /* Optional: Add some space around the clipart */
+}

@@ -169,15 +169,15 @@ header .image-container img {
     background-color: white; /* Optional: Add a background color */
     border: 1px solid white; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
-    text-align: center;
+    /*text-align: center; */
 }
 
 /* Flexbox styles */
 .content-row {
-    width: 100px;
-    height: 100px;
+    /*width: 100px;
+    height: 100px; */
     display: flex;
-    align-items: center; /* Center items vertically */
+    /*align-items: center; /* Center items vertically */
     justify-content: flex-start; /* Align items to the start */
     gap: 10px; /* Space between items */
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */

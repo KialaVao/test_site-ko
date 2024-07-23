@@ -14,7 +14,9 @@ const catholicEvents = {
     "2024-6-9": "Pentecôte",
     "2024-8-15": "Assomption de Marie",
     "2024-9-15": "Messe du mois",
+    "2024-10-20": "Messe du mois",
     "2024-11-1": "Toussaint",
+    "2024-11-17": "Messe du mois",
     "2024-12-25": "Noël"
 };
 

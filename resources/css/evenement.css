@@ -139,7 +139,7 @@ header .image-container img {
     align-items: center;
     justify-content: center;
     background-color: white;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     cursor: pointer;
     position: relative;
 }
@@ -169,7 +169,7 @@ header .image-container img {
     display: flex;
     align-items: center; /* Center items vertically */
     justify-content: flex-start; /* Align items to the start */
-    gap: 10px; /* Space between items */
+    gap: 100px; /* Space between items */
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
 }
 

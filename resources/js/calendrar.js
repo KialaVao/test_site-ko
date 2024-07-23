@@ -13,9 +13,16 @@ const catholicEvents = {
     "2024-5-30": "Ascension",
     "2024-6-9": "Pentecôte",
     "2024-8-15": "Assomption de Marie",
+   // "2024-9-15": "Messe du mois",
+   // "2024-10-20": "Messe du mois",
+    "2024-11-1": "Toussaint",
+    //"2024-11-17": "Messe du mois",
+    "2024-12-25": "Noël"
+};
+
+const KTOEvents = {
     "2024-9-15": "Messe du mois",
     "2024-10-20": "Messe du mois",
-    "2024-11-1": "Toussaint",
     "2024-11-17": "Messe du mois",
     "2024-12-25": "Noël"
 };
@@ -35,12 +42,17 @@ function renderCalendar(month, year) {
     for (let day = 1; day <= daysInMonth; day++) {
         const dayCell = document.createElement('div');
         dayCell.textContent = day;
+        dayCell.textContent = day2;
         dayCell.className = 'day';
+        dayCell.className = 'day2';
         const eventDateKey = `${year}-${month + 1}-${day}`;
 
         if (catholicEvents[eventDateKey]) {
             dayCell.classList.add('event');
             dayCell.title = catholicEvents[eventDateKey];
+        } else if (KTOEvents[eventDateKey]) {
+            dayCell.classList.add('event2');
+            dayCell.title = KTOEvents[eventDateKey];
         }
         calendar.appendChild(dayCell);
     }

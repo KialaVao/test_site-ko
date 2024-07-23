@@ -132,7 +132,7 @@ header .image-container img {
     justify-content: center; /* Centrer horizontalement */
 }
 
-.day {
+.day, .day2 {
     width: 40px;
     height: 40px;
     display: flex;
@@ -152,6 +152,17 @@ header .image-container img {
     width: 10px;
     height: 10px;
     background-color: red;
+    border-radius: 50%;
+}
+
+.day2.event::after {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
     border-radius: 50%;
 }
 

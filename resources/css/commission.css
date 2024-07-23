@@ -107,7 +107,7 @@ header .image-container img {
 }
 
 /* Style for the text block */
-.text-block {
+.text-block, .text-block2 {
     max-width: 1000px; /* Set a max-width for the text block */
     padding: 0px; /* Add some padding */
     background-color: white; /* Optional: Add a background color */

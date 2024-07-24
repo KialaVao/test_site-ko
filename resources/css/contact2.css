@@ -31,4 +31,29 @@ footer {
     bottom: 0;
 }
 
-/* Autres règles CSS restent inchangées */
+/* Ajoutez des styles pour le conteneur d'images et le texte pour une meilleure lisibilité */
+.image-container, .image-container2, .text-block, .text-block2 {
+    background-color: rgba(255, 255, 255, 0.8); /* Optionnel : Ajouter un fond avec transparence pour une meilleure lisibilité */
+    padding: 10px;
+    border-radius: 8px; /* Optionnel : Ajouter des coins arrondis */
+}
+
+.content-row {
+    display: flex;
+    align-items: flex-start; /* Aligner les éléments au début verticalement */
+    justify-content: space-between; /* Espacer les éléments horizontalement */
+    gap: 20px; /* Espace entre les éléments */
+    flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne suivante si l'espace est insuffisant */
+}
+
+.content-row > div {
+    flex: 1;
+    min-width: 300px; /* Assurer une largeur minimale pour les éléments */
+}
+
+.map-container iframe {
+    width: 100%; /* Ajuster la largeur pour correspondre au conteneur parent */
+    height: 300px; /* Ajuster la hauteur selon les besoins */
+    border: 0; /* Enlever la bordure */
+    border-radius: 8px; /* Ajouter des coins arrondis */
+}

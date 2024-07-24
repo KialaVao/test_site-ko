@@ -155,6 +155,6 @@ header .image-container img {
 }
 
 .title-with-clipart .clipart {
-    width: 50px; /* Adjust the size of the clipart */
+    width: 100px; /* Adjust the size of the clipart */
     height: auto;
 }

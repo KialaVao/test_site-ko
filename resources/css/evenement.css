@@ -137,8 +137,8 @@ header .image-container img {
 }
 
 .day {
-    width: 30px; /* Réduire la largeur des cases de jour */
-    height: 30px; /* Réduire la hauteur des cases de jour */
+    width: 35px; /* Réduire la largeur des cases de jour */
+    height: 35px; /* Réduire la hauteur des cases de jour */
     display: flex;
     align-items: center;
     justify-content: center;

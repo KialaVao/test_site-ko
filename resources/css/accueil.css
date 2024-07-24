@@ -1,17 +1,8 @@
-/*body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}*/
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /* background: linear-gradient(135deg, #A97142 25%, #D3A56A 75%); */
-    background-size: cover;
 }
-
 
 header {
     background: linear-gradient(135deg, #A97142 25%, #D3A56A 75%);
@@ -193,4 +184,5 @@ header .image-container img {
 
 #parole-du-jour p {
     margin: 10px 0;
+    left: 150px;
 }

@@ -137,7 +137,7 @@ header .image-container img {
     }
 
     .header .image-container img {
-        width: 120px; /* Ajuster la largeur pour les écrans moyens */
+        width: 10px; /* Ajuster la largeur pour les écrans moyens */
         align-items : left;
     }
     .content-row {
@@ -155,7 +155,7 @@ header .image-container img {
     }
 
     .header .image-container img {
-        width: 50px; /* Ajuster la largeur pour les petits écrans */
+        width: 10px; /* Ajuster la largeur pour les petits écrans */
         align-items : left;
     }
 

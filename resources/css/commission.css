@@ -130,18 +130,6 @@ header .image-container img {
     margin-bottom: 10px; /* Add bottom margin for spacing when items wrap */
 } 
 
-.map-container {
-    text-align: center; /* Center align the map */
-    margin-top: 20px; /* Add some space above the map */
-}
-
-.map-container iframe {
-    width: 100%; /* Ensure the map takes full width */
-    height: 250px; /* Set the height of the map */
-    border: 0; /* Remove border */
-    border-radius: 8px; /* Add rounded corners */
-}
-
 .clipart {
     width: 100px; /* Adjust the size as needed */
     height: auto;

@@ -9,23 +9,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const date = getCurrentDate();
     const zone = 'romain';
-    const apiUrl = `https://api.aelf.org/v1/messes/{date}/{zone}`;
+    const apiUrl = `https://api.aelf.org/v1/messes/${date}/${zone}`;
 
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
             console.log(data); // Inspecter la structure de la réponse
             const paroleDuJour = document.getElementById("parole-du-jour");
-            if (data.lectures && data.lectures.evangile) {
-                const evangel = data.lectures.evangile;
-                const content = `
-                    <h4>${date}</h4>
-                    <h5>${evangel.titre}</h5>
-                    <p>${evangel.texte}</p>
-                `;
-                paroleDuJour.innerHTML = content;
+            if (data.messes && data.messes.length > 0) {
+                const messe = data.messes[0]; // Supposons qu'il y a au moins une messe
+                const evangile = messe.lectures.find(lecture => lecture.type === 'evangile');
+                if (evangile) {
+                    const content = `
+                        <h4>${date}</h4>
+                        <h5>${evangile.titre}</h5>
+                        <p>${evangile.texte}</p>
+                    `;
+                    paroleDuJour.innerHTML = content;
+                } else {
+                    paroleDuJour.innerHTML = "Aucune lecture de l'évangile trouvée pour cette date.";
+                }
             } else {
-                paroleDuJour.innerHTML = "Aucune lecture de l'évangile trouvée pour cette date.";
+                paroleDuJour.innerHTML = "Aucune messe trouvée pour cette date.";
             }
         })
         .catch(error => {

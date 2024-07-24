@@ -148,6 +148,13 @@ header .image-container img {
     margin: 10px 0; /* Optional: Add some space around the clipart */;
 }
 
-.flotte {
-    float:right;
+.title-with-clipart {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the space between the clipart and the title */
+}
+
+.title-with-clipart .clipart {
+    width: 50px; /* Adjust the size of the clipart */
+    height: auto;
 }

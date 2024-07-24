@@ -147,3 +147,7 @@ header .image-container img {
     height: auto;
     margin: 10px 0; /* Optional: Add some space around the clipart */
 }
+
+.flotte {
+    float:right;
+}

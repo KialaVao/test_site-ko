@@ -146,3 +146,32 @@ header .image-container img {
     width: 100px; /* Adjust the size of the clipart */
     height: auto;
 }
+
+/* Media queries pour différentes tailles d'écran */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em;
+    }
+
+    .content-row {
+        flex-direction: column;
+    }
+
+    .map-container iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .social-media-icons a {
+        font-size: 1.5em;
+    }
+
+    .map-container iframe {
+        height: 150px;
+    }
+}

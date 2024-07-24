@@ -128,30 +128,38 @@ header .image-container img {
     grid-template-columns: repeat(7, 1fr);
     gap: 2px;
     align-items: center;
-    justify-content: center; /* Centrer horizontalement */
+    justify-content: center;
+    max-width: 280px; /* Limiter la largeur totale du calendrier */
+    margin: 0 auto; /* Centrer le calendrier horizontalement */
+    padding: 10px; /* Ajouter du padding autour du calendrier */
+    background-color: #f0f0f0; /* Couleur de fond optionnelle pour le calendrier */
+    border-radius: 8px; /* Coins arrondis optionnels */
 }
 
 .day {
-    width: 40px;
-    height: 40px;
+    width: 30px; /* Réduire la largeur des cases de jour */
+    height: 30px; /* Réduire la hauteur des cases de jour */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: white;
     cursor: pointer;
     position: relative;
+    border: 1px solid #ddd; /* Ajouter une bordure fine */
+    border-radius: 4px; /* Coins arrondis pour les cases de jour */
 }
 
 .day.event::after {
     content: "";
     position: absolute;
-    bottom: 5px;
-    right: 5px;
-    width: 10px;
-    height: 10px;
+    bottom: 3px; /* Ajuster la position du point d'événement */
+    right: 3px; /* Ajuster la position du point d'événement */
+    width: 8px; /* Réduire la taille du point d'événement */
+    height: 8px; /* Réduire la taille du point d'événement */
     background-color: red;
     border-radius: 50%;
 }
+
 
 /* Style for the text block */
 .text-block {
@@ -187,4 +195,33 @@ header .image-container img {
     height: 250px; /* Set the height of the map */
     border: 0; /* Remove border */
     border-radius: 8px; /* Add rounded corners */
+}
+
+/* Media queries pour différentes tailles d'écran */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em;
+    }
+
+    .content-row {
+        flex-direction: column;
+    }
+
+    .map-container iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .social-media-icons a {
+        font-size: 1.5em;
+    }
+
+    .map-container iframe {
+        height: 150px;
+    }
 }

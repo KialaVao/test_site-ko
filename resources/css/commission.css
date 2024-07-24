@@ -5,7 +5,8 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    /*background-color: #4CAF50;*/
+    background: linear-gradient(#614e1a, #333);
     color: white;
     padding: 1em;
     text-align: center;
@@ -43,7 +44,8 @@ main {
 }
 
 footer {
-    background-color: #4CAF50;
+    /* background-color: #4CAF50; */
+    background: linear-gradient(white, #614e1a);
     color: white;
     text-align: center;
     padding: 0.2em;

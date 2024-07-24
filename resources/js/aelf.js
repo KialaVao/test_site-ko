@@ -24,9 +24,10 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log("Data received from API:", data);
             const paroleDuJour = document.getElementById("parole-du-jour");
             if (data.messes && data.messes.length > 0) {
-                const messe = data.messes[0];
+                const messe = data.messes[0]; // Supposons qu'il y a au moins une messe
                 console.log("Messe data:", messe);
                 const evangile = messe.lectures.find(lecture => lecture.type === 'evangile');
+                console.log("Evangile data:", evangile); // Inspecter la structure de l'objet évangile
                 if (evangile) {
                     const content = `
                         <h4>${date}</h4>

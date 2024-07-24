@@ -173,3 +173,24 @@ header .image-container img {
         height: 150px;
     }
 }
+
+/* Styles pour le conteneur de l'image miniature */
+.thumbnail-container {
+    display: flex;
+    justify-content: center; /* Centrer l'image horizontalement */
+    align-items: center; /* Centrer l'image verticalement */
+    margin: 20px; /* Ajouter de la marge autour du conteneur */
+}
+
+/* Styles pour l'image miniature */
+.thumbnail {
+    width: 150px; /* Largeur de la miniature */
+    height: auto; /* Ajuster la hauteur automatiquement pour garder le ratio */
+    border-radius: 8px; /* Ajouter des coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre pour un effet de profondeur */
+    transition: transform 0.2s; /* Ajouter une transition pour l'effet de survol */
+}
+
+.thumbnail:hover {
+    transform: scale(1.1); /* Agrandir légèrement l'image au survol */
+}

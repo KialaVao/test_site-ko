@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const date = getCurrentDate();
     const zone = 'romain';
-    const apiUrl = `https://api.aelf.org/v1/lectures/${date}/${zone}`;
+    const apiUrl = `https://api.aelf.org/v1/messes/{date}/{zone}`;
 
     fetch(apiUrl)
         .then(response => response.json())

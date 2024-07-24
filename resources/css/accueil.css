@@ -158,3 +158,19 @@ header .image-container img {
         height: 150px;
     }
 }
+
+#parole-du-jour {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#parole-du-jour h4, #parole-du-jour h5 {
+    margin: 10px 0;
+}
+
+#parole-du-jour p {
+    margin: 10px 0;
+}

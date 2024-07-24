@@ -129,3 +129,46 @@ header .image-container img {
     border: 1px solid white; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
 }
+
+/* Media queries pour différentes tailles d'écran */
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    .content-row {
+        flex-direction: column;
+    }
+
+    .map-container iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .social-media-icons a {
+        font-size: 1.5em;
+    }
+
+    .map-container iframe {
+        height: 150px;
+    }
+}

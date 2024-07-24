@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     const content = `
                         <h4>${date}</h4>
                         <h5>${evangile.titre}</h5>
-                        <p>${evangile.texte}</p>
+                        <p>${evangile.contenu}</p> <!-- Adaptez selon la structure réelle -->
                     `;
                     paroleDuJour.innerHTML = content;
                 } else {

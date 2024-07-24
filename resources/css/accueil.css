@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -6,6 +6,25 @@ body {
 
 header {
     background: linear-gradient(#FFD700, white);
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: relative;
+}
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../resources/img/intérieur_fiangonana.jpg'); /* Chemin vers votre image de fond */
+    background-size: cover; /* Pour que l'image couvre l'ensemble de la page */
+    background-repeat: no-repeat; /* Pour éviter la répétition de l'image */
+    background-attachment: fixed; /* Pour fixer l'image de fond lors du défilement */
+}
+
+header {
+    background: linear-gradient(rgba(255, 215, 0, 0.8), rgba(255, 255, 255, 0.8)); /* Couleur dorée avec opacité */
     color: white;
     padding: 1em;
     text-align: center;

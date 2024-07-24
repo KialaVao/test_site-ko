@@ -15,8 +15,9 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
+            console.log(data); // Inspecter la structure de la réponse
             const paroleDuJour = document.getElementById("parole-du-jour");
-            if (data.lectures) {
+            if (data.lectures && Array.isArray(data.lectures)) {
                 let content = `<h4>${date}</h4>`;
                 data.lectures.forEach(lecture => {
                     content += `<h5>${lecture.titre}</h5>`;

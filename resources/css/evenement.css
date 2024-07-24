@@ -118,7 +118,7 @@ header .image-container img {
 
 .calendar-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -132,7 +132,7 @@ header .image-container img {
     max-width: 280px; /* Limiter la largeur totale du calendrier */
     margin: 0 auto; /* Centrer le calendrier horizontalement */
     padding: 10px; /* Ajouter du padding autour du calendrier */
-    background-color: #f0f0f0; /* Couleur de fond optionnelle pour le calendrier */
+    /*background-color: #f0f0f0; /* Couleur de fond optionnelle pour le calendrier */
     border-radius: 8px; /* Coins arrondis optionnels */
 }
 

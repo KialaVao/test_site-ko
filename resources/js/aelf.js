@@ -17,12 +17,15 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(data => {
             console.log(data); // Inspecter la structure de la réponse
             const paroleDuJour = document.getElementById("parole-du-jour");
-            if (data.lectures && Array.isArray(data.lectures)) {
+            if (data.lectures) {
                 let content = `<h4>${date}</h4>`;
-                data.lectures.forEach(lecture => {
-                    content += `<h5>${lecture.titre}</h5>`;
-                    content += `<p>${lecture.texte}</p>`;
-                });
+                for (const key in data.lectures) {
+                    if (data.lectures.hasOwnProperty(key)) {
+                        const lecture = data.lectures[key];
+                        content += `<h5>${lecture.titre}</h5>`;
+                        content += `<p>${lecture.texte}</p>`;
+                    }
+                }
                 paroleDuJour.innerHTML = content;
             } else {
                 paroleDuJour.innerHTML = "Aucune lecture trouvée pour cette date.";

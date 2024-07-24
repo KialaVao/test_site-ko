@@ -138,6 +138,7 @@ header .image-container img {
 
     .header .image-container img {
         width: 120px; /* Ajuster la largeur pour les écrans moyens */
+        align-items : left;
     }
     .content-row {
         flex-direction: column;
@@ -152,9 +153,10 @@ header .image-container img {
     header h1 {
         font-size: 1.2em;
     }
-    
+
     .header .image-container img {
-        width: 100px; /* Ajuster la largeur pour les petits écrans */
+        width: 50px; /* Ajuster la largeur pour les petits écrans */
+        align-items : left;
     }
 
     .social-media-icons a {
@@ -166,6 +168,7 @@ header .image-container img {
     }
 }
 
+/* Styles pour la section Parole du jour */
 #parole-du-jour {
     background-color: #fff;
     padding: 15px;

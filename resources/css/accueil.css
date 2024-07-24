@@ -136,6 +136,9 @@ header .image-container img {
         padding: 0.5em;
     }
 
+    .header .image-container img {
+        width: 120px; /* Ajuster la largeur pour les écrans moyens */
+    }
     .content-row {
         flex-direction: column;
     }
@@ -148,6 +151,10 @@ header .image-container img {
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.2em;
+    }
+    
+    .header .image-container img {
+        width: 100px; /* Ajuster la largeur pour les petits écrans */
     }
 
     .social-media-icons a {

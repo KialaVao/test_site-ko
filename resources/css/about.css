@@ -184,8 +184,8 @@ header .image-container img {
 
 /* Styles pour l'image miniature ronde */
 .thumbnail {
-    width: 150px; /* Largeur de la miniature */
-    height: 150px; /* Hauteur de la miniature pour s'assurer que l'image est un cercle parfait */
+    width: 100px; /* Largeur de la miniature */
+    height: 100px; /* Hauteur de la miniature pour s'assurer que l'image est un cercle parfait */
     border-radius: 50%; /* Rendre l'image ronde */
     object-fit: cover; /* S'assurer que l'image couvre bien le cercle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre pour un effet de profondeur */

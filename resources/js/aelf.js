@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const date = getCurrentDate(); // Obtenir la date actuelle
     const zone = 'france'; // La zone peut être 'romain' ou une autre selon votre besoin
-    const apiUrl = `https://api.aelf.org/v1/lectures/${date}/${zone}`;
+    const apiUrl = `https://api.aelf.org/get/v1/lectures/${date}/${zone}`;
 
     fetch(apiUrl)
         .then(response => response.json())

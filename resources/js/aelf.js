@@ -1,30 +1,44 @@
 document.addEventListener("DOMContentLoaded", function() {
-    // Fonction pour obtenir la date actuelle au format YYYY-MM-DD
     function getCurrentDate() {
         const today = new Date();
         const year = today.getFullYear();
-        const month = String(today.getMonth() + 1).padStart(2, '0'); // Mois de 0 à 11, donc ajouter 1
+        const month = String(today.getMonth() + 1).padStart(2, '0');
         const day = String(today.getDate()).padStart(2, '0');
         return `${year}-${month}-${day}`;
     }
 
-    const date = getCurrentDate(); // Obtenir la date actuelle
-    const zone = 'romain'; // La zone peut être 'romain' ou une autre selon votre besoin
+    const date = getCurrentDate();
+    const zone = 'romain';
     const apiUrl = `https://api.aelf.org/v1/messes/${date}/${zone}`;
 
+    console.log("Fetching data from API:", apiUrl);
+
     fetch(apiUrl)
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
         .then(data => {
+            console.log("Data received from API:", data);
             const paroleDuJour = document.getElementById("parole-du-jour");
-            if (data.lectures) {
-                let content = `<h4>${date}</h4>`;
-                data.lectures.forEach(lecture => {
-                    content += `<h5>${lecture.titre}</h5>`;
-                    content += `<p>${lecture.texte}</p>`;
-                });
-                paroleDuJour.innerHTML = content;
+            if (data.messes && data.messes.length > 0) {
+                const messe = data.messes[0];
+                console.log("Messe data:", messe);
+                const evangile = messe.lectures.find(lecture => lecture.type === 'evangile');
+                if (evangile) {
+                    const content = `
+                        <h4>${date}</h4>
+                        <h5>${evangile.titre}</h5>
+                        <p>${evangile.texte}</p>
+                    `;
+                    paroleDuJour.innerHTML = content;
+                } else {
+                    paroleDuJour.innerHTML = "Aucune lecture de l'évangile trouvée pour cette date.";
+                }
             } else {
-                paroleDuJour.innerHTML = "Aucune lecture trouvée pour cette date.";
+                paroleDuJour.innerHTML = "Aucune messe trouvée pour cette date.";
             }
         })
         .catch(error => {

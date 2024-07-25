@@ -20,9 +20,19 @@ const catholicEvents = {
     "2024-12-25": "Noël"
 };
 
+const daysOfWeek = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];
+
 function renderCalendar(month, year) {
     calendar.innerHTML = '';
     monthYear.textContent = new Date(year, month).toLocaleString('fr-FR', { month: 'long', year: 'numeric' });
+
+    // Ajouter les noms des jours de la semaine
+    daysOfWeek.forEach(day => {
+        const dayCell = document.createElement('div');
+        dayCell.className = 'weekday';
+        dayCell.textContent = day;
+        calendar.appendChild(dayCell);
+    });
 
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();

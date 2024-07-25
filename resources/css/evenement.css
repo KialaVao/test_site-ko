@@ -137,8 +137,8 @@ header .image-container img {
 }
 
 .day {
-    width: 35px; /* Réduire la largeur des cases de jour */
-    height: 35px; /* Réduire la hauteur des cases de jour */
+    width: 50px; /* Réduire la largeur des cases de jour */
+    height: 50px; /* Réduire la hauteur des cases de jour */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,5 +228,12 @@ header .image-container img {
 
 .event-name {
     font-size: 0.8em;
-    color: red;
+    color: blue;
+}
+
+.weekday {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f0f0;
 }

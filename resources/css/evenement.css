@@ -140,13 +140,15 @@ header .image-container img {
     width: 75px; /* Réduire la largeur des cases de jour */
     height: 75px; /* Réduire la hauteur des cases de jour */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: white;
     cursor: pointer;
     position: relative;
     border: 1px solid #ddd; /* Ajouter une bordure fine */
     border-radius: 4px; /* Coins arrondis pour les cases de jour */
+    padding: 2px;
 }
 
 .day.event::after {
@@ -229,6 +231,8 @@ header .image-container img {
 .event-name {
     font-size: 0.8em;
     color: blue;
+    margin-top: 2px;
+    text-align: center;
 }
 
 .weekday {

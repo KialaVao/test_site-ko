@@ -179,9 +179,9 @@ header .image-container img {
 }
 
 .today {
-    /*background-color: #ffeb3b; /* Yellow background for today's date */
-    color: #f0f0f0;
-    border: 3px solid black; /* Slightly darker border */
+    background-color: #ddd; /* Yellow background for today's date */
+    color: black;
+    border: 3px solid #ddd; /* Slightly darker border */
 }
 
 /* Style for the text block */

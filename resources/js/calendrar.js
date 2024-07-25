@@ -2,11 +2,11 @@ const calendar = document.getElementById('calendar');
 const monthYear = document.getElementById('monthYear');
 const prevMonthBtn = document.getElementById('prevMonth');
 const nextMonthBtn = document.getElementById('nextMonth');
+const eventTooltip = document.getElementById('eventTooltip');
 
 let currentMonth = new Date().getMonth();
 let currentYear = new Date().getFullYear();
 
-// Exemple d'événements catholiques
 const catholicEvents = {
     "2024-1-1": "Sainte Marie, Mère de Dieu",
     "2024-4-21": "Pâques",
@@ -42,9 +42,22 @@ function renderCalendar(month, year) {
         if (catholicEvents[eventDateKey]) {
             dayCell.classList.add('event');
             dayCell.title = catholicEvents[eventDateKey];
+            dayCell.addEventListener('mouseover', (e) => showTooltip(e, catholicEvents[eventDateKey]));
+            dayCell.addEventListener('mouseout', hideTooltip);
         }
         calendar.appendChild(dayCell);
     }
+}
+
+function showTooltip(event, text) {
+    eventTooltip.style.display = 'block';
+    eventTooltip.textContent = text;
+    eventTooltip.style.left = event.pageX + 'px';
+    eventTooltip.style.top = event.pageY + 'px';
+}
+
+function hideTooltip() {
+    eventTooltip.style.display = 'none';
 }
 
 function changeMonth(direction) {

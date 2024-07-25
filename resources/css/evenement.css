@@ -162,6 +162,27 @@ header .image-container img {
     border-radius: 50%;
 }
 
+.event-name {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: blue;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.weekday {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd; /* Ajouter une bordure fine */
+}
+
+.today {
+    background-color: #ffeb3b; /* Yellow background for today's date */
+    color: black;
+    border: 2px solid #fbc02d; /* Slightly darker border */
+}
 
 /* Style for the text block */
 .text-block {
@@ -228,18 +249,3 @@ header .image-container img {
     }
 }
 
-.event-name {
-    font-size: 0.8em;
-    font-weight: bold;
-    color: blue;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.weekday {
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 0;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd; /* Ajouter une bordure fine */
-}

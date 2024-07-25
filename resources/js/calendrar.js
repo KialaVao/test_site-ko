@@ -5,6 +5,7 @@ const nextMonthBtn = document.getElementById('nextMonth');
 
 let currentMonth = new Date().getMonth();
 let currentYear = new Date().getFullYear();
+const today = new Date();
 
 const catholicEvents = {
     "2024-1-1": "Sainte Marie, Mère de Dieu",
@@ -47,12 +48,16 @@ function renderCalendar(month, year) {
         dayCell.className = 'day';
         const eventDateKey = `${year}-${month + 1}-${day}`;
 
+        dayCell.innerHTML = `<span>${day}</span>`;
         if (catholicEvents[eventDateKey]) {
             dayCell.classList.add('event');
-            dayCell.innerHTML = `<span>${day}</span><div class="event-name">${catholicEvents[eventDateKey]}</div>`;
-        } else {
-            dayCell.textContent = day;
+            dayCell.innerHTML += `<div class="event-name">${catholicEvents[eventDateKey]}</div>`;
         }
+
+        if (day === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+            dayCell.classList.add('today');
+        }
+
         calendar.appendChild(dayCell);
     }
 }

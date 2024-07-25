@@ -181,7 +181,7 @@ header .image-container img {
 .today {
     background-color: #ddd; /* Yellow background for today's date */
     color: black;
-    border: 2px solid #ddd; /* Slightly darker border */
+    border: 2px solid black; /* Slightly darker border */
 }
 
 /* Style for the text block */

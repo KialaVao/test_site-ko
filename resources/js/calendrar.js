@@ -2,7 +2,6 @@ const calendar = document.getElementById('calendar');
 const monthYear = document.getElementById('monthYear');
 const prevMonthBtn = document.getElementById('prevMonth');
 const nextMonthBtn = document.getElementById('nextMonth');
-const eventTooltip = document.getElementById('eventTooltip');
 
 let currentMonth = new Date().getMonth();
 let currentYear = new Date().getFullYear();
@@ -35,29 +34,17 @@ function renderCalendar(month, year) {
 
     for (let day = 1; day <= daysInMonth; day++) {
         const dayCell = document.createElement('div');
-        dayCell.textContent = day;
         dayCell.className = 'day';
         const eventDateKey = `${year}-${month + 1}-${day}`;
 
         if (catholicEvents[eventDateKey]) {
             dayCell.classList.add('event');
-            dayCell.title = catholicEvents[eventDateKey];
-            dayCell.addEventListener('mouseover', (e) => showTooltip(e, catholicEvents[eventDateKey]));
-            dayCell.addEventListener('mouseout', hideTooltip);
+            dayCell.innerHTML = `<span>${day}</span><div class="event-name">${catholicEvents[eventDateKey]}</div>`;
+        } else {
+            dayCell.textContent = day;
         }
         calendar.appendChild(dayCell);
     }
-}
-
-function showTooltip(event, text) {
-    eventTooltip.style.display = 'block';
-    eventTooltip.textContent = text;
-    eventTooltip.style.left = event.pageX + 'px';
-    eventTooltip.style.top = event.pageY + 'px';
-}
-
-function hideTooltip() {
-    eventTooltip.style.display = 'none';
 }
 
 function changeMonth(direction) {

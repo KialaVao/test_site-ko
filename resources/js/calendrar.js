@@ -15,7 +15,7 @@ const catholicEvents = {
     "2024-11-17": "Messe du mois",
     "2024-11-24": "Christ Roi",
     "2024-12-22": "Messe du mois : 4ème dimanche de l'Avent",
-    "2024-12-25": "Noël,
+    "2024-12-25": "Noël",
     "2024-12-29": "Sainte Famille",
     "2025-1-1": "Sainte Marie, Mère de Dieu",
     "2025-1-5": "Epiphanie",

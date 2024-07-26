@@ -299,7 +299,7 @@ header .image-container img {
         font-size: 1.2em;
     }
     header .image-container {
-        top: 65%; /* Ajuster la position pour les petits écrans */
+        top: 50%; /* Ajuster la position pour les petits écrans */
         left: 10%;
         transform: translateY(-50%);
     }

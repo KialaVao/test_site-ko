@@ -109,7 +109,7 @@ header .image-container img {
 }
 
 .clipart {
-    width: 100px; /* Adjust the size as needed */
+    width: 50px; /* Adjust the size as needed */
     height: auto;
     margin: 10px 0; /* Optional: Add some space around the clipart */
 }

@@ -17,7 +17,7 @@ header {
     background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
     background-position: center; /* Pour centrer l'image */
     color: white;
-    padding: 1em;
+    padding: 2em 1em;
     text-align: center;
     position: relative;
 }

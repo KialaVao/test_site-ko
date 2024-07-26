@@ -106,46 +106,11 @@ header .image-container img {
     color: #C13584; /* Darker Instagram pink */
 }
 
-/* Style for the text block 
-.text-block, .text-block2 {
-    max-width: 1000px; /* Set a max-width for the text block 
-    padding: 0px; /* Add some padding 
-    background-color: white; /* Optional: Add a background color 
-    border: 1px solid white; /* Optional: Add a border 
-    border-radius: 8px; /* Optional: Add rounded corners */
-} */
-
-/* Flexbox styles 
-.content-row {
-    display: flex;
-    align-items: center; /* Center items vertically 
-    justify-content: flex-start; /* Align items to the start 
-    gap: 100px; /* Space between items 
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens 
-} */
-
-/*.content-row > div {
-    flex: 1; /* Ensure items take equal space 
-    min-width: 200px; /* Ensure a minimum width for each item 
-    margin-bottom: 10px; /* Add bottom margin for spacing when items wrap 
-} */
-
 .clipart {
     width: 100px; /* Adjust the size as needed */
     height: auto;
     margin: 10px 0; /* Optional: Add some space around the clipart */
 }
-
-/*.title-with-clipart {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Adjust the space between the clipart and the title 
-} */
-
-/*.title-with-clipart .clipart {
-    width: 100px; /* Adjust the size of the clipart 
-    height: auto;
-} */
 
 /* Media queries pour différentes tailles d'écran */
 @media (max-width: 768px) {
@@ -176,13 +141,12 @@ header .image-container img {
     }
 }
 
-
 table {
     width: 100%;
     border-collapse: collapse;
 }
 th, td {
-    border: 1px solid #000;
+    border: 2px solid #000;
     padding: 8px;
 }
 th {

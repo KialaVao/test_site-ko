@@ -62,7 +62,7 @@ header .image-container {
 }
 
 header .image-container img {
-   /* max-width: 100px; /* Adjust as necessary */
+    max-width: 50px; /* Adjust as necessary */
     height: auto;
 } 
 

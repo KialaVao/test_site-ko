@@ -6,13 +6,14 @@ body {
 }
 
 header {
-    /*background-color: #77B5FE;*/
-    background: linear-gradient(#77B5FE, white);
+    background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
+    background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
+    background-position: center; /* Pour centrer l'image */
     color: white;
-    padding: 1em;
+    padding: 5em 1em;
     text-align: center;
     position: relative;
-}
+} 
 
 nav ul {
     background-color: #333;

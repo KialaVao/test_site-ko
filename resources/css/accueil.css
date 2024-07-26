@@ -294,7 +294,7 @@ nav ul .dropdown:hover .dropdown-content {
     }
     header .image-container {
         top: 50%; /* Ajuster la position pour les petits écrans */
-        left: 10%;
+        left: 5%;
         transform: translateY(-50%);
     }
     header .image-container img {

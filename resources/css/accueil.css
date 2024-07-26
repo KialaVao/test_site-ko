@@ -133,6 +133,12 @@ header .image-container img {
 }
 
 /* Media queries pour différentes tailles d'écran */
+@media (max-width: 1200px) {
+    #parole-du-jour {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+}
+
 @media (max-width: 768px) {
     header {
         padding: 0.5em;
@@ -173,19 +179,21 @@ header .image-container img {
 /* Styles pour la section Parole du jour */
 #parole-du-jour {
     background-color: #fff;
-    /*padding: 1px;*/
     border-radius: 8px;
     border: 1px solid #D3A56A;
-    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
     margin-top: 20px;
+    padding: 1em;
+    font-size: 1rem;
 }
 
 #parole-du-jour h4, #parole-du-jour h5 {
     margin: 10px 0;
+    font-size: 1.5em;
 }
 
 #parole-du-jour p {
     margin: 10px 0;
+    font-size: 1.2em;
 }
 
 /* Styles pour le menu déroulant */

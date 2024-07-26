@@ -1,17 +1,18 @@
-/* Reset some styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
+} 
 
 header {
-    background-color: #4CAF50;
+    background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
+    background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
+    background-position: center; /* Pour centrer l'image */
     color: white;
-    padding: 1em;
+    padding: 5em 1em;
     text-align: center;
     position: relative;
-}
+} 
 
 nav ul {
     background-color: #333;
@@ -44,19 +45,19 @@ main {
 }
 
 footer {
-    background-color: #4CAF50;
+    background: linear-gradient(135deg, #A97142 25%, #D3A56A 75%);
     color: white;
     text-align: center;
     padding: 0.2em;
-    position: fixed;
+    /*position: fixed; */
     width: 100%;
     bottom: 0;
-}
+} 
 
 header .image-container {
     position: absolute;
     top: 75%;
-    left: 250px;
+    left: 150px;
     transform: translateY(-50%);
 }
 
@@ -66,15 +67,15 @@ header .image-container img {
 }
 
 .margin-container {
-    width: 100%; /* Full width */
-    margin: 0 auto; /* Centered horizontally */
-    text-align: center; /* Center the links */
+    width: 100%; /* Largeur du conteneur */
+    margin: 0 auto; /* Marges automatiques à gauche et à droite */
+    text-align: center; /* Centre le texte à l'intérieur du conteneur */
 }
 
 .margin-container a {
     display: inline-block;
     color: white;
-    margin: 0 10px; /* Spacing between links */
+    margin: 0 10px; /* Espacement entre les liens */
 }
 
 .social-media-icons {
@@ -107,3 +108,158 @@ header .image-container img {
     color: #C13584; /* Darker Instagram pink */
 }
 
+/* Flexbox styles */
+.content-row {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align items to the start */
+    gap: 100px; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+.content-row > div {
+    flex: 1; /* Ensure items take equal space */
+    min-width: 200px; /* Ensure a minimum width for each item */
+    margin-bottom: 10px; /* Add bottom margin for spacing when items wrap */
+}
+
+/* Style for the text block */
+.text-block {
+    max-width: 1000px; /* Set a max-width for the text block */
+    padding: 0px; /* Add some padding */
+    background-color: white; /* Optional: Add a background color */
+    border: 1px solid white; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+text-block2 {
+    max-width: 1000px; /* Set a max-width for the text block */
+    padding: 0px; /* Add some padding */
+    background-color: white; /* Optional: Add a background color */
+    border: 1px solid #D3A56A; /* Optional: Add a border */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    font-size: 1rem;
+}
+
+/* Media queries pour différentes tailles d'écran */
+@media (max-width: 1200px) {
+    #parole-du-jour {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    #text-block2 {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 0.5em;
+    }
+
+    .header .image-container img {
+        width: 10px; /* Ajuster la largeur pour les écrans moyens */
+        align-items : left;
+    }
+    .content-row {
+        flex-direction: column;
+    }
+
+    .map-container iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .header .image-container img {
+        width: 10px; /* Ajuster la largeur pour les petits écrans */
+        align-items : left;
+    }
+
+    .social-media-icons a {
+        font-size: 1.5em;
+    }
+
+    .map-container iframe {
+        height: 150px;
+    }
+}
+
+/* Styles pour la section Parole du jour */
+#parole-du-jour {
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #D3A56A;
+    margin-top: 20px;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+#parole-du-jour h4, #parole-du-jour h5 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+#parole-du-jour p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* Styles pour le menu déroulant */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+nav ul li.dropdown {
+    display: inline-block;
+}
+
+nav ul .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -15,23 +15,21 @@
             <a href="./accueil.html">
                 <img src="../resources/img/LOGO MALAGASY RENNES.jpg" alt="logo-KTOrennes" class="image">  
             </a>
-        </div>
-            <!-- Ajout de la liste déroulante pour la sélection de la commission -->
-            <div class="form-group">
-                <label for="commission">Commission:</label>
-                <select id="commission" name="commission">
-                    <option value="commission1">Liturgie</option>
-                    <option value="commission2">Catéchèse</option>
-                    <option value="commission3">Communication</option>
-                    <option value="commission4">Gestion</option>
-                </select>
-            </div>                   
+        </div>                
     </header>
     <nav>
         <ul>
             <li><a href="./accueil.html">Accueil</a></li>
             <li><a href="./about.html">À propos de nous</a></li>
-            <li><a href="./commission.html">Commissions</a></li>
+            <li class="dropdown">
+                <a href="./commission.html" class="dropbtn">Commissions</a>
+                <ul class="dropdown-content">
+                    <li><a href="./commission1.html">Liturgie</a></li>
+                    <li><a href="./commission2.html">Catéchèse</a></li>
+                    <li><a href="./commission3.html">Communication</a></li>
+                    <li><a href="./commission4.html">Gestion</a></li>
+                </ul>
+            </li>
             <li><a href="./evenement.html">Evenements</a></li>
             <li><a href="./contact.html">Contacts</a></li> 
         </ul>   

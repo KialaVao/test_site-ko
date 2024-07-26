@@ -159,3 +159,8 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #ddd;
 }
+
+/* Ajouter des bordures autour du tableau entier */
+table, th, td {
+    border: 1px solid #000;
+}

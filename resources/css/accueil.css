@@ -62,7 +62,7 @@ header .image-container {
 }
 
 header .image-container img {
-    max-width: 50px; /* Adjust as necessary */
+    max-width: 75px; /* Adjust as necessary */
     height: auto;
 } 
 
@@ -266,7 +266,7 @@ nav ul .dropdown:hover .dropdown-content {
 
 /* CSS pour le logo */
 header .image-container img {
-    max-width: 50%;
+    max-width: 75%;
     height: auto;
 }
 

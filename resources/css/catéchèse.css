@@ -160,8 +160,16 @@ header .image-container img {
     gap: 20px; /* Espacement entre les colonnes */
 }
 .column {
-    flex: 1; /* Chaque colonne prend une part égale de l'espace disponible */
     padding: 10px;
     border: 1px solid #000; /* Bordure autour des colonnes */
     background-color: #f2f2f2; /* Couleur de fond des colonnes */
+}
+.column-1 {
+    flex: 1; /* Prend 1 part de l'espace disponible */
+}
+.column-2 {
+    flex: 2; /* Prend 2 parts de l'espace disponible */
+}
+.column-3 {
+    flex: 1; /* Prend 1 part de l'espace disponible */
 }

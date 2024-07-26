@@ -157,6 +157,8 @@ header .image-container img {
 
 .columns {
     display: flex;
+    flex-direction: column; /* Aligne les colonnes verticalement */
+    height: 100vh; /* Ajuste la hauteur à la hauteur de la fenêtre */
     gap: 20px; /* Espacement entre les colonnes */
 }
 .column {
@@ -164,4 +166,6 @@ header .image-container img {
     padding: 10px;
     border: 1px solid #000; /* Bordure autour des colonnes */
     background-color: #f2f2f2; /* Couleur de fond des colonnes */
+    display: flex;
+    flex-direction: column;
 }

@@ -114,6 +114,17 @@ header .image-container img {
     margin: 10px 0; /* Optional: Add some space around the clipart */
 }
 
+.title-with-clipart {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the space between the clipart and the title */
+}
+
+.title-with-clipart .clipart {
+    width: 100px; /* Adjust the size of the clipart */
+    height: auto;
+}
+
 /* Media queries pour différentes tailles d'écran */
 @media (max-width: 768px) {
     header {

@@ -153,3 +153,15 @@ header .image-container img {
         height: 150px;
     }
 }
+
+
+.columns {
+    display: flex;
+    gap: 20px; /* Espacement entre les colonnes */
+}
+.column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace disponible */
+    padding: 10px;
+    border: 1px solid #000; /* Bordure autour des colonnes */
+    background-color: #f2f2f2; /* Couleur de fond des colonnes */
+}

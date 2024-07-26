@@ -8,17 +8,29 @@ let currentYear = new Date().getFullYear();
 const today = new Date();
 
 const catholicEvents = {
-    "2024-1-1": "Sainte Marie, Mère de Dieu",
-    "2024-4-21": "Pâques",
-    "2024-5-30": "Ascension",
-    "2024-6-9": "Pentecôte",
     "2024-8-15": "Assomption de Marie",
     "2024-9-15": "Messe du mois",
     "2024-10-20": "Messe du mois",
     "2024-11-1": "Toussaint",
     "2024-11-17": "Messe du mois",
-    "2024-12-21": "Messe du mois",
-    "2024-12-25": "Noël"
+    "2024-11-24": "Christ Roi",
+    "2024-12-22": "Messe du mois : 4ème dimanche de l'Avent",
+    "2024-12-25": "Noël,
+    "2024-12-29": "Sainte Famille",
+    "2025-1-1": "Sainte Marie, Mère de Dieu",
+    "2025-1-5": "Epiphanie",
+    "2025-1-12": "Baptême du Seigneur",
+    "2025-1-19": "Messe du mois",
+    "2025-2-2": "Présentation du Seigneur au Temple",
+    "2025-2-16": "Messe du mois",
+    "2025-3-5": "Mercredi des cendres",
+    "2025-3-16": "Messe du mois",
+    "2025-4-13": "Dimanche des Rameaux",
+    "2025-4-17": "Jeudi Saint",
+    "2025-4-18": "Vendredi Saint",
+    "2025-4-19": "Samedi Saint",
+    "2025-4-20": "Pâques",
+    "2025-4-27": "Dimanche de la Miséricorde"
 };
 
 const daysOfWeek = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];

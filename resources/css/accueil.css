@@ -138,6 +138,7 @@ text-block2 {
     background-color: white; /* Optional: Add a background color */
     border: 1px solid #D3A56A; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
+    font-size: 1rem;
 }
 
 /* Media queries pour différentes tailles d'écran */

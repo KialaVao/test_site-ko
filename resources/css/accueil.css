@@ -57,14 +57,14 @@ footer {
 header .image-container {
     position: absolute;
     top: 75%;
-    left: 150px;
+    left: 100px;
     transform: translateY(-50%);
 }
 
-/* header .image-container img {
-    max-width: 100px; /* Adjust as necessary 
+header .image-container img {
+    max-width: 100px; /* Adjust as necessary */
     height: auto;
-} */
+} 
 
 .margin-container {
     width: 100%; /* Largeur du conteneur */

@@ -14,7 +14,7 @@ const catholicEvents = {
     "2024-11-1": "Toussaint",
     "2024-11-17": "Messe du mois",
     "2024-11-24": "Christ Roi",
-    "2024-12-22": "Messe du mois : 4ème dimanche de l'Avent",
+    "2024-12-22": "Messe du mois:4ème dimanche de l'Avent",
     "2024-12-25": "Noël",
     "2024-12-29": "Sainte Famille",
     "2025-1-1": "Sainte Marie, Mère de Dieu",
@@ -30,7 +30,17 @@ const catholicEvents = {
     "2025-4-18": "Vendredi Saint",
     "2025-4-19": "Samedi Saint",
     "2025-4-20": "Pâques",
-    "2025-4-27": "Dimanche de la Miséricorde"
+    "2025-4-27": "Dimanche de la Miséricorde",
+    "2025-5-18": "Messe du mois",
+    "2025-5-29": "Ascension",
+    "2025-6-8": "Pentecôte",
+    "2025-6-15": "Messe du mois: La Sainte Trinité",
+    "2025-6-22": "Saint Sacrement",
+    "2025-6-27": "Sacré-Coeur de Jésus",
+    "2025-6-28": "Coeur Immaculée de Marie",
+    "2025-6-29": "Saint Pierre et Saint Paul",
+    "2025-7-20": "Messe du mois",
+    "2025-8-15": "Assomption de Marie"
 };
 
 const daysOfWeek = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];

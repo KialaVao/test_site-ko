@@ -4,14 +4,6 @@ body {
     padding: 0;
 } 
 
-/*header {
-    background: linear-gradient(135deg, #A97142 25%, #D3A56A 75%);
-    color: white;
-    padding: 1em;
-    text-align: center;
-    position: relative;
-} */
-
 header {
     background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
     background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
@@ -209,6 +201,30 @@ label {
 
 select {
     width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header .form-group {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.header label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.header select {
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;

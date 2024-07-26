@@ -264,12 +264,6 @@ nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* CSS pour le logo */
-header .image-container img {
-    max-width: 75%;
-    height: auto;
-}
-
 /* Media queries pour différentes tailles d'écran */
 @media (max-width: 1200px) {
     header {

@@ -263,3 +263,47 @@ nav ul .dropdown-content a:hover {
 nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* CSS pour le logo */
+header .image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media queries pour différentes tailles d'écran */
+@media (max-width: 1200px) {
+    header {
+        padding: 3em 1em; /* Ajuster la largeur pour les écrans moyens */
+    }
+    header .image-container img {
+        max-width: 80px; /* Ajuster la taille de l'image */
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 2em 1em; /* Ajuster la largeur pour les écrans moyens */
+    }
+    header .image-container {
+        top: 70%; /* Ajuster la position pour les écrans moyens */
+        left: 10%;
+        transform: translateY(-50%);
+    }
+    header .image-container img {
+        max-width: 60px; /* Ajuster la taille de l'image */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em;
+    }
+    header .image-container {
+        top: 65%; /* Ajuster la position pour les petits écrans */
+        left: 10%;
+        transform: translateY(-50%);
+    }
+    header .image-container img {
+        max-width: 40px; /* Ajuster la taille de l'image */
+    }
+}

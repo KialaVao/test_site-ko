@@ -1,26 +1,37 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+} */
+ 
+body {
+    background-image: url('../img/intérieur_fiangonana.JPG'); /* Remplacez par le chemin réel de votre image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
-/*header {
+header {
     background: linear-gradient(135deg, #A97142 25%, #D3A56A 75%);
     color: white;
     padding: 1em;
     text-align: center;
     position: relative;
-}*/
+}
 
-header {
-    background-image: url('../img/intérieur_fiangonana.JPG'); /* Assurez-vous de fournir le bon chemin vers l'image */
-    background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
-    background-position: center; /* Pour centrer l'image */
+ /* header {
+    background-image: url('../img/intérieur_fiangonana.JPG'); /* Assurez-vous de fournir le bon chemin vers l'image 
+    background-size: cover; /* Pour s'assurer que l'image couvre tout le header 
+    background-position: center; /* Pour centrer l'image 
     color: white;
     padding: 2em 1em;
     text-align: center;
     position: relative;
-}
+} */
 
 nav ul {
     background-color: #333;

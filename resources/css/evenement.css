@@ -136,6 +136,7 @@ header .image-container img {
     margin: 0 auto; /* Centrer le calendrier horizontalement */
     padding: 10px; /* Ajouter du padding autour du calendrier */
     /*background-color: #f0f0f0; /* Couleur de fond optionnelle pour le calendrier */
+    background-color: #fdf1f2;
     border-radius: 8px; /* Coins arrondis optionnels */
 }
 
@@ -191,7 +192,8 @@ header .image-container img {
 .text-block {
     max-width: 1000px; /* Set a max-width for the text block */
     padding: 0px; /* Add some padding */
-    background-color: white; /* Optional: Add a background color */
+    /*background-color: white; /* Optional: Add a background color */
+    background-color: #fdf1f2;
     border: 1px solid white; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
 }

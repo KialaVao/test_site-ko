@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #fdf1f2;
 } 
 
 header {
@@ -305,13 +306,13 @@ nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.events-container {
+.events-container2 {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.event {
+.event2 {
     background-color: white;
     border-radius: 8px;
     padding: 20px;
@@ -319,19 +320,19 @@ nav ul .dropdown:hover .dropdown-content {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.event-date {
+.event-date2 {
     color: #8b8b8b;
     font-size: 14px;
 }
 
-.event-title {
+.event-title2 {
     color: #333;
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
 }
 
-.event-location {
+.event-location2 {
     color: #555;
     font-size: 16px;
 }

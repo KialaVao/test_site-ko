@@ -250,3 +250,29 @@ nav ul .dropdown-content a:hover {
 nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    padding: 0.5em;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}

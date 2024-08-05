@@ -241,3 +241,18 @@ nav ul .dropdown-content a:hover {
 nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
+
+
+section {
+    margin-bottom: 2em;
+}
+
+section h2 {
+    background: #333;
+    color: white;
+    padding: 0.5em;
+}
+
+article h3 {
+    color: #333;
+}

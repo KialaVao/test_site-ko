@@ -220,3 +220,38 @@ nav ul .dropdown-content a:hover {
 nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
+
+/* Styles pour l'image miniature ronde */
+section#members {
+    padding: 2em;
+    text-align: center;
+}
+
+.thumbnail-container {
+    /*display: grid;*/
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em; /* Espace entre les colonnes et les lignes */
+    max-width: 500px;
+    /*margin: 0 auto;*/
+}
+
+.thumbnail-figure {
+    margin: 0;
+    padding: 1em;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Pour rendre les images rondes, si désiré */
+}
+
+.thumbnail-caption {
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: #333;
+}

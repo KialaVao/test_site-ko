@@ -162,6 +162,12 @@ header .image-container img {
         padding: 0.5em;
     }
 
+    header .image-container {
+        top: 70%; /* Ajuster la position pour les écrans moyens */
+        left: 10%;
+        transform: translateY(-50%);
+    }
+
     .header .image-container img {
         width: 120px; /* Ajuster la largeur pour les écrans moyens */
     }

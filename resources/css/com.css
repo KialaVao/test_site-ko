@@ -286,8 +286,8 @@ form button:hover {
 
 #contact {
     position: absolute;
-    top: 20px; /* Ajustez selon vos besoins */
-    right: 20px; /* Ajustez selon vos besoins */
+    top: 100px; /* Ajustez selon vos besoins */
+    right: 50px; /* Ajustez selon vos besoins */
     width: 300px; /* Ajustez selon vos besoins */
     background: #fff;
     padding: 1em;

@@ -229,7 +229,7 @@ section#members {
 
 .thumbnail-container {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1em; /* Espace entre les colonnes et les lignes */
     max-width: 500px;
     /*margin: 0 auto;*/

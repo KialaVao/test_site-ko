@@ -165,6 +165,7 @@ header .image-container img {
     #contact {
         position: static;
         width: 100px;
+        right: 50px;
         margin: 0 1em;
         box-shadow: none;
         padding: 0;

@@ -161,6 +161,18 @@ header .image-container img {
     header .image-container img {
         max-width: 40px; /* Ajuster la taille de l'image */
     }
+
+    #contact {
+        position: static;
+        width: auto;
+        margin: 0 1em;
+        box-shadow: none;
+        padding: 0;
+    }
+        
+    form {
+        padding: 1em;
+    }
 }
 
 /* Flexbox styles */

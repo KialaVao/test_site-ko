@@ -79,7 +79,7 @@ header .image-container img {
 }
 
 .social-media-icons {
-    text-align: center;
+   /* text-align: center; */
     margin-top: 0;
 }
 
@@ -255,6 +255,8 @@ form {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 form label {
@@ -267,10 +269,15 @@ form input, form textarea, form button {
     border: 1px solid #ccc;
 }
 
+form input, form textarea {
+    width: 100%;
+}
+
 form button {
     background: #333;
     color: white;
     cursor: pointer;
+    border: none;
 }
 
 form button:hover {

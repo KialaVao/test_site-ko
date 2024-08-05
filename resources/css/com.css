@@ -294,3 +294,32 @@ form button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
+
+/* Styles pour le conteneur de l'image miniature */
+.thumbnail-container {
+    display: flex;
+    justify-content: center; /* Centrer l'image horizontalement */
+    align-items: center; /* Centrer l'image verticalement */
+    margin: 20px; /* Ajouter de la marge autour du conteneur */
+}
+
+/* Styles pour l'image miniature ronde */
+.thumbnail {
+    width: 100px; /* Largeur de la miniature */
+    height: 100px; /* Hauteur de la miniature pour s'assurer que l'image est un cercle parfait */
+    border-radius: 50%; /* Rendre l'image ronde */
+    object-fit: cover; /* S'assurer que l'image couvre bien le cercle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre pour un effet de profondeur */
+    transition: transform 0.2s; /* Ajouter une transition pour l'effet de survol */
+}
+
+.thumbnail:hover {
+    transform: scale(1.1); /* Agrandir légèrement l'image au survol */
+}
+
+/* Styles pour la légende */
+.thumbnail-caption, .thumbnail-caption2  {
+    margin-top: 10px; /* Espacement entre l'image et la légende */
+    font-size: 14px; /* Taille de la police de la légende */
+    color: #333; /* Couleur de la légende */
+}

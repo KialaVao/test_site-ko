@@ -286,11 +286,11 @@ form button:hover {
 
 #contact {
     position: absolute;
-    top: 100px; /* Ajustez selon vos besoins */
+    top: 500px; /* Ajustez selon vos besoins */
     right: 50px; /* Ajustez selon vos besoins */
-    width: 300px; /* Ajustez selon vos besoins */
+    width: 500px; /* Ajustez selon vos besoins */
     background: #fff;
-    padding: 1em;
+    padding: 2em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -298,28 +298,62 @@ form button:hover {
 /* Styles pour le conteneur de l'image miniature */
 .thumbnail-container {
     display: flex;
-    justify-content: center; /* Centrer l'image horizontalement */
+    /*justify-content: center; /* Centrer l'image horizontalement */
     align-items: center; /* Centrer l'image verticalement */
     margin: 20px; /* Ajouter de la marge autour du conteneur */
 }
 
 /* Styles pour l'image miniature ronde */
-.thumbnail {
-    width: 100px; /* Largeur de la miniature */
-    height: 100px; /* Hauteur de la miniature pour s'assurer que l'image est un cercle parfait */
-    border-radius: 50%; /* Rendre l'image ronde */
-    object-fit: cover; /* S'assurer que l'image couvre bien le cercle */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre pour un effet de profondeur */
-    transition: transform 0.2s; /* Ajouter une transition pour l'effet de survol */
-}
+/*.thumbnail {
+    width: 100px; /* Largeur de la miniature 
+    height: 100px; /* Hauteur de la miniature pour s'assurer que l'image est un cercle parfait 
+    border-radius: 50%; /* Rendre l'image ronde 
+    object-fit: cover; /* S'assurer que l'image couvre bien le cercle 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre pour un effet de profondeur 
+    transition: transform 0.2s; /* Ajouter une transition pour l'effet de survol 
+} */
 
-.thumbnail:hover {
-    transform: scale(1.1); /* Agrandir légèrement l'image au survol */
-}
+/*.thumbnail:hover {
+    transform: scale(1.1); /* Agrandir légèrement l'image au survol 
+} */
 
 /* Styles pour la légende */
-.thumbnail-caption, .thumbnail-caption2  {
-    margin-top: 10px; /* Espacement entre l'image et la légende */
-    font-size: 14px; /* Taille de la police de la légende */
-    color: #333; /* Couleur de la légende */
+/*.thumbnail-caption, .thumbnail-caption2  {
+    margin-top: 10px; /* Espacement entre l'image et la légende 
+    font-size: 14px; /* Taille de la police de la légende 
+    color: #333; /* Couleur de la légende 
+} */
+
+section#members {
+    padding: 2em;
+    text-align: center;
+}
+
+.thumbnail-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em; /* Espace entre les colonnes et les lignes */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.thumbnail-figure {
+    margin: 0;
+    padding: 1em;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Pour rendre les images rondes, si désiré */
+}
+
+.thumbnail-caption {
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: #333;
 }

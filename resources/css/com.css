@@ -330,11 +330,11 @@ section#members {
 }
 
 .thumbnail-container {
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: repeat(2, 1fr);
     gap: 1em; /* Espace entre les colonnes et les lignes */
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 500px;
+    /*margin: 0 auto;*/
 }
 
 .thumbnail-figure {

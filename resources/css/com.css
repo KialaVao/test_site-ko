@@ -283,3 +283,14 @@ form button {
 form button:hover {
     background: #555;
 }
+
+#contact {
+    position: absolute;
+    top: 20px; /* Ajustez selon vos besoins */
+    right: 20px; /* Ajustez selon vos besoins */
+    width: 300px; /* Ajustez selon vos besoins */
+    background: #fff;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}

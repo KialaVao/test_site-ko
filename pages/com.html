@@ -35,14 +35,72 @@
         </ul>   
     </nav>
     <main>
-        <section>
+       <!--<section>
             <div class="title-with-clipart">
                 <img src="../resources/img/Communication2.jpg" alt="Clipart Communication" class="clipart">
             </div>
             <p>Les membres de cette commission s'occupent de cette commission en assurant la communication entre nous mais aussi la communication de notre communauté avec les autres communautés ou avec la Paroisse.</p>
             <br>
 
+        </section> --> 
+
+        <section id="news">
+            <h2>Nouvelles et Annonces</h2>
+            <article>
+                <h3>Annonce 1</h3>
+                <p>Description de l'annonce 1...</p>
+            </article>
+            <article>
+                <h3>Annonce 2</h3>
+                <p>Description de l'annonce 2...</p>
+            </article>
         </section>
+
+        <section id="bulletins">
+            <h2>Bulletins et Newsletters</h2>
+            <p>Téléchargez nos bulletins hebdomadaires et newsletters :</p>
+            <ul>
+                <li><a href="./resources/bulletins/bulletin1.pdf" target="_blank">Bulletin du 1er Janvier 2024</a></li>
+                <li><a href="./resources/bulletins/bulletin2.pdf" target="_blank">Bulletin du 8 Janvier 2024</a></li>
+            </ul>
+        </section>
+
+        <section id="social-media">
+            <h2>Médias Sociaux</h2>
+            <p>Suivez-nous sur les réseaux sociaux :</p>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/eglisemalagasy" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/eglisemalagasy" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="submit_contact.php" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+
+        <section id="resources">
+            <h2>Ressources Téléchargeables</h2>
+        <!--  <ul>
+                <li><a href="./resources/documents/guide.pdf" target="_blank">Guide de la communauté</a></li>
+                <li><a href="./resources/documents/calendar.pdf" target="_blank">Calendrier des événements</a></li>
+            </ul> -->  
+        </section>
+
+
+
     </main>
     <footer>
         <div class="social-media-icons">

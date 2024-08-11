@@ -128,18 +128,9 @@ header .image-container img {
     max-width: 1000px; /* Set a max-width for the text block */
     padding: 0px; /* Add some padding */
     background-color: white; /* Optional: Add a background color */
-    border: 1px solid white; /* Optional: Add a border */
+    /*border: 1px solid white; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
 }
-
-/*.text-block2 {
-    max-width: 1000px; /* Set a max-width for the text block 
-    padding: 0px; /* Add some padding 
-    background-color: white; /* Optional: Add a background color 
-    border: 1px solid #D3A56A; /* Optional: Add a border 
-    border-radius: 8px; /* Optional: Add rounded corners 
-    font-size: 1rem;
-} */
 
 /* Media queries pour différentes tailles d'écran */
 @media only screen and (max-width: 1200px) {

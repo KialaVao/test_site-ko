@@ -172,6 +172,14 @@ header .image-container img {
         max-width: 40px; /* Ajuster la taille de l'image */
     }
 
+    .thumbnail-container {
+        display: grid;
+        grid-template-columns: repeat(6, 2fr);
+        gap: 1em; /* Espace entre les colonnes et les lignes */
+        /*max-width: 700px;
+        /*margin: 0 auto;*/
+    }
+
 }
 
 table {
@@ -260,7 +268,7 @@ section#members {
 
 .thumbnail-container {
     display: grid;
-    grid-template-columns: repeat(6, 2fr);
+    grid-template-columns: repeat(11, 1fr);
     gap: 1em; /* Espace entre les colonnes et les lignes */
     /*max-width: 700px;
     /*margin: 0 auto;*/

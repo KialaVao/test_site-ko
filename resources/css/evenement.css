@@ -226,6 +226,15 @@ header .image-container img {
 }
 
 /* Media queries pour différentes tailles d'écran */
+@media (max-width: 1200px) {
+    header {
+        padding: 3em 1em; /* Ajuster la largeur pour les écrans moyens */
+    }
+    header .image-container img {
+        max-width: 100px; /* Ajuster la taille de l'image */
+    }
+}
+
 @media (max-width: 768px) {
     header {
         padding: 0.5em;
@@ -237,6 +246,15 @@ header .image-container img {
 
     .map-container iframe {
         height: 200px;
+    }
+
+    header .image-container {
+        top: 70%; /* Ajuster la position pour les écrans moyens */
+        left: 10%;
+        transform: translateY(-50%);
+    }
+    header .image-container img {
+        max-width: 60px; /* Ajuster la taille de l'image */
     }
 }
 
@@ -251,6 +269,15 @@ header .image-container img {
 
     .map-container iframe {
         height: 150px;
+    }
+
+    header .image-container {
+        top: 50%; /* Ajuster la position pour les petits écrans */
+        left: 5%;
+        transform: translateY(-50%);
+    }
+    header .image-container img {
+        max-width: 40px; /* Ajuster la taille de l'image */
     }
 }
 

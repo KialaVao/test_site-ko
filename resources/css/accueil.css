@@ -176,12 +176,12 @@ header .image-container img {
         height: 150px;
     }
     header .image-container {
-        top: 50%; /* Ajuster la position pour les petits écrans */
+        top: 40%; /* Ajuster la position pour les petits écrans */
         left: 5%;
         transform: translateY(-50%);
     }
     header .image-container img {
-        max-width: 40px; /* Ajuster la taille de l'image */
+        max-width: 25%; /* Ajuster la taille de l'image */
     }
 }
 

@@ -167,6 +167,7 @@ header .image-container img {
         left: 5%;
         transform: translateY(-50%);
     }
+    
     header .image-container img {
         max-width: 40px; /* Ajuster la taille de l'image */
     }

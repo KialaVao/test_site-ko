@@ -149,10 +149,7 @@ header .image-container img {
     header .image-container img {
         max-width: 100px; /* Ajuster la taille de l'image */
     }
-    #parole-du-jour {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
-    }
-    #text-block2 {
+    #parole-du-jour, #text-block2  {
         font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
 }
@@ -168,17 +165,16 @@ header .image-container img {
         transform: translateY(-50%);
     }
 	
+    header .image-container img {
+        max-width: 40%; /* Ajuster la taille de l'image */
+    }
+
     .content-row {
         flex-direction: column;
     }
     .map-container iframe {
         height: 200%;
-    }
-	
-    header .image-container img {
-            max-width: 40%; /* Ajuster la taille de l'image */
-    }
-	
+    }	
 }
 
 @media only screen and (max-width: 480px) {

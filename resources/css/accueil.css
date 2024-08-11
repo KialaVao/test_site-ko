@@ -55,8 +55,7 @@ footer {
 } 
 
 header .image-container {
-    /*position: absolute; */
-    position: relative;
+    position: absolute;
     top: 75%;
     left: 95px;
     transform: translateY(-50%);

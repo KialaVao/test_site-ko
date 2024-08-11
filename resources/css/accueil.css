@@ -158,17 +158,14 @@ header .image-container img {
 	header {
         padding: 2em 1em; /* Ajuster la largeur pour les écrans moyens */
 	}	
-
     header .image-container {
         top: 70%; /* Ajuster la position pour les écrans moyens */
         left: 10%;
         transform: translateY(-50%);
-    }
-	
+    }	
     header .image-container img {
         max-width: 40%; /* Ajuster la taille de l'image */
     }
-
     .content-row {
         flex-direction: column;
     }

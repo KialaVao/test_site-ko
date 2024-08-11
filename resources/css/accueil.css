@@ -189,11 +189,11 @@ header .image-container img {
     }
     header .image-container {
         top: 50%; /* Ajuster la position pour les petits écrans */
-        left: 2.5%;
+        left: 0.5%;
         transform: translateY(-50%);
     }
     header .image-container img {
-        max-width: 40%; /* Ajuster la taille de l'image */
+        max-width: 20%; /* Ajuster la taille de l'image */
     }
 }
 

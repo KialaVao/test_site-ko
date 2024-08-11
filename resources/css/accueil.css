@@ -187,11 +187,17 @@ header .image-container img {
     .map-container iframe {
         height: 150%;
     }
-    header .image-container {
+    .header .image-container {
         top: 25%; /* Ajuster la position pour les petits écrans */
         left: 1%;
         transform: translateY(-50%);
     }
+
+ /*   .header .image-container img {
+        width: 10px; /* Ajuster la largeur pour les petits écrans 
+        align-items : left; 
+    } */
+
     header .image-container img {
         max-width: 20%; /* Ajuster la taille de l'image */
     }

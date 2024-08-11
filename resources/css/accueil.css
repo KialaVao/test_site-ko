@@ -159,9 +159,10 @@ text-block2 {
     }
 
     .header .image-container img {
-        width: 10px; /* Ajuster la largeur pour les écrans moyens */
+        width: 10%; /* Ajuster la largeur pour les écrans moyens */
         align-items : left;
     }
+
     .content-row {
         flex-direction: column;
     }
@@ -177,7 +178,7 @@ text-block2 {
     }
 
     .header .image-container img {
-        width: 10px; /* Ajuster la largeur pour les petits écrans */
+        width: 10%; /* Ajuster la largeur pour les petits écrans */
         align-items : left;
     }
 

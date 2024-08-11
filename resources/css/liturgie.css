@@ -115,9 +115,25 @@ header .image-container img {
 }
 
 /* Media queries pour différentes tailles d'écran */
+@media (max-width: 1200px) {
+    #parole-du-jour {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+    #text-block2 {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+    }
+
+}
+
 @media (max-width: 768px) {
     header {
         padding: 0.5em;
+    }
+
+    .header .image-container img {
+        width: 10%; /* Ajuster la largeur pour les écrans moyens */
+        align-items : left;
     }
 
     .content-row {
@@ -132,6 +148,11 @@ header .image-container img {
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.2em;
+    }
+
+    .header .image-container img {
+        width: 10%; /* Ajuster la largeur pour les petits écrans */
+        align-items : left;
     }
 
     .social-media-icons a {

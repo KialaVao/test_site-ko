@@ -166,22 +166,22 @@ header .image-container img {
 }
 /* Styles pour les petits écrans de téléphone */
 @media (max-width: 480px) {
-    header {
-        font-size: 1.2em;
-   }
     .social-media-icons a {
         font-size: 1.5em;
     }
     .map-container iframe {
         height: 150px;
     }
+    header h1 {
+        font-size: 1.2em;
+    }
     header .image-container {
-        top: 40%; /* Ajuster la position pour les petits écrans */
-        left: 5%;
+        top: 50%; /* Ajuster la position pour les petits écrans */
+        left: 2.5%;
         transform: translateY(-50%);
     }
     header .image-container img {
-        max-width: 25%; /* Ajuster la taille de l'image */
+        max-width: 40px; /* Ajuster la taille de l'image */
     }
 }
 

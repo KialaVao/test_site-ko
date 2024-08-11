@@ -172,11 +172,11 @@ header .image-container img {
         flex-direction: column;
     }
     .map-container iframe {
-        height: 200px;
+        height: 200%;
     }
 	
     header .image-container img {
-            max-width: 60px; /* Ajuster la taille de l'image */
+            max-width: 40%; /* Ajuster la taille de l'image */
     }
 	
 }

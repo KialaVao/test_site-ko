@@ -108,14 +108,8 @@ header .image-container img {
     color: #C13584; /* Darker Instagram pink */
 }
 
-.clipart {
-    width: 100px; /* Adjust the size as needed */
-    height: auto;
-    margin: 10px 0; /* Optional: Add some space around the clipart */
-}
-
 /* Media queries pour différentes tailles d'écran */
-@media (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
     #parole-du-jour {
         font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
@@ -126,7 +120,7 @@ header .image-container img {
 
 }
 
-@media (max-width: 768px) {
+@media only screen and @media (max-width: 768px) {
     header {
         padding: 0.5em;
     }
@@ -149,7 +143,7 @@ header .image-container img {
     }
 }
 
-@media (max-width: 480px) {
+@media only screen and @media (max-width: 480px) {
     header h1 {
         font-size: 1.2em;
     }

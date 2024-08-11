@@ -150,7 +150,6 @@ text-block2 {
     #text-block2 {
         font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
-
 }
 
 @media (max-width: 768px) {

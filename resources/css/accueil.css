@@ -146,27 +146,22 @@ text-block2 {
     #parole-du-jour {
         font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
-
     #text-block2 {
         font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
-
 }
 
 @media only screen and @media (max-width: 768px) {
     header {
         padding: 0.5em;
     }
-
     .header .image-container img {
         width: 10%; /* Ajuster la largeur pour les écrans moyens */
         align-items : left;
     }
-
     .content-row {
         flex-direction: column;
     }
-
     .map-container iframe {
         height: 200px;
     }
@@ -176,23 +171,20 @@ text-block2 {
     header h1 {
         font-size: 1.2em;
     }
-
     .header .image-container img {
         width: 10%; /* Ajuster la largeur pour les petits écrans */
         align-items : left;
     }
-
     .social-media-icons a {
         font-size: 1.5em;
     }
-
     .map-container iframe {
         height: 150px;
     }
 }
 
 /* Styles pour la section Parole du jour */
-#parole-du-jour {
+#parole-du-jour, #text-block2 {
     background-color: #fff;
     border-radius: 8px;
     border: 1px solid #D3A56A;

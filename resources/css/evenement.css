@@ -281,38 +281,6 @@ header .image-container img {
         max-width: 40px; /* Ajuster la taille de l'image */
     }
 
-/* Media queries pour les écrans de moins de 480px */
-    .calendar-container {
-        width: 100%; /* Utiliser la pleine largeur du conteneur */
-        margin-bottom: 10px; /* Réduire l'espace en dessous */
-    }
-
-    .calendar {
-        grid-template-columns: repeat(7, 1fr);
-        gap: 1px; /* Réduire l'espace entre les cases */
-        max-width: 100%; /* Utiliser la pleine largeur disponible */
-        padding: 5px; /* Réduire le padding autour du calendrier */
-    }
-
-    .day {
-        width: 40px; /* Réduire la largeur des cases de jour */
-        height: 40px; /* Réduire la hauteur des cases de jour */
-        font-size: 12px; /* Réduire la taille de la police */
-        padding: 1px; /* Réduire le padding à l'intérieur des cases */
-    }
-
-    .event-name {
-        font-size: 0.7em; /* Réduire la taille de la police pour les noms d'événements */
-    }
-    
-    .calendar-header {
-        font-size: 0.9em; /* Réduire la taille de la police pour le mois et l'année */
-        margin-bottom: 5px; /* Réduire l'espace en dessous */
-    }
-
-    .calendar-header button {
-        padding: 5px; /* Réduire le padding des boutons */
-    }
 }
 
 /* Styles pour le menu déroulant */

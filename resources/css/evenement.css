@@ -281,7 +281,7 @@ header .image-container img {
         max-width: 40px; /* Ajuster la taille de l'image */
     }
 
-    /* Media queries pour les écrans de moins de 480px */
+/* Media queries pour les écrans de moins de 480px */
     .calendar-container {
         width: 100%; /* Utiliser la pleine largeur du conteneur */
         margin-bottom: 10px; /* Réduire l'espace en dessous */

@@ -178,14 +178,14 @@ header .image-container img {
 }
 
 @media only screen and (max-width: 480px) {
-    header h1 {
+    header {
         font-size: 1.2em;
    }
     .social-media-icons a {
         font-size: 1.5em;
     }
     .map-container iframe {
-        height: 150px;
+        height: 150%;
     }
     header .image-container {
         top: 50%; /* Ajuster la position pour les petits écrans */
@@ -193,7 +193,7 @@ header .image-container img {
         transform: translateY(-50%);
     }
     header .image-container img {
-        max-width: 40px; /* Ajuster la taille de l'image */
+        max-width: 40%; /* Ajuster la taille de l'image */
     }
 }
 

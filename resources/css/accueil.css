@@ -133,7 +133,7 @@ header .image-container img {
 }
 
 /* Media queries pour différentes tailles d'écran */
-@media only screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     header {
         padding: 3em 1em; /* Ajuster la largeur pour les écrans moyens */
     }
@@ -145,7 +145,7 @@ header .image-container img {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	header {
         padding: 2em 1em; /* Ajuster la largeur pour les écrans moyens */
 	}	
@@ -155,7 +155,7 @@ header .image-container img {
         transform: translateY(-50%);
     }	
     header .image-container img {
-        max-width: 40%; /* Ajuster la taille de l'image */
+        max-width: 60%; /* Ajuster la taille de l'image */
     }
     .content-row {
         flex-direction: column;
@@ -165,7 +165,7 @@ header .image-container img {
     }	
 }
 /* Styles pour les petits écrans de téléphone */
-@media only screen and (max-width: 480px) {
+@media (max-width: 480px) {
     header {
         font-size: 1.2em;
    }
@@ -177,7 +177,7 @@ header .image-container img {
     }
     header .image-container {
         top: 50%; /* Ajuster la position pour les petits écrans */
-        left: 5px;
+        left: 5%;
         transform: translateY(-50%);
     }
     header .image-container img {

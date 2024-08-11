@@ -176,7 +176,7 @@ header .image-container img {
         height: 200%;
     }	
 }
-
+/* Styles pour les petits écrans de téléphone */
 @media only screen and (max-width: 480px) {
     header {
         font-size: 1.2em;
@@ -188,8 +188,8 @@ header .image-container img {
         height: 150%;
     }
     header .image-container {
-        top: 50%; /* Ajuster la position pour les petits écrans */
-        left: 0.5%;
+        top: 25%; /* Ajuster la position pour les petits écrans */
+        left: 1%;
         transform: translateY(-50%);
     }
     header .image-container img {

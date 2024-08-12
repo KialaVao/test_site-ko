@@ -171,18 +171,15 @@ header .image-container img {
     header {
         padding: 0.5em;
     }
-
     .content-row {
         flex-direction: column;
     }
-
     .map-container iframe {
         height: 200px;
     }
-
     header .image-container {
-        top: 70%; /* Ajuster la position pour les écrans moyens */
-        left: 10%;
+        top: 50%; /* Ajuster la position pour les écrans moyens */
+        left: 7%;
         transform: translateY(-50%);
     }
     header .image-container img {

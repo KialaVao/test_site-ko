@@ -151,12 +151,12 @@ header .image-container img {
         padding: 2em 1em; /* Ajuster la largeur pour les écrans moyens */
 	}	
     header .image-container {
-        top: 50%; /* Ajuster la position pour les écrans moyens */
+        top: 40%; /* Ajuster la position pour les écrans moyens */
         left: 5%;
         transform: translateY(-50%);
     }	
     header .image-container img {
-        max-width: 25%; /* Ajuster la taille de l'image */
+        max-width: 25px; /* Ajuster la taille de l'image */
     }
     .content-row {
         flex-direction: column;

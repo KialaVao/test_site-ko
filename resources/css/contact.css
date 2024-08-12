@@ -202,7 +202,7 @@ header .image-container img {
         height: 150px;
     }
     header .image-container {
-        top: 50%; /* Ajuster la position pour les petits écrans */
+        top: 25%; /* Ajuster la position pour les petits écrans */
         left: 3%;
         transform: translateY(-50%);
     }

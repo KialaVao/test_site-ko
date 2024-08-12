@@ -190,19 +190,17 @@ header .image-container img {
     }
 }
 
+/* Styles pour les petits écrans de téléphone */
 @media (max-width: 480px) {
     header h1 {
         font-size: 1.2em;
     }
-
     .social-media-icons a {
         font-size: 1.5em;
     }
-
     .map-container iframe {
         height: 150px;
     }
-
     header .image-container {
         top: 50%; /* Ajuster la position pour les petits écrans */
         left: 3%;

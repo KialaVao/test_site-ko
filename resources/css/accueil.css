@@ -165,6 +165,7 @@ header .image-container img {
         height: 200%;
     }	
 }
+
 /* Styles pour les petits écrans de téléphone */
 @media (max-width: 480px) {
     .social-media-icons a {
@@ -178,7 +179,7 @@ header .image-container img {
     }
     header .image-container {
         top: 50%; /* Ajuster la position pour les petits écrans */
-        left: 5%;
+        left: 3%;
         transform: translateY(-50%);
     }
     header .image-container img {

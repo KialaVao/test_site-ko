@@ -114,7 +114,6 @@ header .image-container img {
     #parole-du-jour {
         font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
-
     #text-block2 {
         font-size: 0.9rem; /* Adjust font size for smaller screens */
     }
@@ -168,6 +167,7 @@ header .image-container img {
     }
 }
 
+/* Tableau */
 table {
     width: 100%;
     border-collapse: collapse;

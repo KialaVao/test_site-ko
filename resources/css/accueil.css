@@ -178,7 +178,7 @@ header .image-container img {
     }
     header .image-container {
         top: 50%; /* Ajuster la position pour les petits écrans */
-        left: 2.5%;
+        left: 5%;
         transform: translateY(-50%);
     }
     header .image-container img {

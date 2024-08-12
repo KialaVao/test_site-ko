@@ -274,6 +274,12 @@ header .image-container img {
     header .image-container img {
         max-width: 40px; /* Ajuster la taille de l'image */
     }
+    .calendar-container {
+        width: 150px;
+        margin-bottom: 20px;
+        align-items: center;
+        text-align: center; /* Centrer le texte */
+    }
 }
 
 /* Styles pour le menu déroulant */

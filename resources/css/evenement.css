@@ -156,6 +156,10 @@ header .image-container img {
     padding: 2px;
 }
 
+.day:hover {
+    color: #757575; /* Darker Facebook blue */
+}
+
 .day.event::after {
     content: "";
     position: absolute;

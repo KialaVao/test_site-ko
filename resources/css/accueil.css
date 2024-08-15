@@ -47,7 +47,7 @@ main {
 
 footer {
     /*background: linear-gradient(135deg, #A97142 25%, #D3A56A 75%); */
-    background:#F1F1F1;
+    background:#111;
     color: white;
     text-align: center;
     padding: 0.2em;
@@ -130,7 +130,7 @@ header .image-container img {
 .text-block {
     max-width: 1000px; /* Set a max-width for the text block */
     padding: 0px; /* Add some padding */
-    background-color: white; /* Optional: Add a background color */
+    background-color: #F1F1F1; /* Optional: Add a background color */
     /*border: 1px solid white; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
 }
@@ -191,9 +191,9 @@ header .image-container img {
 
 /* Styles pour la section Parole du jour et Homélie */
 #parole-du-jour, #homelie {
-    background-color: #fff;
+    background-color: #f1f1f1;
     border-radius: 8px;
-    border: 1px solid #D3A56A;
+    border: 1px solid #545454;
     margin-top: 20px;
     padding: 1em;
     font-size: 1rem;

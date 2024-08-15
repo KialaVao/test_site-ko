@@ -46,7 +46,8 @@ main {
 }
 
 footer {
-    background: linear-gradient(#FAFAFA, #333); 
+    /*background: linear-gradient(#FAFAFA, #333); */
+    background: #333; 
     color: white;
     text-align: center;
     padding: 0.2em;

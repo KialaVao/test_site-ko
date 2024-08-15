@@ -15,7 +15,8 @@ header {
 } 
 
 nav ul {
-    background-color: #333;
+    /*background-color: #333;*/
+    background: linear-gradient(#FAFAFA, #111); 
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -46,7 +47,7 @@ main {
 }
 
 footer {
-    background: linear-gradient(#FAFAFA, #303030); 
+    background: linear-gradient(#FAFAFA, #111); 
     color: white;
     text-align: center;
     padding: 0.2em;
@@ -130,7 +131,6 @@ header .image-container img {
     max-width: 1000px; /* Set a max-width for the text block */
     padding: 0px; /* Add some padding */
     background-color: #FAFAFA; /* Optional: Add a background color */
-    /*border: 1px solid white; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
 }
 

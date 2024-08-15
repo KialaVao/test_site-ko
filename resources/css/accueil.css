@@ -129,7 +129,7 @@ header .image-container img {
 .text-block {
     max-width: 1000px; /* Set a max-width for the text block */
     padding: 0px; /* Add some padding */
-    background-color: #F1F1F1; /* Optional: Add a background color */
+    background-color: #FAFAFA; /* Optional: Add a background color */
     /*border: 1px solid white; /* Optional: Add a border */
     border-radius: 8px; /* Optional: Add rounded corners */
 }

@@ -178,12 +178,12 @@ header .image-container img {
         font-size: 1.2em;
     }
     header .image-container {
-        top: 50%; /* Ajuster la position pour les petits écrans */
-        left: 1%;
+        top: 40%; /* Ajuster la position pour les petits écrans */
+        left: 5%;
         transform: translateY(-50%);
     }
     header .image-container img {
-        max-width: 40px; /* Ajuster la taille de l'image */
+        max-width: 25px; /* Ajuster la taille de l'image */
     }
 }
 

@@ -16,7 +16,7 @@ header {
 
 nav ul {
     /*background-color: #333;*/
-    background: linear-gradient(#FAFAFA, #111); 
+    background: linear-gradient(#111, #FAFAFA); 
     list-style-type: none;
     margin: 0;
     padding: 0;

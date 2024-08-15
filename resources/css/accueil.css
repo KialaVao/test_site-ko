@@ -96,8 +96,7 @@ header .image-container img {
 
 /* Couleurs spécifiques aux réseaux sociaux */
 .social-icon.facebook {
-    color: #3b5998; /* Facebook blue */
-    border: 1px solid #2f4779;
+    color: #2f4779; /* Facebook blue */
 }
 
 .social-icon.instagram {

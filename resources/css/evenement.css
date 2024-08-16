@@ -3,17 +3,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
-} 
+}
 
 header {
-    background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
-    background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
-    background-position: center; /* Pour centrer l'image */
+    background-image: url('../img/interieur2.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 5em 1em;
     text-align: center;
     position: relative;
-} 
+}
 
 nav ul {
     background-color: #555555;
@@ -21,7 +21,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center the nav items */
+    justify-content: center;
 }
 
 nav ul li {
@@ -38,12 +38,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #111; 
+    background-color: #111;
 }
 
 main {
     padding: 1em;
-    justify-content: center; /* Centrer horizontalement */
+    justify-content: center;
     flex-grow: 1;
     flex-direction: column;
 }
@@ -53,34 +53,8 @@ footer {
     color: white;
     text-align: center;
     padding: 0.2em;
-   /* position: fixed; */
     width: 100%;
     bottom: 0;
-}
-
-header .image-container {
-    position: absolute;
-    top: 75%;
-    left: 95px;
-    transform: translateY(-50%);
-}
-
-header .image-container img {
-    max-width: 100px; /* Adjust as necessary */
-    height: auto;
-    border: 1px solid black;
-}
-
-.margin-container {
-    width: 100%; /* Largeur du conteneur */
-    margin: 0 auto; /* Marges automatiques à gauche et à droite */
-    text-align: center; /* Centre le texte à l'intérieur du conteneur */
-}
-
-.margin-container a {
-    display: inline-block;
-    color: white;
-    margin: 0 10px; /* Espacement entre les liens */
 }
 
 .social-media-icons {
@@ -90,35 +64,32 @@ header .image-container img {
 
 .social-media-icons a {
     text-decoration: none;
-    color: white; /* Icon color */
-    margin: 0 10px; /* Spacing between icons */
-    font-size: 2em; /* Icon size */
-} 
+    color: white;
+    margin: 0 10px;
+    font-size: 2em;
+}
 
-/* Couleurs spécifiques aux réseaux sociaux */
 .social-icon.facebook {
-    color: #2f4779; /* Facebook blue */
+    color: #2f4779;
 }
 
 .social-icon.instagram {
-    color: #E1306C; /* Instagram pink */
+    color: #E1306C;
 }
 
-/* Hover effects */
 .social-icon.facebook:hover {
-    color: #23355b; /* Darker Facebook blue */
+    color: #23355b;
 }
 
 .social-icon.instagram:hover {
-    color: #C13584; /* Darker Instagram pink */
-} 
+    color: #C13584;
+}
 
-/* Calendrier */
 .calendar-container {
     width: 300px;
     margin-bottom: 20px;
     align-items: center;
-    text-align: center; /* Centrer le texte */
+    text-align: center;
 }
 
 .calendar-header {
@@ -134,16 +105,16 @@ header .image-container img {
     gap: 2px;
     align-items: center;
     justify-content: center;
-    max-width: 280px; /* Limiter la largeur totale du calendrier */
-    margin: 0 auto; /* Centrer le calendrier horizontalement */
-    padding: 10px; /* Ajouter du padding autour du calendrier */
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 10px;
     background-color: #FAFAFA;
-    border-radius: 8px; /* Coins arrondis optionnels */
+    border-radius: 8px;
 }
 
 .day {
-    width: 75px; /* Réduire la largeur des cases de jour */
-    height: 75px; /* Réduire la hauteur des cases de jour */
+    width: 75px;
+    height: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,22 +122,22 @@ header .image-container img {
     background-color: white;
     cursor: pointer;
     position: relative;
-    border: 1px solid #ddd; /* Ajouter une bordure fine */
-    border-radius: 4px; /* Coins arrondis pour les cases de jour */
+    border: 1px solid #ddd;
+    border-radius: 4px;
     padding: 2px;
 }
 
 .day:hover {
-    color: #757575; /* Darker Facebook blue */
+    color: #757575;
 }
 
 .day.event::after {
     content: "";
     position: absolute;
-    bottom: 3px; /* Ajuster la position du point d'événement */
-    right: 3px; /* Ajuster la position du point d'événement */
-    width: 8px; /* Réduire la taille du point d'événement */
-    height: 8px; /* Réduire la taille du point d'événement */
+    bottom: 3px;
+    right: 3px;
+    width: 8px;
+    height: 8px;
     background-color: red;
     border-radius: 50%;
 }
@@ -184,152 +155,34 @@ header .image-container img {
     text-align: center;
     padding: 10px 0;
     background-color: #f0f0f0;
-    border: 1px solid #ddd; /* Ajouter une bordure fine */
+    border: 1px solid #ddd;
 }
 
 .today {
-    background-color: #ddd; /* Yellow background for today's date */
+    background-color: #ddd;
     color: black;
-    border: 2px solid black; /* Slightly darker border */
+    border: 2px solid black;
 }
 
-/* Style for the text block */
 .text-block {
-    max-width: 1000px; /* Set a max-width for the text block */
-    padding: 0px; /* Add some padding */
+    max-width: 1000px;
+    padding: 0px;
     background-color: #FAFAFA;
-    border-radius: 8px; /* Optional: Add rounded corners */
+    border-radius: 8px;
 }
 
-/* Flexbox styles */
 .content-row {
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: flex-start; /* Align items to the start */
-    gap: 100px; /* Space between items */
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    flex-wrap: wrap;
 }
 
 .content-row > div {
-    flex: 1; /* Ensure items take equal space */
-    min-width: 200px; /* Ensure a minimum width for each item */
-    margin-bottom: 10px; /* Add bottom margin for spacing when items wrap */
-} 
-
-.map-container {
-    text-align: center; /* Center align the map */
-    margin-top: 20px; /* Add some space above the map */
-}
-
-.map-container iframe {
-    width: 100%; /* Ensure the map takes full width */
-    height: 250px; /* Set the height of the map */
-    border: 0; /* Remove border */
-    border-radius: 8px; /* Add rounded corners */
-}
-
-/* Media queries pour différentes tailles d'écran */
-@media (max-width: 1200px) {
-    header {
-        padding: 3em 1em; /* Ajuster la largeur pour les écrans moyens */
-    }
-    header .image-container img {
-        max-width: 100px; /* Ajuster la taille de l'image */
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        padding: 0.5em;
-    }
-    .content-row {
-        flex-direction: column;
-    }
-    .map-container iframe {
-        height: 200px;
-    }
-    header .image-container {
-        top: 70%; /* Ajuster la position pour les écrans moyens */
-        left: 10%;
-        transform: translateY(-50%);
-    }
-    header .image-container img {
-        max-width: 60px; /* Ajuster la taille de l'image */
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2em;
-    }
-    .social-media-icons a {
-        font-size: 1.5em;
-    }
-    .map-container iframe {
-        height: 150px;
-    }
-    header .image-container {
-        top: 50%; /* Ajuster la position pour les petits écrans */
-        left: 5%;
-        transform: translateY(-50%);
-    }  
-    header .image-container img {
-        max-width: 40px; /* Ajuster la taille de l'image */
-    }
-}
-
-/* Styles pour le menu déroulant */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover, .dropdown:hover .dropbtn {
-    background-color: #111;
-}
-
-nav ul li.dropdown {
-    display: inline-block;
-}
-
-nav ul .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-nav ul .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-nav ul .dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-nav ul .dropdown:hover .dropdown-content {
-    display: block;
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 10px;
 }
 
 .events-container2 {
@@ -345,6 +198,7 @@ nav ul .dropdown:hover .dropdown-content {
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .event2:hover {
@@ -369,7 +223,6 @@ nav ul .dropdown:hover .dropdown-content {
     font-size: 16px;
 }
 
-/* popup.css */
 .modal {
     display: none;
     position: fixed;
@@ -381,7 +234,7 @@ nav ul .dropdown:hover .dropdown-content {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
 }
-  
+
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
@@ -390,14 +243,14 @@ nav ul .dropdown:hover .dropdown-content {
     width: 80%;
     max-width: 600px;
 }
-  
+
 .close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
-  
+
 .close:hover,
 .close:focus {
     color: black;
@@ -405,7 +258,6 @@ nav ul .dropdown:hover .dropdown-content {
     cursor: pointer;
 }
 
-/* Style de la couverture d'album */
 .album {
     margin-bottom: 20px;
 }
@@ -439,13 +291,12 @@ nav ul .dropdown:hover .dropdown-content {
     font-weight: bold;
 }
 
-/* Cache le contenu de l'album par défaut */
 .album-content {
     display: none;
     margin-top: 20px;
+    animation: slideDown 0.5s ease forwards;
 }
 
-/* Galerie styling, réutilisé de l'exemple précédent */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -463,12 +314,6 @@ nav ul .dropdown:hover .dropdown-content {
 .gallery a img:hover {
     transform: scale(1.1);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.album-content {
-    display: none;
-    margin-top: 20px;
-    animation: slideDown 0.5s ease forwards;
 }
 
 @keyframes slideDown {

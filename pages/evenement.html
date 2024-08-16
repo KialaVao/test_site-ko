@@ -1,123 +1,121 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Evenements</title>
-        <link rel="icon" type="image/jpg" href="../resources/img/LOGO MALAGASY RENNES.jpg"> <!-- Ligne ajoutée pour le favicon -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenements</title>
+    <link rel="icon" type="image/jpg" href="../resources/img/LOGO MALAGASY RENNES.jpg"> <!-- Ligne ajoutée pour le favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
 
-        <!-- Lightbox2 CSS -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    
+    <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="../resources/css/evenement.css">
+</head>
+<body>
+    <header>
+        <div class="image-container">
+            <a href="./accueil.html">
+                <img src="../resources/img/LOGO MALAGASY RENNES.jpg" alt="logo-KTOrennes" class="image">
+            </a>
+        </div>
+        <h1>Fiangonana Katolika Malagasy eto Rennes sy ny manodidina</h1>
+    </header>
 
-        <!-- Lightbox2 JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <nav>
+        <ul>
+            <li><a href="./accueil.html">Accueil</a></li>
+            <li><a href="./about.html">À propos de nous</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Commissions &#9662;</a>
+                <ul class="dropdown-content">
+                    <li><a href="./liturgie.html">Liturgie</a></li>
+                    <li><a href="./catechèse.html">Catéchèse</a></li>
+                    <li><a href="./com.html">Communication</a></li>
+                    <li><a href="./gestion.html">Gestion</a></li>
+                </ul>
+            </li>
+            <li><a href="./evenement.html">Evenements</a></li>
+            <li><a href="./contact.html">Contacts</a></li>
+        </ul>
+    </nav>
 
-
-        <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="../resources/css/evenement.css">
-    </head>
-    <body>
-        <header>
-            <div class="image-container">
-                <a href="./accueil.html">
-                    <img src="../resources/img/LOGO MALAGASY RENNES.jpg" alt="logo-KTOrennes" class="image">
-                </a>
-            </div>
-            <h1>Fiangonana Katolika Malagasy eto Rennes sy ny manodidina</h1>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="./accueil.html">Accueil</a></li>
-                <li><a href="./about.html">À propos de nous</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Commissions &#9662; </a>
-                    <ul class="dropdown-content">
-                        <li><a href="./liturgie.html">Liturgie</a></li>
-                        <li><a href="./catechèse.html">Catéchèse</a></li>
-                        <li><a href="./com.html">Communication</a></li>
-                        <li><a href="./gestion.html">Gestion</a></li>
-                    </ul>
-                </li>
-                <li><a href="./evenement.html">Evenements</a></li>
-                <li><a href="./contact.html">Contacts</a></li> 
-            </ul> 
-        </nav>
-
-        <main>
-            <h2>Evenements</h2>
-            <section>
-                <div class="content-row"> 
-                    <div class="calendar-container">
-                        <h3>Calendrier des nos événements</h3>
-                        <div class="calendar-header">
-                            <button id="prevMonth">Précédent</button>
-                            <h2 id="monthYear"></h2>
-                            <button id="nextMonth">Suivant</button>
-                        </div>
-
-                        <div class="calendar" id="calendar"></div>
-                        <script src="../resources/js/calendrar.js"></script>
-
+    <main>
+        <h2>Evenements</h2>
+        <section>
+            <div class="content-row">
+                <div class="calendar-container">
+                    <h3>Calendrier de nos événements</h3>
+                    <div class="calendar-header">
+                        <button id="prevMonth">Précédent</button>
+                        <h2 id="monthYear"></h2>
+                        <button id="nextMonth">Suivant</button>
                     </div>
-                    
-                    <div class="text-block">
-                        <h3>Actualités</h3>
-                        <div class="events-container2">
-                            <div class="event2">
-                                <div class="event-date2"> 15 Septembre 2024 </div>
-                                <div class="event-title2"> La rentrée pastorale </div>
-                                <p> Nous partagerons un moment convivial et un repas pour ce jour-là.
-                                    Chacun est invité à ramener un repas que nous partagerons ensemble.
-                                </p>
-                                <div class="event-location2"> Eglise Saint Etienne</div>
+                    <div class="calendar" id="calendar"></div>
+                    <script src="../resources/js/calendrar.js"></script>
+                </div>
+                
+                <div class="text-block">
+                    <h3>Actualités</h3>
+                    <div class="events-container2">
+                        <div class="event2" onclick="openModal('eventModal1')">
+                            <div class="event-date2"> 15 Septembre 2024 </div>
+                            <div class="event-title2"> La rentrée pastorale </div>
+                            <p>Nous partagerons un moment convivial et un repas pour ce jour-là.
+                                Chacun est invité à ramener un repas que nous partagerons ensemble.</p>
+                            <div class="event-location2">Eglise Saint Etienne</div>
+                        </div>
+                    </div>
+
+                    <h3>Galerie de photos</h3>
+                    <!-- Album : 16 Juin 2024 -->
+                    <div class="album">
+                        <div class="album-cover" onclick="openAlbum('albumJuin2024')">
+                            <img src="../resources/img/albumJuin2024_cover.jpg" alt="Album 16 Juin 2024">
+                            <p>16 Juin 2024</p>
+                        </div>
+                        <div id="albumJuin2024" class="album-content">
+                            <div class="gallery">
+                                <a href="../resources/img/albumJuin2024/photo1.jpeg" data-lightbox="albumJuin2024">
+                                    <img src="../resources/img/albumJuin2024/photo1.jpeg" alt="Photo 1">
+                                </a>
+                                <a href="../resources/img/albumJuin2024/photo2.jpeg" data-lightbox="albumJuin2024">
+                                    <img src="../resources/img/albumJuin2024/photo2.jpeg" alt="Photo 2">
+                                </a>
+                                <a href="../resources/img/albumJuin2024/photo3.jpeg" data-lightbox="albumJuin2024">
+                                    <img src="../resources/img/albumJuin2024/photo3.jpeg" alt="Photo 3">
+                                </a>
+                                <!-- Ajoutez plus de photos pour l'album 16 Juin 2024 -->
                             </div>
                         </div>
-
-                        <h3>Galerie de photos</h3>
-
-                        <!-- Album : 16 Juin 2024 -->
-                        <div class="album">
-                            <div class="album-cover" onclick="openAlbum('albumJuin2024')">
-                                <img src="../resources/img/albumJuin2024_cover.jpg" alt="Album 16 Juin 2024">
-                                <p>16 Juin 2024</p>
-                            </div>
-                            <div id="albumJuin2024" class="album-content">
-                                <div class="gallery">
-                                    <a href="../resources/img/albumJuin2024/photo1.jpeg" data-lightbox="albumJuin2024">
-                                        <img src="../resources/img/albumJuin2024/photo1.jpeg" alt="Photo 1">
-                                    </a>
-                                    <a href="../resources/img/albumJuin2024/photo2.jpeg" data-lightbox="albumJuin2024">
-                                        <img src="../resources/img/albumJuin2024/photo2.jpeg" alt="Photo 2">
-                                    </a>
-                                    <a href="../resources/img/albumJuin2024/photo3.jpeg" data-lightbox="albumJuin2024">
-                                        <img src="../resources/img/albumJuin2024/photo3.jpeg" alt="Photo 3">
-                                    </a>
-                                    <!-- Ajoutez plus de photos pour l'album 16 Juin 2024 -->
-                                </div>
-                            </div>
-                        </div>
-                        
                     </div>
                 </div>
-            </section>
-        </main>
-
-        <footer>
-            <div class="social-media-icons">
-                <a href="https://www.facebook.com/profile.php?id=61556191906769" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/kto_malagasy_rennes" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
             </div>
-            <p>&copy; 2024 KTO Malagasy Rennes. Tous droits réservés.</p>
-        </footer>
+        </section>
+    </main>
 
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <script src="../resources/js/popup.js"></script>
-                <div id="eventDetails"></div>
-            </div>
+    <footer>
+        <div class="social-media-icons">
+            <a href="https://www.facebook.com/profile.php?id=61556191906769" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/kto_malagasy_rennes" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
         </div>
+        <p>&copy; 2024 KTO Malagasy Rennes. Tous droits réservés.</p>
+    </footer>
 
-    </body>
+    <!-- Modale pour l'événement -->
+    <div id="eventModal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('eventModal1')">&times;</span>
+            <h2>Détails de l'événement : La rentrée pastorale</h2>
+            <p>Date : 15 Septembre 2024</p>
+            <p>Lieu : Eglise Saint Etienne</p>
+            <p>Description : Nous partagerons un moment convivial et un repas pour ce jour-là. Chacun est invité à ramener un repas que nous partagerons ensemble.</p>
+        </div>
+    </div>
+
+    <script src="../resources/js/popup.js"></script>
+</body>
 </html>

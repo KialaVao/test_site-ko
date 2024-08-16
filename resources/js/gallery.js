@@ -51,4 +51,16 @@ document.addEventListener("DOMContentLoaded", function() {
             closeLightbox();
         }
     });
+
+    document.addEventListener("keydown", function(event) {
+        if (lightbox.style.display === "block") {
+            if (event.key === "ArrowRight") {
+                showNextImage();
+            } else if (event.key === "ArrowLeft") {
+                showPrevImage();
+            } else if (event.key === "Escape") {
+                closeLightbox();
+            }
+        }
+    });
 });

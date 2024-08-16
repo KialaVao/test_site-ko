@@ -59,14 +59,6 @@
                         <div class="calendar" id="calendar"></div>
                         <script src="../resources/js/calendrar.js"></script>
 
-                        <div id="modal" class="modal">
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <script src="../resources/js/popup.js"></script>
-                                <div id="eventDetails"></div>
-                            </div>
-                        </div>
-
                     </div>
                     
                     <div class="text-block">
@@ -111,43 +103,59 @@
                         </div> -->
 
                         <h3>Galerie de photos</h3>
+                        
+                        <script src="../resources/js/gallery.js"></script>
 
-                        <!-- Section 1 : Galerie pour Événement A -->
-                        <h4>Événement A</h4>
-                        <div class="gallery">
-                            <a href="../resources/img/evenementA/photo1_large.jpg" data-lightbox="evenementA">
-                                <img src="../resources/img/evenementA/photo1_thumb.jpg" alt="Photo 1">
-                            </a>
-                            <a href="../resources/img/evenementA/photo2_large.jpg" data-lightbox="evenementA">
-                                <img src="../resources/img/evenementA/photo2_thumb.jpg" alt="Photo 2">
-                            </a>
-                            <!-- Ajoutez plus de photos pour l'événement A -->
+                        <!-- Onglets -->
+                        <div class="tab">
+                          <button class="tablinks" onclick="openGallery(event, 'EvenementA')">Événement A</button>
+                          <button class="tablinks" onclick="openGallery(event, 'EvenementB')">Événement B</button>
+                          <button class="tablinks" onclick="openGallery(event, 'EvenementC')">Événement C</button>
                         </div>
                         
-                        <!-- Section 2 : Galerie pour Événement B -->
-                        <h4>Événement B</h4>
-                        <div class="gallery">
-                            <a href="../resources/img/evenementB/photo1_large.jpg" data-lightbox="evenementB">
-                                <img src="../resources/img/evenementB/photo1_thumb.jpg" alt="Photo 1">
-                            </a>
-                            <a href="../resources/img/evenementB/photo2_large.jpg" data-lightbox="evenementB">
-                                <img src="../resources/img/evenementB/photo2_thumb.jpg" alt="Photo 2">
-                            </a>
-                            <!-- Ajoutez plus de photos pour l'événement B -->
+                        <!-- Galerie pour Événement A -->
+                        <div id="16Juin2024" class="tabcontent">
+                          <div class="gallery">
+                                <a href="../resources/img/16Juin2024/photo1.jpeg" data-lightbox="evenementA">
+                                  <img src="../resources/img/16Juin2024/photo1.jpeg" alt="Photo 1">
+                                </a>
+                                <a href="../resources/img/16Juin2024/photo2.jpeg" data-lightbox="evenementA">
+                                  <img src="../resources/img/16Juin2024/photo2.jpeg" alt="Photo 2">
+                                </a>
+                                <a href="../resources/img/16Juin2024/photo3.jpeg" data-lightbox="evenementA">
+                                    <img src="../resources/img/16Juin2024/photo3.jpeg" alt="Photo 3">
+                                </a>
+                              <!-- Ajoutez plus de photos pour l'événement A -->
+                          </div>
                         </div>
                         
-                        <!-- Section 3 : Galerie pour Événement C -->
-                        <h4>Événement C</h4>
-                        <div class="gallery">
-                            <a href="../resources/img/evenementC/photo1_large.jpg" data-lightbox="evenementC">
-                                <img src="../resources/img/evenementC/photo1_thumb.jpg" alt="Photo 1">
-                            </a>
-                            <a href="../resources/img/evenementC/photo2_large.jpg" data-lightbox="evenementC">
-                                <img src="../resources/img/evenementC/photo2_thumb.jpg" alt="Photo 2">
-                            </a>
-                            <!-- Ajoutez plus de photos pour l'événement C -->
+                        <!-- Galerie pour Événement B -->
+                        <div id="EvenementB" class="tabcontent">
+                          <div class="gallery">
+                              <a href="../resources/img/evenementB/photo1_large.jpg" data-lightbox="evenementB">
+                                  <img src="../resources/img/evenementB/photo1_thumb.jpg" alt="Photo 1">
+                              </a>
+                              <a href="../resources/img/evenementB/photo2_large.jpg" data-lightbox="evenementB">
+                                  <img src="../resources/img/evenementB/photo2_thumb.jpg" alt="Photo 2">
+                              </a>
+                              <!-- Ajoutez plus de photos pour l'événement B -->
+                          </div>
                         </div>
                         
+                        <!-- Galerie pour Événement C -->
+                        <div id="EvenementC" class="tabcontent">
+                          <div class="gallery">
+                              <a href="../resources/img/evenementC/photo1_large.jpg" data-lightbox="evenementC">
+                                  <img src="../resources/img/evenementC/photo1_thumb.jpg" alt="Photo 1">
+                              </a>
+                              <a href="../resources/img/evenementC/photo2_large.jpg" data-lightbox="evenementC">
+                                  <img src="../resources/img/evenementC/photo2_thumb.jpg" alt="Photo 2">
+                              </a>
+                              <!-- Ajoutez plus de photos pour l'événement C -->
+                          </div>
+                        </div>
+                        
+
                     </div>
                 </div>
             </section>
@@ -160,5 +168,14 @@
             </div>
             <p>&copy; 2024 KTO Malagasy Rennes. Tous droits réservés.</p>
         </footer>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <script src="../resources/js/popup.js"></script>
+                <div id="eventDetails"></div>
+            </div>
+        </div>
+
     </body>
 </html>

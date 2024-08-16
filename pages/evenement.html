@@ -73,18 +73,43 @@
                     </div>
 
                     <h3>Galerie de photos</h3>
-                    <div class="gallery-container">
-                        <div class="gallery-item">
-                            <img src="../resources/img/albumJuin2024/photo1.jpeg" alt="Photo 1">
+
+                    <div class="album-container">
+                        <div class="album" onclick="openAlbum('album1')">
+                            <img src="cover1.jpg" alt="Album 1">
+                            <p>Album 1</p>
                         </div>
-                        <div class="gallery-item">
-                            <img src="../resources/img/albumJuin2024/photo2.jpeg" alt="Photo 2">
+                        <div class="album" onclick="openAlbum('album2')">
+                            <img src="cover2.jpg" alt="Album 2">
+                            <p>Album 2</p>
                         </div>
-                        <div class="gallery-item">
-                            <img src="../resources/img/albumJuin2024/photo3.jpeg" alt="Photo 3">
-                        </div>
-                        <!-- Ajoutez plus d'images ici -->
+                        <!-- Ajoutez plus d'albums ici -->
                     </div>
+                
+                    <!-- Div pour la galerie de l'album (initialement cachée) -->
+                    <div class="gallery-container" id="album1" style="display: none;">
+                        <button class="back-button" onclick="closeAlbum()">Retour aux albums</button>
+                        <div class="gallery-item">
+                            <img src="album1_image1.jpg" alt="Photo 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="album1_image2.jpg" alt="Photo 2">
+                        </div>
+                        <!-- Ajoutez plus d'images pour cet album ici -->
+                    </div>
+                
+                    <div class="gallery-container" id="album2" style="display: none;">
+                        <button class="back-button" onclick="closeAlbum()">Retour aux albums</button>
+                        <div class="gallery-item">
+                            <img src="album2_image1.jpg" alt="Photo 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="album2_image2.jpg" alt="Photo 2">
+                        </div>
+                        <!-- Ajoutez plus d'images pour cet album ici -->
+                    </div>
+                
+                    <script src="script.js"></script>
                 
                     <!-- Section pour l'affichage de l'image en grand -->
                     <div class="lightbox" id="lightbox">

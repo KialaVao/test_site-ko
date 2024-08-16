@@ -63,4 +63,22 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         }
     });
+
+    function openAlbum(albumId) {
+        // Cache la liste des albums
+        document.querySelector('.album-container').style.display = 'none';
+        
+        // Affiche l'album sélectionné
+        document.getElementById(albumId).style.display = 'flex';
+    }
+    
+    function closeAlbum() {
+        // Cache toutes les galeries
+        document.querySelectorAll('.gallery-container').forEach(gallery => {
+            gallery.style.display = 'none';
+        });
+    
+        // Affiche la liste des albums
+        document.querySelector('.album-container').style.display = 'flex';
+    }
 });

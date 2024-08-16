@@ -73,7 +73,7 @@
                     </div>
 
                     <h3>Galerie de photos</h3>
-                    <!-- Album : 16 Juin 2024 -->
+                    <!-- Album : 16 Juin 2024 
                     <div class="album">
                         <div class="album-cover" onclick="openAlbum('albumJuin2024')">
                             <img src="../resources/img/albumJuin2024_cover.jpg" alt="Album 16 Juin 2024">
@@ -89,10 +89,32 @@
                                 <a href="../resources/img/albumJuin2024/photo3.jpeg" data-lightbox="albumJuin2024">
                                     <img src="../resources/img/albumJuin2024/photo3.jpeg" alt="Photo 3">
                                 </a>
-                                <!-- Ajoutez plus de photos pour l'album 16 Juin 2024 -->
                             </div>
                         </div>
+                    </div> -->
+
+                    <div class="gallery-container">
+                        <div class="gallery-item">
+                            <img src="../resources/img/albumJuin2024/photo1.jpeg" alt="Photo 1">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../resources/img/albumJuin2024/photo2.jpeg" alt="Photo 2">
+                        </div>
+                        <div class="gallery-item">
+                            <img src="../resources/img/albumJuin2024/photo3.jpeg" alt="Photo 3">
+                        </div>
+                        <!-- Ajoutez plus d'images ici -->
                     </div>
+                
+                    <!-- Section pour l'affichage de l'image en grand -->
+                    <div class="lightbox" id="lightbox">
+                        <span class="close">&times;</span>
+                        <img class="lightbox-content" id="lightbox-image">
+                    </div>
+                
+                    <script src="../resources/js/gallery.js"></script>
+
+
                 </div>
             </div>
         </section>

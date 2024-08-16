@@ -256,6 +256,9 @@ header .image-container img {
     header .image-container img {
         max-width: 60px; /* Ajuster la taille de l'image */
     }
+    .gallery-item {
+        width: 45%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -275,6 +278,9 @@ header .image-container img {
     }  
     header .image-container img {
         max-width: 40px; /* Ajuster la taille de l'image */
+    }
+    .gallery-item {
+        width: 100%;
     }
 }
 

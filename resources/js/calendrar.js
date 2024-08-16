@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const calendar = document.getElementById('calendar');
+    const popup = document.getElementById('eventPopup');
+    const popupTitle = document.getElementById('popupTitle');
+    const popupDescription = document.getElementById('popupDescription');
+    const closeButton = document.querySelector('.close');
+	
+	const calendar = document.getElementById('calendar');
     const monthYear = document.getElementById('monthYear');
     const prevMonthBtn = document.getElementById('prevMonth');
     const nextMonthBtn = document.getElementById('nextMonth');
@@ -46,6 +51,27 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const daysOfWeek = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];
 
+    // Fonction pour ouvrir le pop-up avec les détails de l'événement
+    function openPopup(eventTitle) {
+        popupTitle.textContent = eventTitle;
+        popupDescription.textContent = `Détails de l'événement : ${eventTitle}`; // Vous pouvez personnaliser ce texte
+        popup.style.display = 'flex'; // Afficher le pop-up
+    }
+
+    // Fermer le pop-up
+    closeButton.addEventListener('click', function () {
+        popup.style.display = 'none';
+    });
+
+    // Fermer le pop-up en cliquant en dehors du contenu
+    window.addEventListener('click', function (event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+	
+
+    // Modification de la fonction renderCalendar pour gérer les clics sur les dates avec événements
     function renderCalendar(month, year) {
         calendar.innerHTML = '';
         monthYear.textContent = new Date(year, month).toLocaleString('fr-FR', { month: 'long', year: 'numeric' });
@@ -75,6 +101,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if (catholicEvents[eventDateKey]) {
                 dayCell.classList.add('event');
                 dayCell.innerHTML += `<div class="event-name">${catholicEvents[eventDateKey]}</div>`;
+
+                // Ajout d'un événement de clic pour ouvrir le pop-up
+                dayCell.addEventListener('click', function () {
+                    openPopup(catholicEvents[eventDateKey]);
+                });
             }
 
             if (day === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
@@ -97,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
         renderCalendar(currentMonth, currentYear);
     }
 
+    // Gestion des boutons de changement de mois
     prevMonthBtn.addEventListener('click', () => changeMonth(-1));
     nextMonthBtn.addEventListener('click', () => changeMonth(1));
 

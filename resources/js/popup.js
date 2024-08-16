@@ -1,31 +1,35 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Sélectionnez tous les éléments qui ont la classe "event"
-    const eventDays = document.querySelectorAll(".day.event");
+// popup.js
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtenez la modale et le bouton de fermeture
+    var modal = document.getElementById("modal");
+    var span = document.getElementsByClassName("close")[0];
 
-    // Le modal et les éléments associés
-    const modal = document.getElementById("modal");
-    const closeBtn = document.querySelector(".close");
-    const eventDetails = document.getElementById("eventDetails");
+    // Ajoutez des gestionnaires d'événements à toutes les dates d'événements
+    document.querySelectorAll(".event-date2").forEach(function(dateElement) {
+        dateElement.addEventListener("click", function() {
+            // Récupérer les détails de l'événement
+            var eventTitle = this.nextElementSibling.textContent;
+            var eventDescription = this.nextElementSibling.nextElementSibling.textContent;
+            var eventLocation = this.nextElementSibling.nextElementSibling.nextElementSibling.textContent;
 
-    // Ajoutez un événement de clic à chaque jour avec un événement
-    eventDays.forEach(day => {
-        day.addEventListener("click", function () {
-            // Affichez les détails de l'événement (vous pouvez personnaliser ici)
-            const eventName = day.querySelector(".event-name").textContent;
-            eventDetails.innerHTML = `<h2>Détails de l'événement</h2><p>${eventName}</p>`;
-            
-            // Affichez le modal
+            // Mettez à jour la modale avec les détails de l'événement
+            document.getElementById("eventDetails").innerHTML = 
+                "<h2>" + eventTitle + "</h2>" +
+                "<p>" + eventDescription + "</p>" +
+                "<p><strong>Lieu:</strong> " + eventLocation + "</p>";
+
+            // Affichez la modale
             modal.style.display = "block";
         });
     });
 
-    // Quand l'utilisateur clique sur (x), fermez la fenêtre modale
-    closeBtn.onclick = function () {
+    // Lorsque l'utilisateur clique sur <span> (x), fermez la modale
+    span.onclick = function() {
         modal.style.display = "none";
     }
 
-    // Quand l'utilisateur clique en dehors de la modale, fermez-la
-    window.onclick = function (event) {
+    // Lorsque l'utilisateur clique n'importe où en dehors de la modale, fermez-la
+    window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }

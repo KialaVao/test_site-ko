@@ -1,28 +1,24 @@
-function openAlbum(albumId) {
-    // Sélectionnez tous les albums et cachez-les
-    var albums = document.getElementsByClassName('album-content');
-    for (var i = 0; i < albums.length; i++) {
-        albums[i].style.display = 'none';
-    }
+// script.js
+document.addEventListener("DOMContentLoaded", function() {
+    const galleryItems = document.querySelectorAll(".gallery-item img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const closeButton = document.querySelector(".close");
 
-    // Affichez le contenu de l'album cliqué
-    document.getElementById(albumId).style.display = 'block';
-}
+    galleryItems.forEach(item => {
+        item.addEventListener("click", function() {
+            lightbox.style.display = "block";
+            lightboxImage.src = this.src;
+        });
+    });
 
-function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
-}
+    closeButton.addEventListener("click", function() {
+        lightbox.style.display = "none";
+    });
 
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-}
-
-// Ferme la modale si l'utilisateur clique en dehors de celle-ci
-window.onclick = function(event) {
-    var modals = document.getElementsByClassName('modal');
-    for (var i = 0; i < modals.length; i++) {
-        if (event.target == modals[i]) {
-            modals[i].style.display = "none";
+    lightbox.addEventListener("click", function(event) {
+        if (event.target !== lightboxImage) {
+            lightbox.style.display = "none";
         }
-    }
-}
+    });
+});

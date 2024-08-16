@@ -52,9 +52,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const daysOfWeek = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];
 
     // Fonction pour ouvrir le pop-up avec les détails de l'événement
+   // function openPopup(eventTitle) {
+   //     popupTitle.textContent = eventTitle;
+     //   popupDescription.textContent = `Détails de l'événement : ${eventTitle}`; // Vous pouvez personnaliser ce texte
+       // popup.style.display = 'flex'; // Afficher le pop-up
+    //}
+
     function openPopup(eventTitle) {
         popupTitle.textContent = eventTitle;
         popupDescription.textContent = `Détails de l'événement : ${eventTitle}`; // Vous pouvez personnaliser ce texte
+            if (eventTitle = 'Noël')
+            {
+                popupDescription.textContent = `C'est la naissance de Notre Seigneur': ${eventTitle}`;  
+            }
         popup.style.display = 'flex'; // Afficher le pop-up
     }
 

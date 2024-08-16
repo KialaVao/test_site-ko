@@ -69,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
             popup.style.display = 'none';
         }
     });
-	
 
     // Modification de la fonction renderCalendar pour gérer les clics sur les dates avec événements
     function renderCalendar(month, year) {

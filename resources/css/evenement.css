@@ -204,7 +204,7 @@ header .image-container img {
 /* Flexbox styles */
 .content-row {
     display: flex;
-    /*align-items: center; /* Center items vertically */
+    align-items: center; /* Center items vertically */
     justify-content: flex-start; /* Align items to the start */
     gap: 100px; /* Space between items */
     flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */

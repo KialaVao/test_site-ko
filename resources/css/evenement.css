@@ -265,12 +265,14 @@ header .image-container img {
     header h1 {
         font-size: 1.2em;
     }
+
     .social-media-icons a {
         font-size: 1.5em;
     }
     .map-container iframe {
         height: 150px;
     }
+
     header .image-container {
         top: 50%; /* Ajuster la position pour les petits écrans */
         left: 5%;
@@ -279,8 +281,18 @@ header .image-container img {
     header .image-container img {
         max-width: 40px; /* Ajuster la taille de l'image */
     }
+    
     .gallery-item {
         width: 100%;
+    }
+
+    .weekday, .day {
+        padding: 6px;
+        font-size: 12px; /* Réduire encore la taille des textes pour les très petits écrans */
+    }
+	
+	.event-name {
+        display: none; /* Optionnel : cacher les noms d'événements sur les très petits écrans */
     }
 }
 

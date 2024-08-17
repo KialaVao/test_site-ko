@@ -53,11 +53,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Fonction pour ouvrir le pop-up avec les détails de l'événement
     function openPopup(eventTitle) {
-        popupTitle.textContent = eventTitle;
+        //popupTitle.textContent = eventTitle;
         //popupDescription.textContent = `Détails de l'événement : ${eventTitle}`; // Vous pouvez personnaliser ce texte
-        popupDescription.textContent = `Détails de l'événement : la Toussaint est la fête de tous les saints. 
-        L’Église honore ainsi la foule innombrable de ceux et celles qui ont été de vivants et lumineux témoins du Christ`.
-        popup.style.display = 'flex'; // Afficher le pop-up
+        if (eventTitle ="Toussaint") { 
+            popupTitle.textContent = eventTitle;
+            popupDescription.textContent = `Détails de l'événement : la Toussaint est la fête de tous les saints. 
+            L’Église honore ainsi la foule innombrable de ceux et celles qui ont été de vivants et lumineux témoins du Christ`.
+            popup.style.display = 'flex'; // Afficher le pop-up
+            }
     }
 
     // Fermer le pop-up

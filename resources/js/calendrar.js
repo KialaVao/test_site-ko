@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Fonction pour ouvrir le pop-up avec les détails de l'événement
     function openPopup(eventTitle) {
         popupTitle.textContent = eventTitle;
-        popupDescription.textContent = `Détails de l'événement : ${eventTitle}`; // Vous pouvez personnaliser ce texte
+        //popupDescription.textContent = `Détails de l'événement : ${eventTitle}`; // Vous pouvez personnaliser ce texte
         popup.style.display = 'flex'; // Afficher le pop-up
     }
 

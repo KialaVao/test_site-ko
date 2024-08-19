@@ -161,7 +161,7 @@ header .image-container img {
     }
     .thumbnail-container {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(11, 1fr);
         grid-template-rows: repeat(2, auto); /* 2 lignes */
         gap: 1em; /* Espace entre les colonnes et les lignes */
         /*max-width: 700px;
@@ -281,13 +281,6 @@ section#members {
     margin-top: 0.5em;
     font-weight: bold;
     color: #333;
-}
-
-ul {
-    list-style-type: disc; /* Définit les puces par défaut */
-    padding-left: 40px; /* Espace pour aligner correctement les puces */
-    margin: 0; /* Réinitialise les marges si besoin */
-    /*text-decoration: none; /* Supprime tout soulignement */
 }
   
 li {

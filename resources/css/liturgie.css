@@ -161,7 +161,8 @@ header .image-container img {
     }
     .thumbnail-container {
         display: grid;
-        grid-template-columns: repeat(6, 2fr);
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, auto); /* 2 lignes */
         gap: 1em; /* Espace entre les colonnes et les lignes */
         /*max-width: 700px;
         /*margin: 0 auto;*/

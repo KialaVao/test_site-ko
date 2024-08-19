@@ -294,6 +294,13 @@ header .image-container img {
 	.event-name {
         display: none; /* Optionnel : cacher les noms d'événements sur les très petits écrans */
     }
+
+    .calendar-container {
+        width: 100px;
+        margin-bottom: 20px;
+        align-items: center;
+        text-align: center; /* Centrer le texte */
+    }
 }
 
 /* Styles pour le menu déroulant */

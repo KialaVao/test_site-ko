@@ -184,7 +184,7 @@ header .image-container img {
         transform: translateY(-50%);
     }
     header .image-container img {
-        max-width: 25px; /* Ajuster la taille de l'image */
+        max-width: 30px; /* Ajuster la taille de l'image */
     }
 }
 

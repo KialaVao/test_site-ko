@@ -281,3 +281,14 @@ section#members {
     font-weight: bold;
     color: #333;
 }
+
+ul {
+    list-style-type: disc; /* Définit les puces par défaut */
+    padding-left: 20px; /* Espace pour aligner correctement les puces */
+    margin: 0; /* Réinitialise les marges si besoin */
+    text-decoration: none; /* Supprime tout soulignement */
+  }
+  
+  li {
+    text-decoration: none; /* Assure que les éléments de la liste ne sont pas soulignés */
+  }

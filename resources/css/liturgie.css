@@ -291,5 +291,5 @@ ul {
   
   li {
     text-decoration: none; /* Assure que les éléments de la liste ne sont pas soulignés */
-    margin-left: 20px; /* Décale le texte vers la droite par rapport aux puces */
+    margin-left: 40px; /* Décale le texte vers la droite par rapport aux puces */
   }

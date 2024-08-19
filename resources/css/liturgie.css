@@ -286,10 +286,10 @@ ul {
     list-style-type: disc; /* Définit les puces par défaut */
     padding-left: 40px; /* Espace pour aligner correctement les puces */
     margin: 0; /* Réinitialise les marges si besoin */
-    text-decoration: none; /* Supprime tout soulignement */
+    /*text-decoration: none; /* Supprime tout soulignement */
 }
   
 li {
-    text-decoration: none !important; /* Assure que les éléments de la liste ne sont pas soulignés */
+    /*text-decoration: none !important; /* Assure que les éléments de la liste ne sont pas soulignés */
     margin-left: 40px; /* Décale le texte vers la droite par rapport aux puces */
-  }
+}

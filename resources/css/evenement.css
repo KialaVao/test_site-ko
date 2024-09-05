@@ -451,6 +451,16 @@ nav ul .dropdown:hover .dropdown-content {
         width: 100%;
         margin-bottom: 5px; /* Ajouter de l'espace entre les boutons et le texte */
     }
+
+    header .image-container {
+        top: 40%; /* Ajuster la position pour les écrans moyens */
+        left: 5%;
+        transform: translateY(-50%);
+    }	
+
+    header .image-container img {
+        max-width: 25px; /* Ajuster la taille de l'image */
+    }
 }
 
 @media (max-width: 480px) {
@@ -465,5 +475,14 @@ nav ul .dropdown:hover .dropdown-content {
 
     .calendar-header h2 {
         font-size: 1.2em; /* Ajuste la taille du texte du titre pour mobile */
+    }
+
+    header .image-container {
+        top: 40%; /* Ajuster la position pour les petits écrans */
+        left: 5%;
+        transform: translateY(-50%);
+    }
+    header .image-container img {
+        max-width: 30px; /* Ajuster la taille de l'image */
     }
 }

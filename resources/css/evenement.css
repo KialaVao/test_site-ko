@@ -116,210 +116,123 @@ header .image-container img {
 /* Calendrier */
 
 
-/* Assurer que le conteneur du calendrier soit centré */
 .calendar-container {
+    width: 100%; /* S'assure que le conteneur occupe toute la largeur disponible */
+    max-width: 400px; /* Largeur maximale pour les grands écrans */
+    margin: 0 auto 20px auto; /* Centrer et espacer en bas */
+    text-align: center; /* Centrer le texte */
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 10px; /* Espacement sur les côtés */
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Garde une grille de 7 colonnes */
+    gap: 2px;
+    max-width: 100%; /* Utilise toute la largeur disponible */
+    margin: 0 auto; /* Centrer le calendrier */
+    padding: 10px; /* Padding autour du calendrier */
+    background-color: #FAFAFA;
+    border-radius: 8px;
+}
+
+.day {
+    width: 100%; /* Laisse la largeur s'ajuster automatiquement */
+    height: auto; /* Ajuste la hauteur automatiquement */
+    padding: 10px; /* Ajuster le padding pour les petits écrans */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    padding: 20px;
-    max-width: 100%; /* Assurez-vous que le conteneur ne dépasse pas la largeur de l'écran */
-}
-
-/* Style général du calendrier */
-.calendar-header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 400px; /* Limite la largeur maximale pour les grands écrans */
-    margin-bottom: 10px;
-}
-
-/* Boutons pour changer de mois */
-.calendar-header button {
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-/* Le titre du mois et de l'année */
-#monthYear {
-    font-size: 18px;
-    text-align: center;
-    flex: 1;
-}
-
-/* Centrer le calendrier lui-même */
-.calendar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 400px; /* Limite la largeur du calendrier */
-    width: 100%;
-}
-
-/* Popup d'événement */
-.popup {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
     background-color: white;
-    padding: 20px;
-    max-width: 90%;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.day:hover {
+    color: #757575;
+}
+
+.day.event::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.event-name {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: blue;
+    margin-top: 10px;
     text-align: center;
 }
 
-/* Styles pour les petits écrans */
-@media (max-width: 768px) {
-    .calendar-header {
-        max-width: 90%; /* Réduire la largeur pour les petits écrans */
-    }
+.weekday {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+}
 
+.today {
+    background-color: #ddd;
+    color: black;
+    border: 2px solid black;
+}
+
+/* --- Responsive design --- */
+@media (max-width: 768px) {
     .calendar {
-        max-width: 90%; /* S'adapte à la largeur de l'écran mobile */
+        grid-template-columns: repeat(7, 1fr); /* Maintient 7 colonnes */
+        padding: 5px; /* Réduit le padding sur les petits écrans */
     }
 
-    .calendar-header button {
-        font-size: 14px;
-        padding: 8px;
+    .day {
+        width: 100%; /* Les cases prennent toute la largeur disponible */
+        height: auto;
+        padding: 8px; /* Ajuste le padding pour les petits écrans */
     }
 
-    #monthYear {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
     .calendar-header {
-        flex-direction: column; /* Les boutons seront placés en dessous du titre sur les très petits écrans */
-        align-items: center;
+        flex-direction: column; /* Change la direction des éléments du header pour mobile */
+        padding: 0 5px;
     }
 
     .calendar-header button {
-        margin: 5px 0; /* Espacement autour des boutons */
         width: 100%;
-    }
-}
-
-/* Style for the text block */
-.text-block {
-    max-width: 1000px; /* Set a max-width for the text block */
-    padding: 0px; /* Add some padding */
-    background-color: #FAFAFA;
-    border-radius: 8px; /* Optional: Add rounded corners */
-}
-
-/* Flexbox styles */
-.content-row {
-    display: flex;
-    /*align-items: center; /* Center items vertically */
-    justify-content: flex-start; /* Align items to the start */
-    gap: 100px; /* Space between items */
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-}
-
-.content-row > div {
-    flex: 1; /* Ensure items take equal space */
-    min-width: 200px; /* Ensure a minimum width for each item */
-    margin-bottom: 10px; /* Add bottom margin for spacing when items wrap */
-} 
-
-.map-container {
-    text-align: center; /* Center align the map */
-    margin-top: 20px; /* Add some space above the map */
-}
-
-.map-container iframe {
-    width: 100%; /* Ensure the map takes full width */
-    height: 250px; /* Set the height of the map */
-    border: 0; /* Remove border */
-    border-radius: 8px; /* Add rounded corners */
-}
-
-/* Media queries pour différentes tailles d'écran */
-@media (max-width: 1200px) {
-    header {
-        padding: 3em 1em; /* Ajuster la largeur pour les écrans moyens */
-    }
-    header .image-container img {
-        max-width: 100px; /* Ajuster la taille de l'image */
-    }
-}
-
-@media (max-width: 768px) {
-    header {
-        padding: 0.5em;
-    }
-    .content-row {
-        flex-direction: column;
-    }
-    .map-container iframe {
-        height: 200px;
-    }
-    header .image-container {
-        top: 70%; /* Ajuster la position pour les écrans moyens */
-        left: 10%;
-        transform: translateY(-50%);
-    }
-    header .image-container img {
-        max-width: 60px; /* Ajuster la taille de l'image */
-    }
-    .gallery-item {
-        width: 45%;
+        margin-bottom: 5px; /* Ajouter de l'espace entre les boutons et le texte */
     }
 }
 
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2em;
+    .calendar {
+        grid-template-columns: repeat(2, 1fr); /* Réduit à 2 colonnes sur très petits écrans */
     }
 
-    .social-media-icons a {
-        font-size: 1.5em;
-    }
-    .map-container iframe {
-        height: 150px;
+    .day {
+        padding: 5px; /* Réduit encore le padding pour les très petits écrans */
+        font-size: 0.8em; /* Réduit la taille du texte */
     }
 
-    header .image-container {
-        top: 50%; /* Ajuster la position pour les petits écrans */
-        left: 5%;
-        transform: translateY(-50%);
-    }  
-    header .image-container img {
-        max-width: 40px; /* Ajuster la taille de l'image */
-    }
-    
-    .gallery-item {
-        width: 100%;
-    }
-
-    .weekday, .day {
-        padding: 6px;
-        font-size: 12px; /* Réduire encore la taille des textes pour les très petits écrans */
-    }
-	
-	.event-name {
-        display: none; /* Optionnel : cacher les noms d'événements sur les très petits écrans */
-    }
-
-    .calendar-container {
-        width: 100px;
-        margin-bottom: 20px;
-        align-items: center;
-        text-align: center; /* Centrer le texte */
+    .calendar-header h2 {
+        font-size: 1.2em; /* Ajuste la taille du texte du titre pour mobile */
     }
 }
+
 
 /* Styles pour le menu déroulant */
 nav ul {

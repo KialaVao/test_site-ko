@@ -119,8 +119,9 @@ header .image-container img {
 .calendar-container {
     width: 100%; /* S'assure que le conteneur occupe toute la largeur disponible */
     max-width: 400px; /* Largeur maximale pour les grands écrans */
-    margin: 0 auto 20px auto; /* Centrer et espacer en bas */
+    /*margin: 0 auto 20px auto; /* Centrer et espacer en bas */
     text-align: center; /* Centrer le texte */
+    margin-bottom: 20px;
 }
 
 .calendar-header {
@@ -128,13 +129,15 @@ header .image-container img {
     justify-content: space-between; /* Espacement entre les éléments */
     align-items: center;
     margin-bottom: 10px;
-    padding: 0 10px; /* Espacement sur les côtés */
+    /*padding: 0 10px; /* Espacement sur les côtés */
 }
 
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr); /* Garde une grille de 7 colonnes */
     gap: 2px;
+    align-items: center;
+    justify-content: center;
     max-width: 100%; /* Utilise toute la largeur disponible */
     margin: 0 auto; /* Centrer le calendrier */
     padding: 10px; /* Padding autour du calendrier */
@@ -149,12 +152,14 @@ header .image-container img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center; */
+    justify-content: flex-start;
     background-color: white;
     cursor: pointer;
     position: relative;
     border: 1px solid #ddd;
     border-radius: 4px;
+    padding: 2px;
 }
 
 .day:hover {

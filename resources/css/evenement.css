@@ -433,11 +433,11 @@ nav ul .dropdown:hover .dropdown-content {
 @media (max-width: 768px) {
     .calendar {
         grid-template-columns: repeat(7, 1fr); /* Maintient 7 colonnes */
-        padding: 5px; /* Réduit le padding sur les petits écrans */
+        padding: 3px; /* Réduit le padding sur les petits écrans */
     }
 
     .day {
-        width: 75%; /* Les cases prennent toute la largeur disponible */
+        width: 100%; /* Les cases prennent toute la largeur disponible si la valeur ici est 100% */
         height: auto;
         padding: 8px; /* Ajuste le padding pour les petits écrans */
     }
@@ -459,7 +459,7 @@ nav ul .dropdown:hover .dropdown-content {
     }
 
     .day {
-        padding: 5px; /* Réduit encore le padding pour les très petits écrans */
+        padding: 3px; /* Réduit encore le padding pour les très petits écrans */
         font-size: 0.8em; /* Réduit la taille du texte */
     }
 

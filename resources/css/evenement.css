@@ -351,17 +351,17 @@ nav ul .dropdown:hover .dropdown-content {
 /*Calendrier*/
 
 .calendar-container {
-    width: 300px;
+    /*width: 300px;*/
     margin-bottom: 20px;
     align-items: center;
-    text-align: center; /* Centrer le texte */
+    /*text-align: center; /* Centrer le texte */
 }
 
 .calendar-header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 
 .calendar {

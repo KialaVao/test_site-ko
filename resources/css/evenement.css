@@ -146,7 +146,7 @@ header .image-container img {
 }
 
 .day {
-    width: 100%; /* Laisse la largeur s'ajuster automatiquement */
+    width: auto; /* Laisse la largeur s'ajuster automatiquement */
     height: 100%; /* Ajuste la hauteur automatiquement */
     padding: 10px; /* Ajuster le padding pour les petits écrans */
     display: flex;
@@ -168,7 +168,7 @@ header .image-container img {
 
 .day.event::after {
     content: "";
-    position: absolute;
+    /*position: absolute;*/
     bottom: 3px;
     right: 3px;
     width: 8px;

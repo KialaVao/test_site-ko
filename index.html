@@ -70,7 +70,7 @@
                         mais manifestent une hostilité ouverte envers la Parole de Dieu qui est le Christ en personne. 
                         Ainsi, ils choisissent délibérément le malheur au lieu d'accueillir Jésus, la source de vie et de bonheur éternel.</p> -->
 
-                        <h3> <a href="./pages/accueil.html">Homélie du jour</a> </h3>
+                    <!--    <h3> <a href="./pages/accueil.html">Homélie du jour</a> </h3> -->
 
                     </div> 
                 </div>
@@ -84,5 +84,26 @@
         </div>
         <p>&copy; 2024 KTO Malagasy Rennes. Tous droits réservés.</p>
     </footer>
+
+    <script>
+        // Fonction pour charger le contenu de l'Homélie depuis Accueil.html
+        fetch('./Accueil.html') // Chemin relatif vers Accueil.html
+            .then(response => response.text()) // Obtenir le contenu sous forme de texte
+            .then(data => {
+                // Parse le texte en HTML pour manipulation DOM
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(data, 'text/html');
+
+                // Récupérer le contenu du bloc d'Homélie par ID
+                const homelieContent = doc.querySelector('#homelie-content').innerHTML;
+
+                // Insérer le contenu dans la page Index
+                document.getElementById('homelie').innerHTML = homelieContent;
+            })
+            .catch(error => {
+                console.error('Erreur lors du chargement de l\'homélie :', error);
+            });
+    </script>
+
 </body>
 </html>

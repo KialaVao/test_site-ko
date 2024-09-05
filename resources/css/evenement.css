@@ -113,88 +113,6 @@ header .image-container img {
     color: #C13584; /* Darker Instagram pink */
 } 
 
-/*Calendrier*/
-
-.calendar-container {
-    width: 300px;
-    margin-bottom: 20px;
-    align-items: center;
-    text-align: center; /* Centrer le texte */
-}
-
-.calendar-header {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 2px;
-    align-items: center;
-    justify-content: center;
-    max-width: 280px; /* Limiter la largeur totale du calendrier */
-    margin: 0 auto; /* Centrer le calendrier horizontalement */
-    padding: 10px; /* Ajouter du padding autour du calendrier */
-    background-color: #FAFAFA;
-    border-radius: 8px; /* Coins arrondis optionnels */
-}
-
-.day {
-    width: 75px; /* Réduire la largeur des cases de jour */
-    height: 75px; /* Réduire la hauteur des cases de jour */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: white;
-    cursor: pointer;
-    position: relative;
-    border: 1px solid #ddd; /* Ajouter une bordure fine */
-    border-radius: 4px; /* Coins arrondis pour les cases de jour */
-    padding: 2px;
-}
-
-.day:hover {
-    color: #757575; /* Darker Facebook blue */
-}
-
-.day.event::after {
-    content: "";
-    position: absolute;
-    bottom: 3px; /* Ajuster la position du point d'événement */
-    right: 3px; /* Ajuster la position du point d'événement */
-    width: 8px; /* Réduire la taille du point d'événement */
-    height: 8px; /* Réduire la taille du point d'événement */
-    background-color: red;
-    border-radius: 50%;
-}
-
-.event-name {
-    font-size: 0.8em;
-    font-weight: bold;
-    color: blue;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.weekday {
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 0;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd; /* Ajouter une bordure fine */
-}
-
-.today {
-    background-color: #ddd; /* Yellow background for today's date */
-    color: black;
-    border: 2px solid black; /* Slightly darker border */
-}
-
-
 /* Styles pour le menu déroulant */
 nav ul {
     list-style-type: none;
@@ -428,4 +346,85 @@ nav ul .dropdown:hover .dropdown-content {
     right: 20px;
     font-size: 24px;
     cursor: pointer;
+}
+
+/*Calendrier*/
+
+.calendar-container {
+    width: 300px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center; /* Centrer le texte */
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    max-width: 280px; /* Limiter la largeur totale du calendrier */
+    margin: 0 auto; /* Centrer le calendrier horizontalement */
+    padding: 10px; /* Ajouter du padding autour du calendrier */
+    background-color: #FAFAFA;
+    border-radius: 8px; /* Coins arrondis optionnels */
+}
+
+.day {
+    width: 75px; /* Réduire la largeur des cases de jour */
+    height: 75px; /* Réduire la hauteur des cases de jour */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #ddd; /* Ajouter une bordure fine */
+    border-radius: 4px; /* Coins arrondis pour les cases de jour */
+    padding: 2px;
+}
+
+.day:hover {
+    color: #757575; /* Darker Facebook blue */
+}
+
+.day.event::after {
+    content: "";
+    position: absolute;
+    bottom: 3px; /* Ajuster la position du point d'événement */
+    right: 3px; /* Ajuster la position du point d'événement */
+    width: 8px; /* Réduire la taille du point d'événement */
+    height: 8px; /* Réduire la taille du point d'événement */
+    background-color: red;
+    border-radius: 50%;
+}
+
+.event-name {
+    font-size: 0.8em;
+    font-weight: bold;
+    color: blue;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.weekday {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd; /* Ajouter une bordure fine */
+}
+
+.today {
+    background-color: #ddd; /* Yellow background for today's date */
+    color: black;
+    border: 2px solid black; /* Slightly darker border */
 }

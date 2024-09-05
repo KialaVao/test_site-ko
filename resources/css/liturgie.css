@@ -254,35 +254,6 @@ section#members {
     text-align: center;
 }
 
-/*.thumbnail-container {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    gap: 1em; /* Espace entre les colonnes et les lignes */
-    /*max-width: 700px;
-    /*margin: 0 auto;
-} */
-
-/*.thumbnail-figure {
-    margin: 0;
-    padding: 1em;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.thumbnail {
-    width: 100%;
-    height: auto;
-    border-radius: 50%; /* Pour rendre les images rondes, si désiré 
-} */
-
-/*.thumbnail-caption {
-    margin-top: 0.5em;
-    font-weight: bold;
-    color: #333;
-} */
-
 .thumbnail-container {
     display: flex;
     flex-wrap: wrap;

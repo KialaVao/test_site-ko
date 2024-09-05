@@ -282,30 +282,34 @@ section#members {
 }
 
 .thumbnail-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 1em; /* Espace entre les colonnes et les lignes */
-    max-width: 900px;
-    /*margin: 0 auto;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espacement entre les figures */
 }
 
 .thumbnail-figure {
-    margin: 0;
-    padding: 1em;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 100px; /* Flex-grow, flex-shrink, flex-basis */
+    max-width: 100px; /* Taille maximale pour les grands écrans */
     text-align: center;
+    margin: 10px;
 }
 
 .thumbnail {
-    width: 100%;
-    height: auto;
-    border-radius: 50%; /* Pour rendre les images rondes, si désiré */
+    width: 100%; /* L'image occupe 100% de la largeur de son conteneur */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 50%; /* Donne une forme circulaire à l'image si nécessaire */
 }
 
-.thumbnail-caption {
-    margin-top: 0.5em;
-    font-weight: bold;
-    color: #333;
+/* Styles pour petits écrans */
+@media (max-width: 768px) {
+    .thumbnail-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .thumbnail-container {
+        grid-template-columns: 1fr; /* Une colonne sur les très petits écrans */
+    }
 }

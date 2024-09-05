@@ -147,7 +147,7 @@ header .image-container img {
 
 .day {
     width: 100%; /* Laisse la largeur s'ajuster automatiquement */
-    height: auto; /* Ajuste la hauteur automatiquement */
+    height: 100%; /* Ajuste la hauteur automatiquement */
     padding: 10px; /* Ajuster le padding pour les petits écrans */
     display: flex;
     flex-direction: column;

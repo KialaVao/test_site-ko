@@ -113,66 +113,61 @@ header .image-container img {
     color: #C13584; /* Darker Instagram pink */
 } 
 
-/* Calendrier */
-
+/*Calendrier*/
 
 .calendar-container {
-    width: 100%; /* S'assure que le conteneur occupe toute la largeur disponible */
-    max-width: 400px; /* Largeur maximale pour les grands écrans */
-    /*margin: 0 auto 20px auto; /* Centrer et espacer en bas */
-    text-align: center; /* Centrer le texte */
+    width: 300px;
     margin-bottom: 20px;
+    align-items: center;
+    text-align: center; /* Centrer le texte */
 }
 
 .calendar-header {
     display: flex;
-    justify-content: space-between; /* Espacement entre les éléments */
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 10px;
-    /*padding: 0 10px; /* Espacement sur les côtés */
 }
 
 .calendar {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); /* Garde une grille de 7 colonnes */
+    grid-template-columns: repeat(7, 1fr);
     gap: 2px;
     align-items: center;
     justify-content: center;
-    max-width: 100%; /* Utilise toute la largeur disponible */
-    margin: 0 auto; /* Centrer le calendrier */
-    padding: 10px; /* Padding autour du calendrier */
+    max-width: 280px; /* Limiter la largeur totale du calendrier */
+    margin: 0 auto; /* Centrer le calendrier horizontalement */
+    padding: 10px; /* Ajouter du padding autour du calendrier */
     background-color: #FAFAFA;
-    border-radius: 8px;
+    border-radius: 8px; /* Coins arrondis optionnels */
 }
 
 .day {
-    width: auto; /* Laisse la largeur s'ajuster automatiquement */
-    height: 100%; /* Ajuste la hauteur automatiquement */
-    padding: 10px; /* Ajuster le padding pour les petits écrans */
+    width: 75px; /* Réduire la largeur des cases de jour */
+    height: 75px; /* Réduire la hauteur des cases de jour */
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*justify-content: center; */
     justify-content: flex-start;
     background-color: white;
     cursor: pointer;
     position: relative;
-    border: 1px solid #ddd;
-    /*border-radius: 4px;*/
+    border: 1px solid #ddd; /* Ajouter une bordure fine */
+    border-radius: 4px; /* Coins arrondis pour les cases de jour */
     padding: 2px;
 }
 
 .day:hover {
-    color: #757575;
+    color: #757575; /* Darker Facebook blue */
 }
 
 .day.event::after {
     content: "";
-    /*position: absolute;*/
-    bottom: 3px;
-    right: 3px;
-    width: 8px;
-    height: 8px;
+    position: absolute;
+    bottom: 3px; /* Ajuster la position du point d'événement */
+    right: 3px; /* Ajuster la position du point d'événement */
+    width: 8px; /* Réduire la taille du point d'événement */
+    height: 8px; /* Réduire la taille du point d'événement */
     background-color: red;
     border-radius: 50%;
 }
@@ -190,52 +185,13 @@ header .image-container img {
     text-align: center;
     padding: 10px 0;
     background-color: #f0f0f0;
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; /* Ajouter une bordure fine */
 }
 
 .today {
-    background-color: #ddd;
+    background-color: #ddd; /* Yellow background for today's date */
     color: black;
-    border: 2px solid black;
-}
-
-/* --- Responsive design --- */
-@media (max-width: 768px) {
-    .calendar {
-        grid-template-columns: repeat(7, 1fr); /* Maintient 7 colonnes */
-        padding: 5px; /* Réduit le padding sur les petits écrans */
-    }
-
-    .day {
-        width: 100%; /* Les cases prennent toute la largeur disponible */
-        height: auto;
-        padding: 8px; /* Ajuste le padding pour les petits écrans */
-    }
-
-    .calendar-header {
-        flex-direction: column; /* Change la direction des éléments du header pour mobile */
-        padding: 0 5px;
-    }
-
-    .calendar-header button {
-        width: 100%;
-        margin-bottom: 5px; /* Ajouter de l'espace entre les boutons et le texte */
-    }
-}
-
-@media (max-width: 480px) {
-    .calendar {
-        grid-template-columns: repeat(2, 1fr); /* Réduit à 2 colonnes sur très petits écrans */
-    }
-
-    .day {
-        padding: 5px; /* Réduit encore le padding pour les très petits écrans */
-        font-size: 0.8em; /* Réduit la taille du texte */
-    }
-
-    .calendar-header h2 {
-        font-size: 1.2em; /* Ajuste la taille du texte du titre pour mobile */
-    }
+    border: 2px solid black; /* Slightly darker border */
 }
 
 

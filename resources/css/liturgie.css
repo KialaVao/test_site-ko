@@ -159,14 +159,6 @@ header .image-container img {
     header .image-container img {
         max-width: 40px; /* Ajuster la taille de l'image */
     }
-    .thumbnail-container {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, auto); /* 2 lignes */
-       /* gap: 1em; /* Espace entre les colonnes et les lignes */
-        /*max-width: 700px;
-        /*margin: 0 auto;*/
-    }
 }
 
 /* Tableau */

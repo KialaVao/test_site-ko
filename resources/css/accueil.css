@@ -189,7 +189,7 @@ header .image-container img {
 }
 
 /* Styles pour la section Parole du jour et Homélie */
-#parole-du-jour, #homelie {
+#parole-du-jour, #homelie-content {
     background-color: #FAFAFA;
     border-radius: 8px;
     border: 2px solid #545454;

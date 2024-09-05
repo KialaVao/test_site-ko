@@ -71,6 +71,31 @@ header .image-container img {
     border: 1px solid black;
 }
 
+/* --- Responsive design pour le logo --- */
+@media (max-width: 768px) {
+    header .image-container {
+        top: 40%; /* Ajuster la position pour les écrans moyens */
+        left: 5%;
+        transform: translateY(-50%);
+    }	
+
+    header .image-container img {
+        max-width: 25px; /* Ajuster la taille de l'image */
+    }
+}
+
+@media (max-width: 480px) {
+    header .image-container {
+        top: 40%; /* Ajuster la position pour les petits écrans */
+        left: 5%;
+        transform: translateY(-50%);
+    }
+    header .image-container img {
+        max-width: 30px; /* Ajuster la taille de l'image */
+    }
+}
+
+
 .margin-container {
     width: 100%; /* Largeur du conteneur */
     margin: 0 auto; /* Marges automatiques à gauche et à droite */
@@ -429,11 +454,11 @@ nav ul .dropdown:hover .dropdown-content {
     border: 2px solid black; /* Slightly darker border */
 }
 
-/* --- Responsive design --- */
+/* --- Responsive design pour le calendrier--- */
 @media (max-width: 768px) {
     .calendar {
         grid-template-columns: repeat(7, 1fr); /* Maintient 7 colonnes */
-        padding: 3px; /* Réduit le padding sur les petits écrans */
+        padding: 5px; /* Réduit le padding sur les petits écrans */
     }
 
     .day {
@@ -451,16 +476,6 @@ nav ul .dropdown:hover .dropdown-content {
         width: 100%;
         margin-bottom: 5px; /* Ajouter de l'espace entre les boutons et le texte */
     }
-
-    header .image-container {
-        top: 40%; /* Ajuster la position pour les écrans moyens */
-        left: 5%;
-        transform: translateY(-50%);
-    }	
-
-    header .image-container img {
-        max-width: 25px; /* Ajuster la taille de l'image */
-    }
 }
 
 @media (max-width: 480px) {
@@ -469,7 +484,7 @@ nav ul .dropdown:hover .dropdown-content {
     }
 
     .day {
-        padding: 3px; /* Réduit encore le padding pour les très petits écrans */
+        padding: 5px; /* Réduit encore le padding pour les très petits écrans */
         font-size: 0.8em; /* Réduit la taille du texte */
     }
 
@@ -477,12 +492,4 @@ nav ul .dropdown:hover .dropdown-content {
         font-size: 1.2em; /* Ajuste la taille du texte du titre pour mobile */
     }
 
-    header .image-container {
-        top: 40%; /* Ajuster la position pour les petits écrans */
-        left: 5%;
-        transform: translateY(-50%);
-    }
-    header .image-container img {
-        max-width: 30px; /* Ajuster la taille de l'image */
-    }
 }

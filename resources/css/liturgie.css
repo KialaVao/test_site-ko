@@ -254,15 +254,15 @@ section#members {
     text-align: center;
 }
 
-.thumbnail-container {
+/*.thumbnail-container {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     gap: 1em; /* Espace entre les colonnes et les lignes */
     /*max-width: 700px;
-    /*margin: 0 auto;*/
-}
+    /*margin: 0 auto;
+} */
 
-.thumbnail-figure {
+/*.thumbnail-figure {
     margin: 0;
     padding: 1em;
     background: white;
@@ -274,13 +274,33 @@ section#members {
 .thumbnail {
     width: 100%;
     height: auto;
-    border-radius: 50%; /* Pour rendre les images rondes, si désiré */
-}
+    border-radius: 50%; /* Pour rendre les images rondes, si désiré 
+} */
 
-.thumbnail-caption {
+/*.thumbnail-caption {
     margin-top: 0.5em;
     font-weight: bold;
     color: #333;
+} */
+
+.thumbnail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espacement entre les figures */
+}
+
+.thumbnail-figure {
+    flex: 1 1 100px; /* Flex-grow, flex-shrink, flex-basis */
+    max-width: 100px; /* Taille maximale pour les grands écrans */
+    text-align: center;
+    margin: 10px;
+}
+
+.thumbnail {
+    width: 100%; /* L'image occupe 100% de la largeur de son conteneur */
+    height: auto; /* Conserve les proportions de l'image */
+    border-radius: 50%; /* Donne une forme circulaire à l'image si nécessaire */
 }
   
 li {

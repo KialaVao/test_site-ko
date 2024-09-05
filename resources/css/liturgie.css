@@ -321,3 +321,7 @@ li {
     /*text-decoration: none !important; /* Assure que les éléments de la liste ne sont pas soulignés */
     margin-left: 20px; /* Décale le texte vers la droite par rapport aux puces */
 }
+
+.souligner {
+    text-decoration: underline;
+}

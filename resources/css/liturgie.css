@@ -302,6 +302,20 @@ section#members {
     height: auto; /* Conserve les proportions de l'image */
     border-radius: 50%; /* Donne une forme circulaire à l'image si nécessaire */
 }
+
+/* Styles pour petits écrans */
+@media (max-width: 768px) {
+    .thumbnail-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .thumbnail-container {
+        grid-template-columns: 1fr; /* Une colonne sur les très petits écrans */
+    }
+}
+
   
 li {
     /*text-decoration: none !important; /* Assure que les éléments de la liste ne sont pas soulignés */

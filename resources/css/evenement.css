@@ -428,3 +428,36 @@ nav ul .dropdown:hover .dropdown-content {
     color: black;
     border: 2px solid black; /* Slightly darker border */
 }
+
+/* --- Responsive design --- */
+@media (max-width: 768px) {
+    /* Centrer le conteneur du calendrier sur mobile avec Flexbox */
+    .calendar-container {
+        display: flex;
+        justify-content: center; /* Centrer horizontalement */
+        align-items: center; /* Centrer verticalement si nécessaire */
+        width: 100%; /* Utilise toute la largeur de l'écran mobile */
+        margin: 0 auto;
+    }
+
+    /* Centrer le calendrier lui-même */
+    .calendar {
+        margin: 0 auto;
+        max-width: 100%; /* Laisse le calendrier s'étendre pour s'adapter à l'écran */
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar {
+        grid-template-columns: repeat(2, 1fr); /* Réduit à 2 colonnes sur très petits écrans */
+    }
+
+    .day {
+        padding: 5px; /* Réduit encore le padding pour les très petits écrans */
+        font-size: 0.8em; /* Réduit la taille du texte */
+    }
+
+    .calendar-header h2 {
+        font-size: 1.2em; /* Ajuste la taille du texte du titre pour mobile */
+    }
+}

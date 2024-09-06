@@ -179,8 +179,8 @@ header .image-container img {
         font-size: 1.2em;
     }
     header .image-container {
-        top: 40%; /* Ajuster la position pour les petits écrans */
-        left: 5%;
+        /*top: 40%; /* Ajuster la position pour les petits écrans */
+        left: 10%;
         transform: translateY(-50%);
     }
     header .image-container img {

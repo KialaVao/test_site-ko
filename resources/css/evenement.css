@@ -484,8 +484,6 @@ nav ul .dropdown:hover .dropdown-content {
     }
 
     .day {
-        width: 100%; /* Les cases prennent toute la largeur disponible si la valeur ici est 100% */
-        height: auto;
         padding: 5px; /* Réduit encore le padding pour les très petits écrans */
         font-size: 0.8em; /* Réduit la taille du texte */
     }
@@ -494,8 +492,4 @@ nav ul .dropdown:hover .dropdown-content {
         font-size: 1.2em; /* Ajuste la taille du texte du titre pour mobile */
     }
 
-    .calendar-header button {
-        width: 100%;
-        margin-bottom: 5px; /* Ajouter de l'espace entre les boutons et le texte */
-    }
 }

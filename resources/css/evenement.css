@@ -376,17 +376,18 @@ nav ul .dropdown:hover .dropdown-content {
 /*Calendrier*/
 
 .calendar-container {
-    /*width: 300px;*/
+    width: 100%; /* Prendre toute la largeur disponible sur mobile */
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    /*text-align: center; /* Centrer le texte */
 }
 
 .calendar-header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between; /* Espacement adapté aux petits écrans */
     align-items: center;
-    /*margin-bottom: 10px;*/
+    margin-bottom: 10px;
 }
 
 .calendar {
@@ -395,45 +396,47 @@ nav ul .dropdown:hover .dropdown-content {
     gap: 2px;
     align-items: center;
     justify-content: center;
-    max-width: 280px; /* Limiter la largeur totale du calendrier */
-    margin: 0 auto; /* Centrer le calendrier horizontalement */
-    padding: 10px; /* Ajouter du padding autour du calendrier */
+    width: 100%; /* Utiliser toute la largeur sur mobile */
+    max-width: 100%; /* Limiter la largeur totale du calendrier */
+    margin: 0 auto;
+    padding: 10px;
     background-color: #FAFAFA;
-    border-radius: 8px; /* Coins arrondis optionnels */
+    border-radius: 8px;
 }
 
 .day {
-    width: 75px; /* Réduire la largeur des cases de jour */
-    height: 75px; /* Réduire la hauteur des cases de jour */
+    width: 100%; /* Rendre chaque case flexible */
+    height: auto; /* Adapter la hauteur */
+    aspect-ratio: 1/1; /* Assurer une forme carrée pour chaque case */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     background-color: white;
     cursor: pointer;
     position: relative;
-    border: 1px solid #ddd; /* Ajouter une bordure fine */
-    border-radius: 4px; /* Coins arrondis pour les cases de jour */
+    border: 1px solid #ddd;
+    border-radius: 4px;
     padding: 2px;
 }
 
 .day:hover {
-    color: #757575; /* Darker Facebook blue */
+    color: #757575;
 }
 
 .day.event::after {
     content: "";
     position: absolute;
-    bottom: 3px; /* Ajuster la position du point d'événement */
-    right: 3px; /* Ajuster la position du point d'événement */
-    width: 8px; /* Réduire la taille du point d'événement */
-    height: 8px; /* Réduire la taille du point d'événement */
+    bottom: 3px;
+    right: 3px;
+    width: 5px; /* Ajuster la taille du point d'événement pour mobile */
+    height: 5px;
     background-color: red;
     border-radius: 50%;
 }
 
 .event-name {
-    font-size: 0.8em;
+    font-size: 0.7em; /* Réduire la taille du texte pour mobile */
     font-weight: bold;
     color: blue;
     margin-top: 10px;
@@ -443,56 +446,30 @@ nav ul .dropdown:hover .dropdown-content {
 .weekday {
     font-weight: bold;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0; /* Réduire le padding pour mobile */
     background-color: #f0f0f0;
-    border: 1px solid #ddd; /* Ajouter une bordure fine */
+    border: 1px solid #ddd;
 }
 
 .today {
-    background-color: #ddd; /* Yellow background for today's date */
+    background-color: #ddd;
     color: black;
-    border: 2px solid black; /* Slightly darker border */
+    border: 2px solid black;
 }
 
-/* --- Responsive design pour le calendrier--- */
+/* Media query pour adapter sur les petits écrans */
 @media (max-width: 768px) {
     .calendar {
-        grid-template-columns: repeat(7, 1fr); /* Maintient 7 colonnes */
-        padding: 5px; /* Réduit le padding sur les petits écrans */
+        grid-template-columns: repeat(7, 1fr); /* Garder la disposition en grille */
     }
 
     .day {
-        width: 100%; /* Les cases prennent toute la largeur disponible si la valeur ici est 100% */
+        width: 100%;
         height: auto;
-        padding: 8px; /* Ajuste le padding pour les petits écrans */
+        aspect-ratio: 1/1; /* Garder les cases carrées */
     }
 
     .calendar-header {
-        display : flex;
-        justify-content : space-evenly;
-        align-items : center;
-        flex-direction: column; /* Change la direction des éléments du header pour mobile */
-        padding: 0 5px;
-    }
-
-    .calendar-header button {
-        width: 100%;
-        margin-bottom: 5px; /* Ajouter de l'espace entre les boutons et le texte */
+        flex-direction: column;
     }
 }
-
-/*@media (max-width: 480px) {
-    .calendar {
-        grid-template-columns: repeat(2, 1fr); /* Réduit à 2 colonnes sur très petits écrans 
-    }
-
-    .day {
-        padding: 5px; /* Réduit encore le padding pour les très petits écrans 
-        font-size: 0.8em; /* Réduit la taille du texte 
-    }
-
-    .calendar-header h2 {
-        font-size: 1.2em; /* Ajuste la taille du texte du titre pour mobile 
-    }
-
-} */

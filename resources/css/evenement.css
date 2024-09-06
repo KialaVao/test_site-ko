@@ -301,7 +301,7 @@ nav ul .dropdown:hover .dropdown-content {
     transition: 0.3s;
 }
 
-.close:hover,
+.close:hover, 
 .close:focus {
     color: #bbb;
     text-decoration: none;

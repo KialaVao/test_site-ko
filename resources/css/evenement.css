@@ -376,7 +376,7 @@ nav ul .dropdown:hover .dropdown-content {
 /*Calendrier*/
 
 .calendar-container {
-    width: 100%; /* Prendre toute la largeur disponible sur mobile */
+    /*width: 100%; /* Prendre toute la largeur disponible sur mobile */
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -387,7 +387,7 @@ nav ul .dropdown:hover .dropdown-content {
     display: flex;
     justify-content: space-between; /* Espacement adapté aux petits écrans */
     align-items: center;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px; */
 }
 
 .calendar {

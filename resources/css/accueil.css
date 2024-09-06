@@ -5,15 +5,43 @@ body {
     background-color: #FAFAFA;
 } 
 
-header {
-    background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
-    background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
-    background-position: center; /* Pour centrer l'image */
+/*header {
+    background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image 
+    background-size: cover; /* Pour s'assurer que l'image couvre tout le header 
+    background-position: center; /* Pour centrer l'image 
     color: white;
     padding: 5em 1em;
     text-align: center;
     position: relative;
-} 
+} */
+
+header {
+    background-image: url('../img/interieur2.jpg'); /* Chemin de l'image */
+    background-size: cover; /* Couvre tout le header */
+    background-position: center; /* Centre l'image */
+    color: white;
+    padding: 10vh 2vw; /* Utilisation d'unités relatives pour rendre le padding responsive */
+    text-align: center;
+    position: relative;
+    min-height: 50vh; /* Assure un minimum de hauteur pour l'en-tête */
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+    header {
+        padding: 8vh 1vw; /* Réduire le padding sur mobile */
+        background-position: top; /* Ajuster la position de l'image sur mobile */
+        background-size: cover; /* S'assurer que l'image couvre tout le header sur mobile */
+    }
+
+    header h1 {
+        font-size: 5vw; /* Taille de police responsive pour les titres */
+    }
+
+    header p {
+        font-size: 3.5vw; /* Ajustement de la taille de la police pour le texte */
+    }
+}
 
 nav ul {
     background-color: #555555;
@@ -134,59 +162,6 @@ header .image-container img {
     border-radius: 8px; /* Optional: Add rounded corners */
 }
 
-/* Media queries pour différentes tailles d'écran */
-@media (max-width: 1200px) {
-    header {
-        padding: 3em 1em; /* Ajuster la largeur pour les écrans moyens */
-    }
-    header .image-container img {
-        max-width: 100px; /* Ajuster la taille de l'image */
-    }
-    #parole-du-jour, #homelie  {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
-    }
-}
-
-@media (max-width: 768px) {
-	header {
-        padding: 2em 1em; /* Ajuster la largeur pour les écrans moyens */
-	}	
-    header .image-container {
-        top: 40%; /* Ajuster la position pour les écrans moyens */
-        left: 5%;
-        transform: translateY(-50%);
-    }	
-    header .image-container img {
-        max-width: 25px; /* Ajuster la taille de l'image */
-    }
-    .content-row {
-        flex-direction: column;
-    }
-    .map-container iframe {
-        height: 200%;
-    }	
-}
-
-/* Styles pour les petits écrans de téléphone */
-@media (max-width: 480px) {
-    .social-media-icons a {
-        font-size: 1.5em;
-    }
-    .map-container iframe {
-        height: 150px;
-    }
-    header h1 {
-        font-size: 1.2em;
-    }
-    header .image-container {
-        /*top: 40%; /* Ajuster la position pour les petits écrans */
-        left: 10%;
-        transform: translateY(-50%);
-    }
-    header .image-container img {
-        max-width: 30px; /* Ajuster la taille de l'image */
-    }
-}
 
 /* Styles pour la section Parole du jour et Homélie */
 #parole-du-jour, #homelie-content ,#homelie {

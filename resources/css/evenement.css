@@ -468,6 +468,9 @@ nav ul .dropdown:hover .dropdown-content {
     }
 
     .calendar-header {
+        display : flex;
+        justify-content : space-evenly;
+        align-items : center;
         flex-direction: column; /* Change la direction des éléments du header pour mobile */
         padding: 0 5px;
     }
@@ -478,18 +481,18 @@ nav ul .dropdown:hover .dropdown-content {
     }
 }
 
-@media (max-width: 480px) {
+/*@media (max-width: 480px) {
     .calendar {
-        grid-template-columns: repeat(2, 1fr); /* Réduit à 2 colonnes sur très petits écrans */
+        grid-template-columns: repeat(2, 1fr); /* Réduit à 2 colonnes sur très petits écrans 
     }
 
     .day {
-        padding: 5px; /* Réduit encore le padding pour les très petits écrans */
-        font-size: 0.8em; /* Réduit la taille du texte */
+        padding: 5px; /* Réduit encore le padding pour les très petits écrans 
+        font-size: 0.8em; /* Réduit la taille du texte 
     }
 
     .calendar-header h2 {
-        font-size: 1.2em; /* Ajuste la taille du texte du titre pour mobile */
+        font-size: 1.2em; /* Ajuste la taille du texte du titre pour mobile 
     }
 
-}
+} */

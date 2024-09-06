@@ -394,7 +394,7 @@ nav ul .dropdown:hover .dropdown-content {
     align-items: center;
     justify-content: center;
     width: 45%; /* Utiliser toute la largeur sur mobile */
-    max-width: 45%; /* Limiter la largeur totale du calendrier */
+    max-width: 40%; /* Limiter la largeur totale du calendrier */
     margin: 0 auto;
     padding: 10px;
     background-color: #FAFAFA;

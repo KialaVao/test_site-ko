@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 console.log("Evangile data:", evangile); // Inspecter la structure de l'objet évangile
                 if (evangile) {
                     const content = `
-                        <h4>"Date du jour:"${date}</h4>
+                        <h4>Date:${date}</h4>
                         <h5>${evangile.titre}</h5>
                         <p>${evangile.contenu}</p> <!-- Adaptez selon la structure réelle -->
                     `;

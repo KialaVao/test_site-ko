@@ -378,7 +378,7 @@ nav ul .dropdown:hover .dropdown-content {
 .calendar-container {
     /*width: 100%; /* Prendre toute la largeur disponible sur mobile */
     margin-bottom: 20px;
-    display: flex;
+    /*display: flex; */
     justify-content: center;
     align-items: center;
 }

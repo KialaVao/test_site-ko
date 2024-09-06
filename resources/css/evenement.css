@@ -464,7 +464,7 @@ nav ul .dropdown:hover .dropdown-content {
     }
 
     .day {
-        width: 100%;
+        width: 90%;
         height: auto;
         aspect-ratio: 1/1; /* Garder les cases carrées */
     }

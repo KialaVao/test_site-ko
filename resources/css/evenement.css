@@ -459,6 +459,8 @@ nav ul .dropdown:hover .dropdown-content {
     .calendar {
         grid-template-columns: repeat(7, 1fr); /* Garder la disposition en grille */
         width: 100%; /* Utiliser toute la largeur sur mobile */
+        max-width : 100%;
+        height: auto;
     }
 
     .day {

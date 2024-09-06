@@ -492,4 +492,8 @@ nav ul .dropdown:hover .dropdown-content {
         font-size: 1.2em; /* Ajuste la taille du texte du titre pour mobile */
     }
 
+    .calendar-header button {
+        width: 100%;
+        margin-bottom: 5px; /* Ajouter de l'espace entre les boutons et le texte */
+    }
 }

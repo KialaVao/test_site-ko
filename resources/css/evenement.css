@@ -467,6 +467,7 @@ nav ul .dropdown:hover .dropdown-content {
     }
 
     .calendar-header {
+        display: flex;
         flex-direction: column;
     }
 }

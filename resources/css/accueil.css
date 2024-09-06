@@ -23,7 +23,7 @@ header {
     padding: 10vh 2vw; /* Utilisation d'unités relatives pour rendre le padding responsive */
     text-align: center;
     position: relative;
-    min-height: 50vh; /* Assure un minimum de hauteur pour l'en-tête */
+    /*min-height: 10vh; /* Assure un minimum de hauteur pour l'en-tête */
 }
 
 /* Media query pour les petits écrans */
@@ -35,11 +35,11 @@ header {
     }
 
     header h1 {
-        font-size: 5vw; /* Taille de police responsive pour les titres */
+        font-size: 3vw; /* Taille de police responsive pour les titres */
     }
 
     header p {
-        font-size: 3.5vw; /* Ajustement de la taille de la police pour le texte */
+        font-size: 2vw; /* Ajustement de la taille de la police pour le texte */
     }
 }
 

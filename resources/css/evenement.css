@@ -376,16 +376,13 @@ nav ul .dropdown:hover .dropdown-content {
 /*Calendrier*/
 
 .calendar-container {
-    /*width: 100%; /* Prendre toute la largeur disponible sur mobile */
     margin-bottom: 20px;
-    /*display: flex; */
-    /*justify-content: center; */
     align-items: center;
 }
 
 .calendar-header {
     display: flex;
-    justify-content: space-between; /* Espacement adapté aux petits écrans */
+    justify-content: space-evenly; /* Espacement adapté aux petits écrans */
     align-items: center;
     /*margin-bottom: 10px; */
 }
@@ -396,8 +393,8 @@ nav ul .dropdown:hover .dropdown-content {
     gap: 2px;
     align-items: center;
     justify-content: center;
-    width: 100%; /* Utiliser toute la largeur sur mobile */
-    max-width: 100%; /* Limiter la largeur totale du calendrier */
+    width: 75%; /* Utiliser toute la largeur sur mobile */
+    max-width: 45%; /* Limiter la largeur totale du calendrier */
     margin: 0 auto;
     padding: 10px;
     background-color: #FAFAFA;
@@ -405,7 +402,7 @@ nav ul .dropdown:hover .dropdown-content {
 }
 
 .day {
-    width: 100%; /* Rendre chaque case flexible */
+    /*width: 100%; /* Rendre chaque case flexible */
     height: auto; /* Adapter la hauteur */
     aspect-ratio: 1/1; /* Assurer une forme carrée pour chaque case */
     display: flex;
@@ -464,7 +461,7 @@ nav ul .dropdown:hover .dropdown-content {
     }
 
     .day {
-        width: 100%;
+        /*width: 100%;*/
         height: auto;
         aspect-ratio: 1/1; /* Garder les cases carrées */
     }

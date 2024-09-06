@@ -86,9 +86,9 @@ header .image-container img {
 
 @media (max-width: 480px) {
     header .image-container {
-        top: 40%; /* Ajuster la position pour les petits écrans */
+        /*top: 40%; /* Ajuster la position pour les petits écrans */
         left: 5%;
-        transform: translateY(-50%);
+        /*transform: translateY(-50%); */
     }
     header .image-container img {
         max-width: 30px; /* Ajuster la taille de l'image */

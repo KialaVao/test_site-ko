@@ -1,0 +1,326 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
+/* Styles du header */
+header {
+    background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
+    background-size: cover; /* L'image couvre tout le header */
+    background-position: center; /* Centre l'image dans le header */
+    color: white;
+    padding: 5em 1em; /* Grand padding pour les grands écrans */
+    text-align: center;
+    position: relative;
+}
+
+/* Image dans le header */
+header .image-container {
+    position: absolute;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+header .image-container img {
+    max-width: 75px; /* Taille par défaut de l'image */
+    height: auto;
+    border: 1px solid black;
+}
+
+/* Media queries pour différentes tailles d'écran */
+
+    /* Écrans moyens (jusqu'à 1200px) */
+@media (max-width: 1200px) {
+    header {
+        padding: 3em 1em; /* Réduction du padding pour les écrans moyens */
+    }
+    #parole-du-jour, #homelie {
+        font-size: 0.9rem; /* Réduction de la taille de police pour les écrans moyens */
+    }
+}
+
+    /* Écrans petits (jusqu'à 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 2em 1em; /* Réduction supplémentaire du padding */
+    }
+
+    header .image-container {
+        /*top: 40%; /* Positionnement de l'image pour les petits écrans */
+        left: 5%;
+        transform: translateY(-50%);
+    }
+
+    header .image-container img {
+        max-width: 47px; /* Réduction de la taille de l'image */
+    }
+
+    .content-row {
+        flex-direction: column; /* Les éléments se disposent en colonne sur petits écrans */
+    }
+
+    .map-container iframe {
+        height: 200%; /* Ajustement de la taille de la carte */
+    }
+}
+
+/* Écrans très petits (jusqu'à 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2em; /* Taille plus petite du titre */
+    }
+
+    header .image-container {
+        left: 10%; /* Réajustement de la position de l'image */
+    }
+
+    header .image-container img {
+        max-width: 30px; /* Taille plus petite de l'image */
+    }
+
+    .map-container iframe {
+        height: 150px; /* Ajustement de la hauteur de l'iframe */
+    }
+
+    .social-media-icons a {
+        font-size: 1.5em; /* Taille des icônes réduite */
+    }
+}
+
+/* Styles de la navigation */
+nav ul {
+    background-color: #555555;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centre les éléments */
+    width: 100%; /* Prend toute la largeur disponible */
+    box-sizing: border-box; /* Gère les marges et padding */
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111; /* Changement de couleur au survol */
+}
+
+/* Menu déroulant */
+nav ul li.dropdown {
+    display: inline-block;
+}
+
+nav ul .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Navigation responsive */
+
+/* Petits écrans (jusqu'à 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: space-around; /* Répartit les éléments avec un espace égal */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Taille du texte légèrement réduite */
+    }
+}
+
+/* Très petits écrans (jusqu'à 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        justify-content: space-between; /* Gère l'espacement pour les très petits écrans */
+    }
+
+    nav ul li a {
+        padding: 8px 5px; /* Espacement réduit */
+        font-size: 12px; /* Réduction de la taille du texte */
+    }
+}
+
+/* Styles du main */
+main {
+    padding: 1em;
+}
+
+/* Styles du footer */
+footer {
+    background: #555555; 
+    color: white;
+    text-align: center;
+    padding: 0.2em;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Conteneur avec marges centrées */
+.margin-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.margin-container a {
+    display: inline-block;
+    color: white;
+    margin: 0 10px;
+}
+
+/* Icônes des réseaux sociaux */
+.social-media-icons {
+    text-align: center;
+    margin-top: 0;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 2em; /* Taille des icônes */
+}
+
+/* Couleurs spécifiques aux réseaux sociaux */
+.social-icon.facebook {
+    color: #2f4779;
+}
+
+.social-icon.instagram {
+    color: #E1306C;
+}
+
+/* Hover effects pour les réseaux sociaux */
+.social-icon.facebook:hover {
+    color: #213153;
+}
+
+.social-icon.instagram:hover {
+    color: #C13584;
+}
+
+/* Flexbox styles */
+.content-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    flex-wrap: wrap; /* Permet aux éléments de se placer sur plusieurs lignes */
+}
+
+.content-row > div {
+    flex: 1;
+    min-width: 200px; /* Largeur minimale pour chaque élément */
+    margin-bottom: 10px;
+}
+
+/* Bloc de texte */
+.text-block {
+    max-width: 1000px;
+    padding: 0;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+}
+
+/* Styles pour les sections Parole du jour et Homélie */
+#parole-du-jour, #homelie-content, #homelie {
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    border: 2px solid #545454;
+    margin-top: 20px;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+#parole-du-jour h4, #parole-du-jour h5 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+#parole-du-jour p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+/* Cacher la navigation par défaut sur les petits écrans */
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Masque le menu par défaut */
+        flex-direction: column; /* Aligne les éléments en colonne */
+        position: absolute;
+        top: 100%; /* Positionne le menu en dessous du header */
+        width: 100%;
+        background-color: #555555;
+        left: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 1em;
+        font-size: 16px;
+    }
+
+    /* Afficher l'icône du menu hamburger */
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    /* Animation pour le menu déroulant */
+    nav ul.active {
+        display: flex; /* Afficher le menu lorsque l'icône est cliquée */
+    }
+}
+
+/* Icône hamburger */
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}

@@ -328,11 +328,11 @@ nav ul {
         display: flex; /* Affiche le menu quand l'icône est cliquée */
     }
 
-    nav ul li a {
+   nav ul li a {
         display: block;
         color: white;
-        /*text-align: center;
-        padding: 10px 10px; */
+        text-align: left;
+        /*padding: 10px 10px; */
         text-decoration: none;
-    }
+    } 
 }

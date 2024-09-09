@@ -95,6 +95,30 @@ nav ul li a:hover {
     background-color: #111; 
 }
 
+/* Pour les petits écrans (moins de 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Alignement en colonne */
+        align-items: center; /* Centrer les éléments */
+    }
+
+    nav ul li a {
+        padding: 10px 15px; /* Espacement réduit pour les petits écrans */
+    }
+}
+
+/* Pour les très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        background-color: #333333; /* Changement de couleur pour une meilleure visibilité */
+    }
+
+    nav ul li a {
+        padding: 12px 10px; /* Espacement encore plus réduit */
+        font-size: 14px; /* Réduction de la taille du texte */
+    }
+}
+
 main {
     padding: 1em;
 }

@@ -18,28 +18,22 @@ header {
 /* Media queries pour différentes tailles d'écran */
 @media (max-width: 1200px) {
     header {
-        padding: 3em 1em; /* Ajuster la largeur pour les écrans moyens */
-    }
-    header .image-container img {
-        max-width: 100px; /* Ajuster la taille de l'image */
+        padding: 3em 1em;
     }
     #parole-du-jour, #homelie  {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 768px) {
-	header {
-        padding: 2em 1em; /* Ajuster la largeur pour les écrans moyens */
-	}	
+    header {
+        padding: 2em 1em;
+    }	
     header .image-container {
-        top: 40%; /* Ajuster la position pour les écrans moyens */
+        top: 40%;
         left: 5%;
         transform: translateY(-50%);
     }	
-    header .image-container img {
-        max-width: 25px; /* Ajuster la taille de l'image */
-    }
     .content-row {
         flex-direction: column;
     }
@@ -48,7 +42,6 @@ header {
     }	
 }
 
-/* Styles pour les petits écrans de téléphone */
 @media (max-width: 480px) {
     .social-media-icons a {
         font-size: 1.5em;
@@ -60,29 +53,30 @@ header {
         font-size: 1.2em;
     }
     header .image-container {
-        /*top: 40%; /* Ajuster la position pour les petits écrans */
         left: 10%;
         transform: translateY(-50%);
     }
     header .image-container img {
-        max-width: 30px; /* Ajuster la taille de l'image */
+        max-width: 30px;
     }
 }
 
+/* Styles de la navigation */
 nav ul {
     background-color: #555555;
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center the nav items */
+    justify-content: center; 
     width: 100%;
-    box-sizing: border-box; /* Évite que les marges et padding dépassent */
+    box-sizing: border-box;
 }
 
 nav ul li {
     margin: 0;
     padding: 0;
+    float: none;
 }
 
 nav ul li a {
@@ -97,201 +91,7 @@ nav ul li a:hover {
     background-color: #111; 
 }
 
-/* Pour les petits écrans (moins de 768px) */
-@media (max-width: 768px) {
-    nav ul {
-        justify-content: space-around; /* Distribue les éléments avec un espace égal */
-        overflow: visible;
-    }
-
-    nav ul li a {
-        padding: 10px 10px; /* Réduction de l'espacement pour plus de compacité */
-        font-size: 16px; /* Taille du texte légèrement réduite */
-    }
-}
-
-/* Pour les très petits écrans (moins de 480px) */
-@media (max-width: 480px) {
-    nav ul {
-        justify-content: space-between; /* Gère l'espacement des éléments sur des petits écrans */
-        overflow: visible;
-    }
-
-    nav ul li a {
-        padding: 8px 5px; /* Espacement réduit pour les très petits écrans */
-        font-size: 12px; /* Réduction supplémentaire de la taille du texte */
-    }
-}
-
-main {
-    padding: 1em;
-}
-
-footer {
-    /*background: linear-gradient(#FAFAFA, #333); */
-    background: #555555; 
-    color: white;
-    text-align: center;
-    padding: 0.2em;
-    /*position: fixed; */
-    width: 100%;
-    bottom: 0;
-} 
-
-header .image-container {
-    position: absolute;
-    /*top: 75%;*/
-    left: 7%;
-    transform: translateY(-50%);
-}
-
-header .image-container img {
-    max-width: 100px; /* Adjust as necessary */
-    height: auto;
-    border: 1px solid black;
-} 
-
-/* Pour les petits écrans (moins de 768px) */
-@media (max-width: 768px) {
-    header .image-container {
-        position: absolute;
-        top: 78%;
-        left: 5%;
-        transform: translateY(-50%);
-    }
-    header .image-container img {
-        max-width: 47px; /* Adjust as necessary */
-        height: auto;
-        border: 1px solid black;
-    } 
-}
-
-/* Pour les très petits écrans (moins de 480px) */
-@media (max-width: 480px) {
-    header .image-container {
-        position: absolute;
-        top: 78%;
-        left: 5%;
-        transform: translateY(-50%);
-    }
-    header .image-container img {
-        max-width: 40px; /* Adjust as necessary */
-        height: auto;
-        border: 1px solid black;
-    } 
-}
-
-.margin-container {
-    width: 100%; /* Largeur du conteneur */
-    margin: 0 auto; /* Marges automatiques à gauche et à droite */
-    text-align: center; /* Centre le texte à l'intérieur du conteneur */
-}
-
-.margin-container a {
-    display: inline-block;
-    color: white;
-    margin: 0 10px; /* Espacement entre les liens */
-}
-
-.social-media-icons {
-    text-align: center;
-    margin-top: 0;
-}
-
-.social-media-icons a {
-    text-decoration: none;
-    color: white; /* Icon color */
-    margin: 0 10px; /* Spacing between icons */
-    font-size: 2em; /* Icon size */
-} 
-
-/* Couleurs spécifiques aux réseaux sociaux */
-.social-icon.facebook {
-    color: #2f4779; /* Facebook blue */
-}
-
-.social-icon.instagram {
-    color: #E1306C; /* Instagram pink */
-}
-
-/* Hover effects */
-.social-icon.facebook:hover {
-    color: #213153; /* Darker Facebook blue */
-}
-
-.social-icon.instagram:hover {
-    color: #C13584; /* Darker Instagram pink */
-}
-
-/* Flexbox styles */
-.content-row {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: flex-start; /* Align items to the start */
-    gap: 100px; /* Space between items */
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-}
-
-.content-row > div {
-    flex: 1; /* Ensure items take equal space */
-    min-width: 200px; /* Ensure a minimum width for each item */
-    margin-bottom: 10px; /* Add bottom margin for spacing when items wrap */
-}
-
-/* Style for the text block */
-.text-block {
-    max-width: 1000px; /* Set a max-width for the text block */
-    padding: 0px; /* Add some padding */
-    background-color: #FAFAFA; /* Optional: Add a background color */
-    border-radius: 8px; /* Optional: Add rounded corners */
-}
-
-
-/* Styles pour la section Parole du jour et Homélie */
-#parole-du-jour, #homelie-content ,#homelie {
-    background-color: #FAFAFA;
-    border-radius: 8px;
-    border: 2px solid #545454;
-    margin-top: 20px;
-    padding: 1em;
-    font-size: 1rem;
-}
-
-#parole-du-jour h4, #parole-du-jour h5 {
-    margin: 10px 0;
-    font-size: 1.5em;
-}
-
-#parole-du-jour p {
-    margin: 10px 0;
-    font-size: 1.2em;
-}
-
-/* Styles pour le menu déroulant */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover, .dropdown:hover .dropbtn {
-    background-color: #111;
-}
-
+/* Menu déroulant */
 nav ul li.dropdown {
     display: inline-block;
 }
@@ -313,11 +113,158 @@ nav ul .dropdown-content a {
     text-align: left;
 }
 
-nav ul .dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
 nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
 
+/* Responsive pour nav */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: space-around;
+        overflow: visible;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        justify-content: space-between;
+    }
+
+    nav ul li a {
+        padding: 8px 5px;
+        font-size: 12px;
+    }
+}
+
+/* Styles supplémentaires */
+main {
+    padding: 1em;
+}
+
+footer {
+    background: #555555; 
+    color: white;
+    text-align: center;
+    padding: 0.2em;
+    width: 100%;
+    bottom: 0;
+} 
+
+header .image-container {
+    position: absolute;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+header .image-container img {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid black;
+} 
+
+@media (max-width: 768px) {
+    header .image-container {
+        top: 78%;
+        left: 5%;
+    }
+    header .image-container img {
+        max-width: 47px;
+    } 
+}
+
+@media (max-width: 480px) {
+    header .image-container img {
+        max-width: 40px;
+    } 
+}
+
+/* Conteneur pour les marges */
+.margin-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.margin-container a {
+    display: inline-block;
+    color: white;
+    margin: 0 10px;
+}
+
+/* Icônes des réseaux sociaux */
+.social-media-icons {
+    text-align: center;
+    margin-top: 0;
+}
+
+.social-media-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 2em;
+} 
+
+/* Couleurs spécifiques aux réseaux sociaux */
+.social-icon.facebook {
+    color: #2f4779;
+}
+
+.social-icon.instagram {
+    color: #E1306C;
+}
+
+/* Hover effects pour les réseaux sociaux */
+.social-icon.facebook:hover {
+    color: #213153;
+}
+
+.social-icon.instagram:hover {
+    color: #C13584;
+}
+
+/* Flexbox styles */
+.content-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.content-row > div {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 10px;
+}
+
+/* Style pour le bloc de texte */
+.text-block {
+    max-width: 1000px;
+    padding: 0;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+}
+
+/* Styles pour les sections Parole du jour et Homélie */
+#parole-du-jour, #homelie-content, #homelie {
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    border: 2px solid #545454;
+    margin-top: 20px;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+#parole-du-jour h4, #parole-du-jour h5 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+#parole-du-jour p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}

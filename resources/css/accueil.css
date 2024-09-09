@@ -1,63 +1,92 @@
+/* Styles globaux */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FAFAFA;
-} 
+}
 
+/* Styles du header */
 header {
     background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
-    background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
-    background-position: center; /* Pour centrer l'image */
+    background-size: cover; /* L'image couvre tout le header */
+    background-position: center; /* Centre l'image dans le header */
     color: white;
-    padding: 5em 1em;
+    padding: 5em 1em; /* Grand padding pour les grands écrans */
     text-align: center;
     position: relative;
-} 
+}
+
+/* Image dans le header */
+header .image-container {
+    position: absolute;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+header .image-container img {
+    max-width: 100px; /* Taille par défaut de l'image */
+    height: auto;
+    border: 1px solid black;
+}
 
 /* Media queries pour différentes tailles d'écran */
+
+/* Écrans moyens (jusqu'à 1200px) */
 @media (max-width: 1200px) {
     header {
-        padding: 3em 1em;
+        padding: 3em 1em; /* Réduction du padding pour les écrans moyens */
     }
-    #parole-du-jour, #homelie  {
-        font-size: 0.9rem;
+    #parole-du-jour, #homelie {
+        font-size: 0.9rem; /* Réduction de la taille de police pour les écrans moyens */
     }
 }
 
+/* Écrans petits (jusqu'à 768px) */
 @media (max-width: 768px) {
     header {
-        padding: 2em 1em;
-    }	
+        padding: 2em 1em; /* Réduction supplémentaire du padding */
+    }
+
     header .image-container {
-        top: 40%;
+        top: 40%; /* Positionnement de l'image pour les petits écrans */
         left: 5%;
         transform: translateY(-50%);
-    }	
-    .content-row {
-        flex-direction: column;
     }
+
+    header .image-container img {
+        max-width: 47px; /* Réduction de la taille de l'image */
+    }
+
+    .content-row {
+        flex-direction: column; /* Les éléments se disposent en colonne sur petits écrans */
+    }
+
     .map-container iframe {
-        height: 200%;
-    }	
+        height: 200%; /* Ajustement de la taille de la carte */
+    }
 }
 
+/* Écrans très petits (jusqu'à 480px) */
 @media (max-width: 480px) {
-    .social-media-icons a {
-        font-size: 1.5em;
-    }
-    .map-container iframe {
-        height: 150px;
-    }
     header h1 {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Taille plus petite du titre */
     }
+
     header .image-container {
-        left: 10%;
-        transform: translateY(-50%);
+        left: 10%; /* Réajustement de la position de l'image */
     }
+
     header .image-container img {
-        max-width: 30px;
+        max-width: 30px; /* Taille plus petite de l'image */
+    }
+
+    .map-container iframe {
+        height: 150px; /* Ajustement de la hauteur de l'iframe */
+    }
+
+    .social-media-icons a {
+        font-size: 1.5em; /* Taille des icônes réduite */
     }
 }
 
@@ -68,15 +97,14 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; 
-    width: 100%;
-    box-sizing: border-box;
+    justify-content: center; /* Centre les éléments */
+    width: 100%; /* Prend toute la largeur disponible */
+    box-sizing: border-box; /* Gère les marges et padding */
 }
 
 nav ul li {
     margin: 0;
     padding: 0;
-    float: none;
 }
 
 nav ul li a {
@@ -88,7 +116,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #111; 
+    background-color: #111; /* Changement de couleur au survol */
 }
 
 /* Menu déroulant */
@@ -101,7 +129,7 @@ nav ul .dropdown-content {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -113,38 +141,45 @@ nav ul .dropdown-content a {
     text-align: left;
 }
 
+nav ul .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
 nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Responsive pour nav */
+/* Navigation responsive */
+
+/* Petits écrans (jusqu'à 768px) */
 @media (max-width: 768px) {
     nav ul {
-        justify-content: space-around;
-        overflow: visible;
+        justify-content: space-around; /* Répartit les éléments avec un espace égal */
     }
 
     nav ul li a {
-        font-size: 16px;
+        font-size: 16px; /* Taille du texte légèrement réduite */
     }
 }
 
+/* Très petits écrans (jusqu'à 480px) */
 @media (max-width: 480px) {
     nav ul {
-        justify-content: space-between;
+        justify-content: space-between; /* Gère l'espacement pour les très petits écrans */
     }
 
     nav ul li a {
-        padding: 8px 5px;
-        font-size: 12px;
+        padding: 8px 5px; /* Espacement réduit */
+        font-size: 12px; /* Réduction de la taille du texte */
     }
 }
 
-/* Styles supplémentaires */
+/* Styles du main */
 main {
     padding: 1em;
 }
 
+/* Styles du footer */
 footer {
     background: #555555; 
     color: white;
@@ -152,37 +187,9 @@ footer {
     padding: 0.2em;
     width: 100%;
     bottom: 0;
-} 
-
-header .image-container {
-    position: absolute;
-    left: 7%;
-    transform: translateY(-50%);
 }
 
-header .image-container img {
-    max-width: 100px;
-    height: auto;
-    border: 1px solid black;
-} 
-
-@media (max-width: 768px) {
-    header .image-container {
-        top: 78%;
-        left: 5%;
-    }
-    header .image-container img {
-        max-width: 47px;
-    } 
-}
-
-@media (max-width: 480px) {
-    header .image-container img {
-        max-width: 40px;
-    } 
-}
-
-/* Conteneur pour les marges */
+/* Conteneur avec marges centrées */
 .margin-container {
     width: 100%;
     margin: 0 auto;
@@ -205,8 +212,8 @@ header .image-container img {
     text-decoration: none;
     color: white;
     margin: 0 10px;
-    font-size: 2em;
-} 
+    font-size: 2em; /* Taille des icônes */
+}
 
 /* Couleurs spécifiques aux réseaux sociaux */
 .social-icon.facebook {
@@ -232,16 +239,16 @@ header .image-container img {
     align-items: center;
     justify-content: flex-start;
     gap: 100px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permet aux éléments de se placer sur plusieurs lignes */
 }
 
 .content-row > div {
     flex: 1;
-    min-width: 200px;
+    min-width: 200px; /* Largeur minimale pour chaque élément */
     margin-bottom: 10px;
 }
 
-/* Style pour le bloc de texte */
+/* Bloc de texte */
 .text-block {
     max-width: 1000px;
     padding: 0;

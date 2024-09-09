@@ -275,45 +275,15 @@ footer {
     margin: 10px 0;
     font-size: 1.2em;
 }
-/* Cacher la navigation par défaut sur les petits écrans */
+
+/* Positionnement du menu hamburger dans la barre de navigation */
 .nav-toggle {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* Masque le menu par défaut */
-        flex-direction: column; /* Aligne les éléments en colonne */
-        position: absolute;
-        top: 100%; /* Positionne le menu en dessous du header */
-        width: 100%;
-        background-color: #555555;
-        left: 0;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 0;
-    }
-
-    nav ul li a {
-        padding: 1em;
-        font-size: 16px;
-    }
-
-    /* Afficher l'icône du menu hamburger */
-    .nav-toggle {
-        display: block;
-        /*position: absolute;*/
-        top: 10px;
-        left: 10px;
-        cursor: pointer;
-    }
-
-    /* Animation pour le menu déroulant */
-    nav ul.active {
-        display: flex; /* Afficher le menu lorsque l'icône est cliquée */
-    }
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px; /* Positionne l'icône à gauche */
+    cursor: pointer;
+    z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
 }
 
 /* Icône hamburger en noir */
@@ -322,10 +292,39 @@ footer {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: black; /* Change la couleur ici en noir */
+    background-color: black; /* Icône en noir */
 }
 
-/* Change la couleur au survol */
-.nav-toggle:hover span {
-    background-color: #333; /* Couleur légèrement plus foncée lors du survol */
+/* Positionnement de la navigation en pleine largeur */
+nav {
+    display: flex;
+    justify-content: center; /* Centre les éléments de navigation */
+    align-items: center;
+    position: relative;
+    background-color: #555555;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustement de la navigation pour les petits écrans */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Cache le menu par défaut sur mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Positionne le menu en dessous de la barre de navigation */
+        left: 0;
+        width: 100%;
+        background-color: #555555;
+    }
+
+    nav ul.active {
+        display: flex; /* Affiche le menu quand l'icône est cliquée */
+    }
 }

@@ -72,7 +72,7 @@ header .image-container img {
     header {
         padding: 1em 1em; /* Réduction supplémentaire du padding */
     }
-    
+
     header h1 {
         font-size: 1.2em; /* Taille plus petite du titre */
     }
@@ -302,7 +302,10 @@ footer {
     font-size: 1.2em;
 }
 
-/* Positionnement du menu hamburger dans la barre de navigation */
+
+/* Ajustement de la navigation pour les petits écrans */
+@media (max-width: 768px) {
+    /* Positionnement du menu hamburger dans la barre de navigation */
 .nav-toggle {
     display: block;
     position: absolute;
@@ -338,27 +341,25 @@ nav ul {
     padding: 0;
 }
 
-/* Ajustement de la navigation pour les petits écrans */
-@media (max-width: 768px) {
-    nav ul {
-        display: none; /* Cache le menu par défaut sur mobile */
-        flex-direction: column;
-        position: absolute;
-        top: 100%; /* Positionne le menu en dessous de la barre de navigation */
-        left: 0;
-        width: 100%;
-        background-color: #555555;
-    }
+nav ul {
+    display: none; /* Cache le menu par défaut sur mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Positionne le menu en dessous de la barre de navigation */
+    left: 0;
+    width: 100%;
+    background-color: #555555;
+}
 
-    nav ul.active {
-        display: flex; /* Affiche le menu quand l'icône est cliquée */
-    }
+nav ul.active {
+    display: flex; /* Affiche le menu quand l'icône est cliquée */
+}
 
-   nav ul li a {
-        display: block;
-        color: white;
-        text-align: left;
-        /*padding: 10px 10px; */
-        text-decoration: none;
-    } 
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+} 
+
 }

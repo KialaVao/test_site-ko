@@ -159,6 +159,11 @@ header .image-container img {
         left: 5%;
         transform: translateY(-50%);
     }
+    header .image-container img {
+        max-width: 47px; /* Adjust as necessary */
+        height: auto;
+        border: 1px solid black;
+    } 
 }
 
 /* Pour les très petits écrans (moins de 480px) */
@@ -169,6 +174,11 @@ header .image-container img {
         left: 5%;
         transform: translateY(-50%);
     }
+    header .image-container img {
+        max-width: 45px; /* Adjust as necessary */
+        height: auto;
+        border: 1px solid black;
+    } 
 }
 
 .margin-container {

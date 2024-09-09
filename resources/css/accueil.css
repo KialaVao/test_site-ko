@@ -151,6 +151,26 @@ header .image-container img {
     border: 1px solid black;
 } 
 
+/* Pour les petits écrans (moins de 768px) */
+@media (max-width: 768px) {
+    header .image-container {
+        position: absolute;
+        top: 78%;
+        left: 5%;
+        transform: translateY(-50%);
+    }
+}
+
+/* Pour les très petits écrans (moins de 480px) */
+@media (max-width: 480px) {
+    header .image-container {
+        position: absolute;
+        top: 78%;
+        left: 5%;
+        transform: translateY(-50%);
+    }
+}
+
 .margin-container {
     width: 100%; /* Largeur du conteneur */
     margin: 0 auto; /* Marges automatiques à gauche et à droite */

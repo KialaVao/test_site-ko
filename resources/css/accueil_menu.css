@@ -280,19 +280,19 @@ footer {
 .nav-toggle {
     display: block;
     position: absolute;
-    top: 15px;
+    top: 1px;
     left: 15px; /* Positionne l'icône à gauche */
     cursor: pointer;
     z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
 }
 
-/* Icône hamburger en noir */
+/* Icône hamburger en blanc */
 .nav-toggle span {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    background-color: black; /* Icône en noir */
+    background-color: white; /* Icône en blanc */
 }
 
 /* Positionnement de la navigation en pleine largeur */
@@ -302,7 +302,7 @@ nav {
     align-items: center;
     position: relative;
     background-color: #555555;
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 nav ul {

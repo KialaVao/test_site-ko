@@ -69,60 +69,6 @@ header {
     }
 }
 
-nav ul {
-    background-color: #555555;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Center the nav items */
-    width: 100%;
-    box-sizing: border-box; /* Évite que les marges et padding dépassent */
-}
-
-nav ul li {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px 10px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #111; 
-}
-
-/* Pour les petits écrans (moins de 768px) */
-@media (max-width: 768px) {
-    nav ul {
-        justify-content: space-around; /* Distribue les éléments avec un espace égal */
-        overflow: visible;
-    }
-
-    nav ul li a {
-        padding: 10px 10px; /* Réduction de l'espacement pour plus de compacité */
-        font-size: 16px; /* Taille du texte légèrement réduite */
-    }
-}
-
-/* Pour les très petits écrans (moins de 480px) */
-@media (max-width: 480px) {
-    nav ul {
-        justify-content: space-between; /* Gère l'espacement des éléments sur des petits écrans */
-        overflow: visible;
-    }
-
-    nav ul li a {
-        padding: 8px 5px; /* Espacement réduit pour les très petits écrans */
-        font-size: 12px; /* Réduction supplémentaire de la taille du texte */
-    }
-}
-
 main {
     padding: 1em;
 }

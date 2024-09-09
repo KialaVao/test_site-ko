@@ -32,7 +32,7 @@ header .image-container img {
 
 /* Media queries pour différentes tailles d'écran */
 
-/* Écrans moyens (jusqu'à 1200px) */
+    /* Écrans moyens (jusqu'à 1200px) */
 @media (max-width: 1200px) {
     header {
         padding: 3em 1em; /* Réduction du padding pour les écrans moyens */
@@ -42,14 +42,14 @@ header .image-container img {
     }
 }
 
-/* Écrans petits (jusqu'à 768px) */
+    /* Écrans petits (jusqu'à 768px) */
 @media (max-width: 768px) {
     header {
         padding: 2em 1em; /* Réduction supplémentaire du padding */
     }
 
     header .image-container {
-        top: 40%; /* Positionnement de l'image pour les petits écrans */
+        /*top: 40%; /* Positionnement de l'image pour les petits écrans */
         left: 5%;
         transform: translateY(-50%);
     }

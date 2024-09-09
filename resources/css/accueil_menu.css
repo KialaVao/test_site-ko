@@ -154,6 +154,18 @@ nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
 
+nav ul li {
+    float: left;
+}
+
+nav ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
 /* Navigation responsive */
 
 /* Petits écrans (jusqu'à 768px) */

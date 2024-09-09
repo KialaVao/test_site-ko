@@ -45,7 +45,7 @@ header .image-container img {
     /* Écrans petits (jusqu'à 768px) */
 @media (max-width: 768px) {
     header {
-        padding: 2em 1em; /* Réduction supplémentaire du padding */
+        padding: 1em 1em; /* Réduction supplémentaire du padding */
     }
 
     header .image-container {
@@ -69,6 +69,10 @@ header .image-container img {
 
 /* Écrans très petits (jusqu'à 480px) */
 @media (max-width: 480px) {
+    header {
+        padding: 1em 1em; /* Réduction supplémentaire du padding */
+    }
+    
     header h1 {
         font-size: 1.2em; /* Taille plus petite du titre */
     }

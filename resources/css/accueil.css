@@ -76,6 +76,8 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center; /* Center the nav items */
+    width: 100%;
+    box-sizing: border-box; /* Évite que les marges et padding dépassent */
 }
 
 nav ul li {
@@ -99,6 +101,7 @@ nav ul li a:hover {
 @media (max-width: 768px) {
     nav ul {
         justify-content: space-around; /* Distribue les éléments avec un espace égal */
+        overflow: visible;
     }
 
     nav ul li a {
@@ -111,6 +114,7 @@ nav ul li a:hover {
 @media (max-width: 480px) {
     nav ul {
         justify-content: space-between; /* Gère l'espacement des éléments sur des petits écrans */
+        overflow: visible;
     }
 
     nav ul li a {

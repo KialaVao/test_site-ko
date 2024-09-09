@@ -327,4 +327,12 @@ nav ul {
     nav ul.active {
         display: flex; /* Affiche le menu quand l'icône est cliquée */
     }
+
+    nav ul li a {
+        display: block;
+        color: white;
+        /*text-align: center;
+        padding: 10px 10px; */
+        text-decoration: none;
+    }
 }

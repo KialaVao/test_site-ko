@@ -98,24 +98,24 @@ nav ul li a:hover {
 /* Pour les petits écrans (moins de 768px) */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column; /* Alignement en colonne */
-        align-items: center; /* Centrer les éléments */
+        justify-content: space-around; /* Distribue les éléments avec un espace égal */
     }
 
     nav ul li a {
-        padding: 10px 15px; /* Espacement réduit pour les petits écrans */
+        padding: 10px 10px; /* Réduction de l'espacement pour plus de compacité */
+        font-size: 16px; /* Taille du texte légèrement réduite */
     }
 }
 
 /* Pour les très petits écrans (moins de 480px) */
 @media (max-width: 480px) {
     nav ul {
-        background-color: #333333; /* Changement de couleur pour une meilleure visibilité */
+        justify-content: space-between; /* Gère l'espacement des éléments sur des petits écrans */
     }
 
     nav ul li a {
-        padding: 12px 10px; /* Espacement encore plus réduit */
-        font-size: 14px; /* Réduction de la taille du texte */
+        padding: 8px 5px; /* Espacement réduit pour les très petits écrans */
+        font-size: 14px; /* Réduction supplémentaire de la taille du texte */
     }
 }
 

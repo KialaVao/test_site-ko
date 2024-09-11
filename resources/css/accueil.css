@@ -358,7 +358,7 @@ footer {
     }
 
     nav ul {
-        display: none; /* Cache le menu par défaut sur mobile */
+        display: flex; /* Cache le menu par défaut sur mobile */
         flex-direction: column;
         position: absolute;
         top: 100%; /* Positionne le menu en dessous de la barre de navigation */
@@ -411,7 +411,7 @@ footer {
     }
 
     nav ul {
-        display: none; /* Cache le menu par défaut sur mobile */
+        display: flex; /* Cache le menu par défaut sur mobile */
         flex-direction: column;
         position: absolute;
         top: 100%; /* Positionne le menu en dessous de la barre de navigation */

@@ -103,7 +103,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center; /* Centre les éléments */
-    width: 100%; /* Prend toute la largeur disponible */
+    /*width: 100%; /* Prend toute la largeur disponible */
     box-sizing: border-box; /* Gère les marges et padding */
 }
 

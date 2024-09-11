@@ -6,258 +6,46 @@ body {
 }
 
 header {
-    background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
-    background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
-    background-position: center; /* Pour centrer l'image */
+    background-image: url('../img/interieur2.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 5em 1em;
     text-align: center;
     position: relative;
-} 
-
-nav ul {
-    background-color: #555555;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* Center the nav items */
 }
 
-nav ul li {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    background-color: #111; 
-}
-
-main {
-    padding: 1em;
-    /*padding-top: 5%;*/
-}
-
-footer {
-    background-color: #555555;
-    color: white;
-    text-align: center;
-    padding: 0.2em;
-    /*position: fixed;*/
-    width: 100%;
-    bottom: 0;
-}
-
-header .image-container {
-    position: absolute;
-    top: 75%;
-    left: 50px;
-    transform: translateY(-50%);
-}
-
-header .image-container img {
-    max-width: 100px; /* Adjust as necessary */
-    height: auto;
-    border: 1px solid black;
-}
-
-.margin-container {
-    width: 100%; /* Full width */
-    margin: 0 auto; /* Centered horizontally */
-    text-align: center; /* Center the links */
-}
-
-.margin-container a {
-    display: inline-block;
-    color: white;
-    margin: 0 10px; /* Spacing between links */
-}
-
-.social-media-icons {
-    text-align: center;
-    margin-top: 0;
-}
-
-.social-media-icons a {
-    text-decoration: none;
-    color: white; /* Icon color */
-    margin: 0 10px; /* Spacing between icons */
-    font-size: 2em; /* Icon size */
-} 
-
-/* Couleurs spécifiques aux réseaux sociaux */
-.social-icon.facebook {
-    color: #2f4779; /* Facebook blue */
-}
-
-.social-icon.instagram {
-    color: #E1306C; /* Instagram pink */
-}
-
-/* Hover effects */
-.social-icon.facebook:hover {
-    color: #213153; /* Darker Facebook blue */
-}
-
-.social-icon.instagram:hover {
-    color: #C13584; /* Darker Instagram pink */
-}
-
-.image-container {
-    text-align: center; /* Center align the text and image within the container */
-}
-
-.image {
-    max-width: 25%; /* Ensure the image fits within its container */
-    height: auto;
-    border: 2px solid black;
-    border-radius: 8px;
-}
-
-/* Style for the text block */
-.text-block, .text-block2 {
-    max-width: 600px; /* Set a max-width for the text block */
-    padding: 10px; /* Add some padding */
-    background-color: white; /* Optional: Add a background color */
-    border: 1px solid white; /* Optional: Add a border */
-    border-radius: 8px; /* Optional: Add rounded corners */
-}
-
-/* Flexbox styles */
-.content-row {
-    display: flex;
-    align-items: flex-start; /* Align items at the start (top) */
-    justify-content: space-between; /* Adjust space between items */
-    gap: 20px; /* Space between items */
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-}
-
-.content-row > div {
-    flex: 1; /* Ensure items take equal space */
-    min-width: 300px; /* Ensure a minimum width for each item */
-    margin-bottom: 20px; /* Add bottom margin for spacing when items wrap */
-}
-
-/* Media queries pour différentes tailles d'écran */
-@media (max-width: 768px) {
-    header {
-        padding: 0.5em;
-    }
-
-    .content-row {
-        flex-direction: column;
-    }
-
-    .map-container iframe {
-        height: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2em;
-    }
-
-    .social-media-icons a {
-        font-size: 1.5em;
-    }
-
-    .map-container iframe {
-        height: 150px;
-    }
-}
-
-/* Styles pour le conteneur de l'image miniature */
-.thumbnail-container {
-    display: flex;
-    justify-content: center; /* Centrer l'image horizontalement */
-    align-items: center; /* Centrer l'image verticalement */
-    margin: 20px; /* Ajouter de la marge autour du conteneur */
-}
-
-/* Styles pour l'image miniature ronde */
-.thumbnail {
-    width: 100px; /* Largeur de la miniature */
-    height: 100px; /* Hauteur de la miniature pour s'assurer que l'image est un cercle parfait */
-    border-radius: 50%; /* Rendre l'image ronde */
-    object-fit: cover; /* S'assurer que l'image couvre bien le cercle */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre pour un effet de profondeur */
-    transition: transform 0.2s; /* Ajouter une transition pour l'effet de survol */
-}
-
-.thumbnail:hover {
-    transform: scale(1.1); /* Agrandir légèrement l'image au survol */
-}
-
-/* Styles pour la légende */
-.thumbnail-caption, .thumbnail-caption2  {
-    margin-top: 10px; /* Espacement entre l'image et la légende */
-    font-size: 14px; /* Taille de la police de la légende */
-    color: #333; /* Couleur de la légende */
-}
-
-/* Styles pour le menu déroulant */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+/* Navigation Styles */
+nav {
     background-color: #333;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
 }
 
 nav ul li {
-    float: left;
+    position: relative;
 }
 
 nav ul li a, .dropbtn {
-    display: inline-block;
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-/* Navigation responsive */
-
-/* Petits écrans (jusqu'à 768px) */
-@media (max-width: 768px) {
-    nav ul {
-        justify-content: space-around; /* Répartit les éléments avec un espace égal */
-    }
-
-    nav ul li a {
-        font-size: 16px; /* Taille du texte légèrement réduite */
-    }
-}
-
-/* Très petits écrans (jusqu'à 480px) */
-@media (max-width: 480px) {
-    nav ul {
-        justify-content: space-between; /* Gère l'espacement pour les très petits écrans */
-    }
-
-    nav ul li a {
-        padding: 8px 5px; /* Espacement réduit */
-        font-size: 12px; /* Réduction de la taille du texte */
-    }
-}
-
-/*nav ul li a:hover, .dropdown:hover .dropbtn {
+nav ul li a:hover {
     background-color: #111;
-}*/
-
-nav ul li.dropdown {
-    display: inline-block;
 }
 
+/* Dropdown menu */
 nav ul .dropdown-content {
     display: none;
     position: absolute;
@@ -267,15 +55,18 @@ nav ul .dropdown-content {
     z-index: 1;
 }
 
-nav ul .dropdown-content a {
+nav ul .dropdown-content li {
+    width: 100%;
+}
+
+nav ul .dropdown-content li a {
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
-    display: block;
+    padding: 12px 16px;
     text-align: left;
 }
 
-nav ul .dropdown-content a:hover {
+nav ul .dropdown-content li a:hover {
     background-color: #f1f1f1;
 }
 
@@ -283,123 +74,52 @@ nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Ajustement de la navigation pour les petits écrans */
+/* Hamburger menu */
+.nav-toggle {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 1px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-    /* Positionnement du menu hamburger dans la barre de navigation */
-.nav-toggle {
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 15px; /* Positionne l'icône à gauche */
-    cursor: pointer;
-    z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
+    .nav-toggle {
+        display: block; /* Show hamburger on small screens */
+    }
+
+    nav ul {
+        display: none; /* Hide the menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    nav ul li {
+        float: none; /* Remove float on small screens */
+    }
 }
 
-/* Icône hamburger en blanc */
-.nav-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white; /* Icône en blanc */
-}
-
-/* Positionnement de la navigation en pleine largeur */
-nav {
-    display: flex;
-    justify-content: center; /* Centre les éléments de navigation */
-    align-items: center;
-    position: relative;
-    background-color: #555555;
-    padding: 15px 0;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul {
-    display: none; /* Cache le menu par défaut sur mobile */
-    flex-direction: column;
-    position: absolute;
-    top: 100%; /* Positionne le menu en dessous de la barre de navigation */
-    left: 0;
-    width: 100%;
-    background-color: #555555;
-}
-
-nav ul.active {
-    display: flex; /* Affiche le menu quand l'icône est cliquée */
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: left;
-    text-decoration: none;
-} 
-}
-
-
-/* Ajustement de la navigation pour les petits écrans */
+/* Additional media query for smaller screens */
 @media (max-width: 480px) {
-    /* Positionnement du menu hamburger dans la barre de navigation */
-.nav-toggle {
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 15px; /* Positionne l'icône à gauche */
-    cursor: pointer;
-    z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
+    nav ul li a {
+        padding: 8px 5px;
+        font-size: 12px;
+    }
 }
-
-/* Icône hamburger en blanc */
-.nav-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white; /* Icône en blanc */
-}
-
-/* Positionnement de la navigation en pleine largeur */
-nav {
-    display: flex;
-    justify-content: center; /* Centre les éléments de navigation */
-    align-items: center;
-    position: relative;
-    background-color: #555555;
-    padding: 15px 0;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul {
-    display: none; /* Cache le menu par défaut sur mobile */
-    flex-direction: column;
-    position: absolute;
-    top: 100%; /* Positionne le menu en dessous de la barre de navigation */
-    left: 0;
-    width: 100%;
-    background-color: #555555;
-}
-
-nav ul.active {
-    display: flex; /* Affiche le menu quand l'icône est cliquée */
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: left;
-    text-decoration: none;
-} 
-}   

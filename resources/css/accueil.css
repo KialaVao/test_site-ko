@@ -397,7 +397,7 @@ footer {
 
 /* Positionnement de la navigation en pleine largeur */
     nav {
-        display: none;
+        display: block;
         justify-content: center; /* Centre les éléments de navigation */
         align-items: center;
         position: relative;

@@ -401,7 +401,7 @@ footer {
 
     /* Positionnement de la navigation en pleine largeur */
     nav {
-        display: flex;
+        display: none;
         justify-content: center; /* Centre les éléments de navigation */
         align-items: center;
         position: relative;

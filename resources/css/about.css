@@ -31,7 +31,7 @@ header .image-container img {
 
 /* Styles pour la navigation */
 nav {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     background-color: #555555;

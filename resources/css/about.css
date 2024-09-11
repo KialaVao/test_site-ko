@@ -225,9 +225,34 @@ nav ul li a, .dropbtn {
     text-decoration: none;
 }
 
-nav ul li a:hover, .dropdown:hover .dropbtn {
-    background-color: #111;
+/* Navigation responsive */
+
+/* Petits écrans (jusqu'à 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: space-around; /* Répartit les éléments avec un espace égal */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Taille du texte légèrement réduite */
+    }
 }
+
+/* Très petits écrans (jusqu'à 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        justify-content: space-between; /* Gère l'espacement pour les très petits écrans */
+    }
+
+    nav ul li a {
+        padding: 8px 5px; /* Espacement réduit */
+        font-size: 12px; /* Réduction de la taille du texte */
+    }
+}
+
+/*nav ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}*/
 
 nav ul li.dropdown {
     display: inline-block;

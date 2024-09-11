@@ -103,8 +103,8 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center; /* Centre les éléments */
-    width: 100%; /* Prend toute la largeur disponible */
-    box-sizing: border-box; /* Gère les marges et padding */
+    /*width: 100%; /* Prend toute la largeur disponible */
+    /*box-sizing: border-box; /* Gère les marges et padding */
 }
 
 nav ul li {
@@ -397,7 +397,7 @@ footer {
 
 /* Positionnement de la navigation en pleine largeur */
     nav {
-        display: block;
+        display: flex;
         justify-content: center; /* Centre les éléments de navigation */
         align-items: center;
         position: relative;
@@ -423,6 +423,6 @@ footer {
     }
 
     nav ul.active {
-        display: none; /* Affiche le menu quand l'icône est cliquée */
+        display: flex; /* Affiche le menu quand l'icône est cliquée */
     }
 }   

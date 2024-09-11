@@ -215,47 +215,19 @@ nav ul {
 
 nav ul li {
     float: left;
-    position: relative; /* Important pour le sous-menu */
 }
 
 nav ul li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    /*padding: 14px 16px;*/
     text-decoration: none;
-}
-
-nav ul li a:hover, .dropdown:hover .dropbtn {
-    background-color: #111;
-}
-
-nav ul li .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-nav ul li .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-nav ul li .dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-nav ul li:hover .dropdown-content {
-    display: block;
 }
 
 /* Navigation responsive */
+
+/* Petits écrans (jusqu'à 768px) */
 @media (max-width: 768px) {
     nav ul {
         justify-content: space-around; /* Répartit les éléments avec un espace égal */
@@ -266,6 +238,7 @@ nav ul li:hover .dropdown-content {
     }
 }
 
+/* Très petits écrans (jusqu'à 480px) */
 @media (max-width: 480px) {
     nav ul {
         justify-content: space-between; /* Gère l'espacement pour les très petits écrans */
@@ -277,43 +250,156 @@ nav ul li:hover .dropdown-content {
     }
 }
 
-/* Menu hamburger pour petits écrans */
-@media (max-width: 768px) {
-    .nav-toggle {
-        display: block;
-        position: absolute;
-        top: 1px;
-        left: 15px; /* Positionne l'icône à gauche */
-        cursor: pointer;
-        z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
-    }
+/*nav ul li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}*/
 
-    .nav-toggle span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        background-color: white; /* Icône en blanc */
-    }
-
-    nav ul {
-        display: none; /* Cache le menu par défaut sur mobile */
-        flex-direction: column;
-        position: absolute;
-        top: 100%; /* Positionne le menu en dessous de la barre de navigation */
-        left: 0;
-        width: 100%;
-        background-color: #555555;
-    }
-
-    nav ul.active {
-        display: flex; /* Affiche le menu quand l'icône est cliquée */
-    }
-
-    nav ul li a {
-        display: block;
-        color: white;
-        text-align: left;
-        text-decoration: none;
-    }
+nav ul li.dropdown {
+    display: inline-block;
 }
+
+nav ul .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ajustement de la navigation pour les petits écrans */
+@media (max-width: 768px) {
+    /* Positionnement du menu hamburger dans la barre de navigation */
+.nav-toggle {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 15px; /* Positionne l'icône à gauche */
+    cursor: pointer;
+    z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
+}
+
+/* Icône hamburger en blanc */
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white; /* Icône en blanc */
+}
+
+/* Positionnement de la navigation en pleine largeur */
+nav {
+    display: flex;
+    justify-content: center; /* Centre les éléments de navigation */
+    align-items: center;
+    position: relative;
+    background-color: #555555;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: none; /* Cache le menu par défaut sur mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Positionne le menu en dessous de la barre de navigation */
+    left: 0;
+    width: 100%;
+    background-color: #555555;
+}
+
+nav ul.active {
+    display: flex; /* Affiche le menu quand l'icône est cliquée */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+} 
+}
+
+
+/* Ajustement de la navigation pour les petits écrans */
+@media (max-width: 480px) {
+    /* Positionnement du menu hamburger dans la barre de navigation */
+.nav-toggle {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 15px; /* Positionne l'icône à gauche */
+    cursor: pointer;
+    z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
+}
+
+/* Icône hamburger en blanc */
+.nav-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white; /* Icône en blanc */
+}
+
+/* Positionnement de la navigation en pleine largeur */
+nav {
+    display: flex;
+    justify-content: center; /* Centre les éléments de navigation */
+    align-items: center;
+    position: relative;
+    background-color: #555555;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: none; /* Cache le menu par défaut sur mobile */
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Positionne le menu en dessous de la barre de navigation */
+    left: 0;
+    width: 100%;
+    background-color: #555555;
+}
+
+nav ul.active {
+    display: flex; /* Affiche le menu quand l'icône est cliquée */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: left;
+    text-decoration: none;
+} 
+}   

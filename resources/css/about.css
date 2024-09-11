@@ -22,6 +22,8 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center; /* Center the nav items */
+    width: 100%; /* Prend toute la largeur disponible */
+    box-sizing: border-box; /* Gère les marges et padding */
 }
 
 nav ul li {
@@ -33,7 +35,7 @@ nav ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 10px 10px;
     text-decoration: none;
 }
 
@@ -41,17 +43,18 @@ nav ul li a:hover {
     background-color: #111; 
 }
 
+/* Styles du main */
 main {
     padding: 1em;
     /*padding-top: 5%;*/
 }
 
+/* Styles du footer */
 footer {
     background-color: #555555;
     color: white;
     text-align: center;
     padding: 0.2em;
-    /*position: fixed;*/
     width: 100%;
     bottom: 0;
 }
@@ -69,6 +72,7 @@ header .image-container img {
     border: 1px solid black;
 }
 
+/* Conteneur avec marges centrées */
 .margin-container {
     width: 100%; /* Full width */
     margin: 0 auto; /* Centered horizontally */
@@ -81,6 +85,7 @@ header .image-container img {
     margin: 0 10px; /* Spacing between links */
 }
 
+/* Icônes des réseaux sociaux */
 .social-media-icons {
     text-align: center;
     margin-top: 0;
@@ -254,6 +259,7 @@ nav ul li a, .dropbtn {
     background-color: #111;
 }*/
 
+/* Menu déroulant */
 nav ul li.dropdown {
     display: inline-block;
 }

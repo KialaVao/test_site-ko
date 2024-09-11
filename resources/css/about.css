@@ -35,7 +35,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: #555555;
-    /*padding: 15px 0;*/
+    /*padding: 15px 0; */
     position: relative;
 }
 
@@ -52,8 +52,8 @@ nav ul {
 nav ul li {
     margin: 0;
     padding: 0;
-    /*float: left;
-    position: relative; */
+    /*float: left;*/
+    position: relative; 
 }
 
 nav ul li a {

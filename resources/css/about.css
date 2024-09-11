@@ -30,14 +30,14 @@ header .image-container img {
 }*/
 
 /* Styles pour la navigation */
-/*nav {
+nav {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #555555;
-    /*padding: 15px 0;
+    /*padding: 15px 0; */
     position: relative;
-}*/
+}
 
 nav ul {
     background-color: #555555;

@@ -56,10 +56,18 @@ nav ul li {
     position: relative;
 }
 
-nav ul li a, .dropbtn {
+nav ul li a {
     display: block;
     color: white;
     text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+nav ul li a, .dropbtn {
+    display: block;
+    color: white;
+    /*text-align: center;*/
     padding: 10px 10px;
     text-decoration: none;
 }

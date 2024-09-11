@@ -342,7 +342,7 @@ footer {
 
 /* Positionnement de la navigation en pleine largeur */
     nav {
-        display: flex;
+        display: none;
         justify-content: center; /* Centre les éléments de navigation */
         align-items: center;
         position: relative;
@@ -351,7 +351,7 @@ footer {
     }
 
     nav ul {
-        /*display: flex;*/
+        display: none;
         list-style-type: none;
         margin: 0;
         padding: 0;

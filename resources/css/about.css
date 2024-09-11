@@ -16,7 +16,7 @@ header {
     position: relative;
 }
 
-/*header .image-container {
+header .image-container {
     position: absolute;
     top: 75%;
     left: 50px;
@@ -27,7 +27,7 @@ header .image-container img {
     max-width: 100px;
     height: auto;
     border: 1px solid black;
-}*/
+}
 
 /* Styles pour la navigation */
 nav {

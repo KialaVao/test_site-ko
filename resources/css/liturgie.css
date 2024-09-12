@@ -1,3 +1,4 @@
+/* Reset some styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     background-color: #FAFAFA;
 }
 
+/* Styles du header */
 header {
     background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
     background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
@@ -15,13 +17,99 @@ header {
     position: relative;
 }
 
+header .image-container {
+    position: absolute;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+header .image-container img {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid black;
+}
+
+/* Media queries pour différentes tailles d'écran */
+
+/* Écrans moyens (jusqu'à 1200px) */
+@media (max-width: 1200px) {
+    header {
+         padding: 3em 1em; /* Réduction du padding pour les écrans moyens */
+    }
+}
+    
+/* Écrans petits (jusqu'à 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 1em 1em; /* Réduction supplémentaire du padding */
+    }
+    
+    header .image-container {
+            /*top: 40%; /* Positionnement de l'image pour les petits écrans */
+        left: 5%;
+        transform: translateY(-50%);
+    }
+    
+    header .image-container img {
+        max-width: 47px; /* Réduction de la taille de l'image */
+    }
+    
+    .content-row {
+        flex-direction: column; /* Les éléments se disposent en colonne sur petits écrans */
+    }
+    
+    .map-container iframe {
+        height: 200%; /* Ajustement de la taille de la carte */
+    }
+}
+    
+/* Écrans très petits (jusqu'à 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 1em 1em; /* Réduction supplémentaire du padding */
+    }
+    
+    header h1 {
+        font-size: 1.2em; /* Taille plus petite du titre */
+    }
+    
+    header .image-container {
+        top: 75%;
+        left: 10%; /* Réajustement de la position de l'image */
+    }
+    
+    header .image-container img {
+        max-width: 30px; /* Taille plus petite de l'image */
+    }
+    
+    .map-container iframe {
+        height: 150px; /* Ajustement de la hauteur de l'iframe */
+    }
+    
+    .social-media-icons a {
+        font-size: 1.5em; /* Taille des icônes réduite */
+    }
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #555555;
+    padding: 15px 0;
+}
+
 nav ul {
-    background-color:#555555;
+    background-color: #555555;
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center the nav items */
+    justify-content: center; /* Centre les éléments */
+    /*width: 100%; /* Prend toute la largeur disponible */
+    box-sizing: border-box; /* Gère les marges et padding */
 }
 
 nav ul li {
@@ -40,11 +128,79 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #111; 
 }
+/* Menu déroulant */
+nav ul li.dropdown {
+    display: inline-block;
+}
 
+nav ul .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li {	 
+    float: left;			  
+}
+
+nav ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    /*padding: 14px 16px; */
+    text-decoration: none;
+}
+
+/* Navigation responsive */
+
+/* Petits écrans (jusqu'à 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: space-around; /* Répartit les éléments avec un espace égal */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Taille du texte légèrement réduite */
+    }
+}
+
+/* Très petits écrans (jusqu'à 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        justify-content: space-between; /* Gère l'espacement pour les très petits écrans */
+    }
+
+    nav ul li a {
+        padding: 8px 5px; /* Espacement réduit */
+        font-size: 12px; /* Réduction de la taille du texte */
+    }
+}
+
+/* Main content */
 main {
     padding: 1em;
 }
 
+/* Style du Footer */
 footer {
     background-color: #555555;
     color: white;
@@ -55,19 +211,7 @@ footer {
     bottom: 0;
 }
 
-header .image-container {
-    position: absolute;
-    /*top: 75%; */
-    left: 7%;
-    transform: translateY(-50%);
-}
-
-header .image-container img {
-    max-width: 100px; /* Adjust as necessary */
-    height: auto;
-    border: 1px solid black;
-}
-
+/* Container with centered margins */
 .margin-container {
     width: 100%; /* Largeur du conteneur */
     margin: 0 auto; /* Marges automatiques à gauche et à droite */
@@ -80,6 +224,7 @@ header .image-container img {
     margin: 0 10px; /* Espacement entre les liens */
 }
 
+/* Social media icons */
 .social-media-icons {
     text-align: center;
     margin-top: 0;
@@ -110,57 +255,6 @@ header .image-container img {
     color: #C13584; /* Darker Instagram pink */
 }
 
-/* Media queries pour différentes tailles d'écran */
-@media only screen and (max-width: 1200px) {
-    #parole-du-jour {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
-    }
-    #text-block2 {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
-    }
-
-}
-
-@media (max-width: 768px) {
-    header {
-        padding: 0.5em;
-    }
-    .content-row {
-        flex-direction: column;
-    }
-    .map-container iframe {
-        height: 200px;
-    }
-    header .image-container {
-        top: 70%; /* Ajuster la position pour les écrans moyens */
-        left: 10%;
-        transform: translateY(-50%);
-    }
-    header .image-container img {
-        max-width: 60px; /* Ajuster la taille de l'image */
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2em;
-    }
-    .social-media-icons a {
-        font-size: 1.5em;
-    }
-    .map-container iframe {
-        height: 150px;
-    }
-    header .image-container {
-        top: 50%; /* Ajuster la position pour les petits écrans */
-        left: 5%;
-        transform: translateY(-50%);
-    }   
-    header .image-container img {
-        max-width: 40px; /* Ajuster la taille de l'image */
-    }
-}
-
 /* Tableau */
 table {
     width: 100%;
@@ -184,60 +278,6 @@ tr:hover {
 /* Ajouter des bordures autour du tableau entier */
 table, th, td {
     border: 1px solid #000;
-}
-
-/* Styles pour le menu déroulant */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-nav ul li {
-    float: left;
-}
-
-nav ul li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav ul li a:hover, .dropdown:hover .dropbtn {
-    background-color: #111;
-}
-
-nav ul li.dropdown {
-    display: inline-block;
-}
-
-nav ul .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-nav ul .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-nav ul .dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-nav ul .dropdown:hover .dropdown-content {
-    display: block;
 }
 
 /* Styles pour l'image miniature ronde */

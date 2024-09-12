@@ -28,7 +28,6 @@ header .image-container img {
     border: 1px solid black;
 }
 
-
 /* Media queries pour différentes tailles d'écran */
 
 /* Écrans moyens (jusqu'à 1200px) */
@@ -134,7 +133,7 @@ nav ul li.dropdown {
     display: inline-block;
 }
 
-nav ul .dropdown-content {						 
+nav ul .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -201,7 +200,7 @@ main {
     padding: 1em;
 }
 
-/* Sytle du Footer */
+/* Style du Footer */
 footer {
     background-color: #555555;
     color: white;
@@ -236,6 +235,7 @@ footer {
     font-size: 2em;
 }
 
+/* Couleurs spécifiques aux réseaux sociaux */
 .social-icon.facebook {
     color: #2f4779;
 }

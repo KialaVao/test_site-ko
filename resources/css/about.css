@@ -29,9 +29,60 @@ header .image-container img {
     border: 1px solid black;
 }
 
+/* Media queries pour différentes tailles d'écran */
+
+/* Écrans moyens (jusqu'à 1200px) */
+@media (max-width: 1200px) {
+    header {                          
+        padding: 3em 1em; /* Réduction du padding pour les écrans moyens */
+    }
+}
+    
+/* Écrans petits (jusqu'à 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 1em 1em; /* Réduction supplémentaire du padding */
+    }
+    
+    header .image-container img {
+        max-width: 47px; /* Réduction de la taille de l'image */
+    }
+    
+    .content-row {
+        flex-direction: column; /* Les éléments se disposent en colonne sur petits écrans */
+    }
+    
+    .map-container iframe {
+        height: 200%; /* Ajustement de la taille de la carte */
+    }
+}
+    
+    /* Écrans très petits (jusqu'à 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 1em 1em; /* Réduction supplémentaire du padding */
+    }
+    
+    header h1 {
+        font-size: 1.2em; /* Taille plus petite du titre */
+    }
+       
+    header .image-container img {
+        max-width: 30px; /* Taille plus petite de l'image */
+    }
+    
+    .map-container iframe {
+        height: 150px; /* Ajustement de la hauteur de l'iframe */
+    }
+    
+    .social-media-icons a {
+        font-size: 1.5em; /* Taille des icônes réduite */
+    }
+}
+
 /* Styles pour la navigation */
 nav {
-    display: none;
+    /*display: none;*/
     justify-content: center;
     align-items: center;
     background-color: #555555;
@@ -276,123 +327,123 @@ footer {
 /* Ajustement de la navigation pour les petits écrans */
 @media (max-width: 768px) {
     /* Positionnement du menu hamburger dans la barre de navigation */
-.nav-toggle {
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 15px; /* Positionne l'icône à gauche */
-    cursor: pointer;
-    z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
-}
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 15px; /* Positionne l'icône à gauche */
+        cursor: pointer;
+        z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
+    }
 
 /* Icône hamburger en blanc */
-.nav-toggle span {
-                     
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white; /* Icône en blanc */
-}
+    .nav-toggle span {
+                        
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white; /* Icône en blanc */
+    }
 
 /* Positionnement de la navigation en pleine largeur */
-nav {
-    display: flex;
-    justify-content: center; /* Centre les éléments de navigation */
-    align-items: center;
-    position: relative;
-    background-color: #555555;
-    padding: 15px 0;
-}
+    nav {
+        display: flex;
+        justify-content: center; /* Centre les éléments de navigation */
+        align-items: center;
+        position: relative;
+        background-color: #555555;
+        padding: 15px 0;
+    }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-nav ul {
-    display: none; /* Cache le menu par défaut sur mobile */
-    flex-direction: column;
-    position: absolute;
-    top: 100%; /* Positionne le menu en dessous de la barre de navigation */
-    left: 0;
-    width: 100%;
-    background-color: #555555;
-}
+    nav ul {
+        display: none; /* Cache le menu par défaut sur mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Positionne le menu en dessous de la barre de navigation */
+        left: 0;
+        width: 100%;
+        background-color: #555555;
+    }
 
-nav ul.active {
-    display: flex; /* Affiche le menu quand l'icône est cliquée */
-}
+    nav ul.active {
+        display: flex; /* Affiche le menu quand l'icône est cliquée */
+    }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: left;
-    text-decoration: none;
-} 
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+    } 
 }
 
 
 /* Ajustement de la navigation pour les petits écrans */
 @media (max-width: 480px) {
     /* Positionnement du menu hamburger dans la barre de navigation */
-.nav-toggle {
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 15px; /* Positionne l'icône à gauche */
-    cursor: pointer;
-    z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
-}
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 15px; /* Positionne l'icône à gauche */
+        cursor: pointer;
+        z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
+    }
 
 /* Icône hamburger en blanc */
-.nav-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white; /* Icône en blanc */
-}
+    .nav-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white; /* Icône en blanc */
+    }
 
 /* Positionnement de la navigation en pleine largeur */
-nav {
-    display: flex;
-    justify-content: center; /* Centre les éléments de navigation */
-    align-items: center;
-    position: relative;
-    background-color: #555555;
-    padding: 15px 0;
-}
+    nav {
+        display: flex;
+        justify-content: center; /* Centre les éléments de navigation */
+        align-items: center;
+        position: relative;
+        background-color: #555555;
+        padding: 15px 0;
+    }
 
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
 
-nav ul {
-    display: none; /* Cache le menu par défaut sur mobile */
-    flex-direction: column;
-    position: absolute;
-    top: 100%; /* Positionne le menu en dessous de la barre de navigation */
-    left: 0;
-    width: 100%;
-    background-color: #555555;
-}
+    nav ul {
+        display: none; /* Cache le menu par défaut sur mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Positionne le menu en dessous de la barre de navigation */
+        left: 0;
+        width: 100%;
+        background-color: #555555;
+    }
 
-nav ul.active {
-    display: flex; /* Affiche le menu quand l'icône est cliquée */
-}
+    nav ul.active {
+        display: flex; /* Affiche le menu quand l'icône est cliquée */
+    }
 
-nav ul li a {
-                                              
-                                                           
-    display: block;
-    color: white;
-    text-align: left;
-    text-decoration: none;
-} 
+    nav ul li a {
+                                                
+                                                            
+        display: block;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+    } 
 }   

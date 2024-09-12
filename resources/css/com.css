@@ -551,11 +551,17 @@ section#members {
     } 
 } 
 
+.annonce {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100%; /* S'assure que l'élément parent a une hauteur suffisante */
+}
+
 .annonce img {
     width: 50%;
     height: 50%;
     object-fit: cover;
     cursor: pointer;
-    justify-content: center;
     transition: transform 0.3s ease;
 }

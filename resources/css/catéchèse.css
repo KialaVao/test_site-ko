@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-/* Styles pour le header */
+/* Styles du header */
 header {
     background-image: url('../img/interieur2.jpg');
     background-size: cover;
@@ -28,6 +28,69 @@ header .image-container img {
     border: 1px solid black;
 }
 
+
+/* Media queries pour différentes tailles d'écran */
+
+/* Écrans moyens (jusqu'à 1200px) */
+@media (max-width: 1200px) {
+    header {
+         padding: 3em 1em; /* Réduction du padding pour les écrans moyens */
+    }
+}
+    
+/* Écrans petits (jusqu'à 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 1em 1em; /* Réduction supplémentaire du padding */
+    }
+    
+    header .image-container {
+            /*top: 40%; /* Positionnement de l'image pour les petits écrans */
+        left: 5%;
+        transform: translateY(-50%);
+    }
+    
+    header .image-container img {
+        max-width: 47px; /* Réduction de la taille de l'image */
+    }
+    
+    .content-row {
+        flex-direction: column; /* Les éléments se disposent en colonne sur petits écrans */
+    }
+    
+    .map-container iframe {
+        height: 200%; /* Ajustement de la taille de la carte */
+    }
+}
+    
+/* Écrans très petits (jusqu'à 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 1em 1em; /* Réduction supplémentaire du padding */
+    }
+    
+    header h1 {
+        font-size: 1.2em; /* Taille plus petite du titre */
+    }
+    
+    header .image-container {
+        top: 75%;
+        left: 10%; /* Réajustement de la position de l'image */
+    }
+    
+    header .image-container img {
+        max-width: 30px; /* Taille plus petite de l'image */
+    }
+    
+    .map-container iframe {
+        height: 150px; /* Ajustement de la hauteur de l'iframe */
+    }
+    
+    .social-media-icons a {
+        font-size: 1.5em; /* Taille des icônes réduite */
+    }
+}
+
 /* Navigation Styles */
 nav {
     display: flex;
@@ -39,20 +102,23 @@ nav {
 }
 
 nav ul {
-    display: flex;
+    background-color: #555555;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    /*justify-content: center;*/
+    display: flex;
+    justify-content: center; /* Centre les éléments */
+    /*width: 100%; /* Prend toute la largeur disponible */
+    box-sizing: border-box; /* Gère les marges et padding */
 }
 
 nav ul li {
     margin: 0;
     padding: 0;
-    position: relative;
+    /*position: relative;*/
 }
 
-nav ul li a, .dropbtn {
+nav ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -60,20 +126,25 @@ nav ul li a, .dropbtn {
     text-decoration: none;
 }
 
-nav ul li a:hover, .dropdown:hover .dropbtn {
+nav ul li a:hover {
     background-color: #111;
 }
 
-nav ul li .dropdown-content {
+/* Menu déroulant */
+nav ul li.dropdown {
+    display: inline-block;
+}
+
+nav ul .dropdown-content {						 
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
-nav ul li .dropdown-content a {
+nav ul .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -85,26 +156,45 @@ nav ul li .dropdown-content a:hover {
     background-color: #f1f1f1;
 }
 
-nav ul li:hover .dropdown-content {
+nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Menu hamburger pour petits écrans */
-.nav-toggle {
-    display: none;
-    position: absolute;
-    top: 1px;
-    left: 15px;
-    cursor: pointer;
-    z-index: 1000;
+nav ul li {	 
+    float: left;			  
 }
 
-.nav-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white;
+nav ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    /*padding: 14px 16px; */
+    text-decoration: none;
+}
+
+/* Navigation responsive */
+
+/* Petits écrans (jusqu'à 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: space-around; /* Répartit les éléments avec un espace égal */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Taille du texte légèrement réduite */
+    }
+}
+
+/* Très petits écrans (jusqu'à 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        justify-content: space-between; /* Gère l'espacement pour les très petits écrans */
+    }
+
+    nav ul li a {
+        padding: 8px 5px; /* Espacement réduit */
+        font-size: 12px; /* Réduction de la taille du texte */
+    }
 }
 
 /* Main content */
@@ -212,76 +302,125 @@ footer {
     border-radius: 50%;
 }
 
-/* Media queries */
-@media (max-width: 1200px) {
-    header {
-        padding: 3em 1em;
-    }
-
-    header .image-container img {
-        max-width: 100px;
-    }
-}
-
+/* Ajustement de la navigation pour les petits écrans */
 @media (max-width: 768px) {
-    header {
-        padding: 0.5em;
+/* Positionnement du menu hamburger dans la barre de navigation */
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 15px; /* Positionne l'icône à gauche */
+        cursor: pointer;
+        z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
     }
 
-    header .image-container {
-        top: 70%;
-        left: 10%;
-        transform: translateY(-50%);
+
+/* Icône hamburger en blanc */
+    .nav-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white; /* Icône en blanc */
     }
 
-    header .image-container img {
-        max-width: 60px;
+/* Positionnement de la navigation en pleine largeur */
+    nav {
+        display: flex;
+        justify-content: center; /* Centre les éléments de navigation */
+        align-items: center;
+        position: relative;
+        background-color: #555555;
+        padding: 15px 0;
     }
 
     nav ul {
-        display: none;
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul {
+        display: none; /* Cache le menu par défaut sur mobile */
         flex-direction: column;
         position: absolute;
-        top: 100%;
+        top: 100%; /* Positionne le menu en dessous de la barre de navigation */
         left: 0;
         width: 100%;
         background-color: #555555;
     }
 
     nav ul.active {
-        display: flex;
+        display: flex; /* Affiche le menu quand l'icône est cliquée */
     }
 
     nav ul li a {
+        display: block;
+        color: white;
         text-align: left;
-    }
+        text-decoration: none;
+    } 
 }
 
+
+/* Ajustement de la navigation pour les petits écrans */
 @media (max-width: 480px) {
-    header h1 {
-        font-size: 1.2em;
+/* Positionnement du menu hamburger dans la barre de navigation */
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 15px; /* Positionne l'icône à gauche */
+        cursor: pointer;
+        z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
     }
 
-    .social-media-icons a {
-        font-size: 1.5em;
+/* Icône hamburger en blanc */
+    .nav-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white; /* Icône en blanc */
     }
 
-    header .image-container {
-        top: 50%;
-        left: 5%;
-        transform: translateY(-50%);
+/* Positionnement de la navigation en pleine largeur */
+    nav {
+        display: flex;
+        justify-content: center; /* Centre les éléments de navigation */
+        align-items: center;
+        position: relative;
+        background-color: #555555;
+        padding: 15px 0;
     }
 
-    header .image-container img {
-        max-width: 40px;
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
     }
 
-    .thumbnail-container {
-        grid-template-columns: 1fr;
+    nav ul {
+        display: none; /* Cache le menu par défaut sur mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Positionne le menu en dessous de la barre de navigation */
+        left: 0;
+        width: 100%;
+        background-color: #555555;
+    }
+
+    nav ul.active {
+        display: flex; /* Affiche le menu quand l'icône est cliquée */
+                        
     }
 
     nav ul li a {
-        padding: 8px 5px;
-        font-size: 12px;
-    }
-}
+        display: block;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+    } 
+} 

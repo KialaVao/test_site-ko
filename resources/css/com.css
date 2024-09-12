@@ -1,9 +1,11 @@
+/* Reset some styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Styles du header */
 header {
     background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
     background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
@@ -14,13 +16,100 @@ header {
     position: relative;
 }
 
+header .image-container {
+    position: absolute;
+    left: 7%;
+    transform: translateY(-50%);
+}
+
+header .image-container img {
+    max-width: 100px;
+    height: auto;
+    border: 1px solid black;
+}
+
+
+/* Media queries pour différentes tailles d'écran */
+
+/* Écrans moyens (jusqu'à 1200px) */
+@media (max-width: 1200px) {
+    header {
+         padding: 3em 1em; /* Réduction du padding pour les écrans moyens */
+    }
+}
+    
+/* Écrans petits (jusqu'à 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 1em 1em; /* Réduction supplémentaire du padding */
+    }
+    
+    header .image-container {
+            /*top: 40%; /* Positionnement de l'image pour les petits écrans */
+        left: 5%;
+        transform: translateY(-50%);
+    }
+    
+    header .image-container img {
+        max-width: 47px; /* Réduction de la taille de l'image */
+    }
+    
+    .content-row {
+        flex-direction: column; /* Les éléments se disposent en colonne sur petits écrans */
+    }
+    
+    .map-container iframe {
+        height: 200%; /* Ajustement de la taille de la carte */
+    }
+}
+    
+/* Écrans très petits (jusqu'à 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 1em 1em; /* Réduction supplémentaire du padding */
+    }
+    
+    header h1 {
+        font-size: 1.2em; /* Taille plus petite du titre */
+    }
+    
+    header .image-container {
+        top: 75%;
+        left: 10%; /* Réajustement de la position de l'image */
+    }
+    
+    header .image-container img {
+        max-width: 30px; /* Taille plus petite de l'image */
+    }
+    
+    .map-container iframe {
+        height: 150px; /* Ajustement de la hauteur de l'iframe */
+    }
+    
+    .social-media-icons a {
+        font-size: 1.5em; /* Taille des icônes réduite */
+    }
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #555555;
+    padding: 15px 0;
+}
+
 nav ul {
     background-color: #555555;
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center the nav items */
+    justify-content: center; /* Centre les éléments */
+    /*width: 100%; /* Prend toute la largeur disponible */
+    box-sizing: border-box; /* Gère les marges et padding */
 }
 
 nav ul li {
@@ -32,7 +121,7 @@ nav ul li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 10px 10px;
     text-decoration: none;
 }
 
@@ -40,10 +129,79 @@ nav ul li a:hover {
     background-color: #111; 
 }
 
+/* Menu déroulant */
+nav ul li.dropdown {
+    display: inline-block;
+}
+
+nav ul .dropdown-content {						 
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+nav ul .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li {	 
+    float: left;			  
+}
+
+nav ul li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    /*padding: 14px 16px; */
+    text-decoration: none;
+}
+
+/* Navigation responsive */
+
+/* Petits écrans (jusqu'à 768px) */
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: space-around; /* Répartit les éléments avec un espace égal */
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Taille du texte légèrement réduite */
+    }
+}
+
+/* Très petits écrans (jusqu'à 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        justify-content: space-between; /* Gère l'espacement pour les très petits écrans */
+    }
+
+    nav ul li a {
+        padding: 8px 5px; /* Espacement réduit */
+        font-size: 12px; /* Réduction de la taille du texte */
+    }
+}
+
+/* Main content */
 main {
     padding: 1em;
 }
 
+/* Sytle du Footer */
 footer {
     background-color: #555555;
     color: white;
@@ -54,19 +212,7 @@ footer {
     bottom: 0;
 }
 
-header .image-container {
-    position: absolute;
-    /*top: 75%;*/
-    left: 7%;
-    transform: translateY(-50%);
-}
-
-header .image-container img {
-    max-width: 100px; /* Adjust as necessary */
-    height: auto;
-    border: 1px solid black;
-}
-
+/* Container with centered margins */
 .margin-container {
     width: 100%; /* Largeur du conteneur */
     margin: 0 auto; /* Marges automatiques à gauche et à droite */
@@ -107,23 +253,6 @@ header .image-container img {
 
 .social-icon.instagram:hover {
     color: #C13584; /* Darker Instagram pink */
-}
-
-.clipart {
-    width: 50px; /* Adjust the size as needed */
-    height: auto;
-    margin: 10px 0; /* Optional: Add some space around the clipart */
-}
-
-.title-with-clipart {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Adjust the space between the clipart and the title */
-}
-
-.title-with-clipart .clipart {
-    width: 100px; /* Adjust the size of the clipart */
-    height: auto;
 }
 
 /* Media queries pour différentes tailles d'écran */
@@ -357,121 +486,121 @@ section#members {
 
 /* Ajustement de la navigation pour les petits écrans */
 @media (max-width: 768px) {
-    /* Positionnement du menu hamburger dans la barre de navigation */
-.nav-toggle {
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 15px; /* Positionne l'icône à gauche */
-    cursor: pointer;
-    z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
-}
-
+/* Positionnement du menu hamburger dans la barre de navigation */
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 15px; /* Positionne l'icône à gauche */
+        cursor: pointer;
+        z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
+    }
+    
 /* Icône hamburger en blanc */
-.nav-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white; /* Icône en blanc */
-}
-
+    .nav-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white; /* Icône en blanc */
+    }
+    
 /* Positionnement de la navigation en pleine largeur */
-nav {
-    display: flex;
-    justify-content: center; /* Centre les éléments de navigation */
-    align-items: center;
-    position: relative;
-    background-color: #555555;
-    padding: 15px 0;
+    nav {
+        display: flex;
+        justify-content: center; /* Centre les éléments de navigation */
+        align-items: center;
+        position: relative;
+        background-color: #555555;
+        padding: 15px 0;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul {
+        display: none; /* Cache le menu par défaut sur mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Positionne le menu en dessous de la barre de navigation */
+        left: 0;
+        width: 100%;
+        background-color: #555555;
+    }
+    
+    nav ul.active {
+        display: flex; /* Affiche le menu quand l'icône est cliquée */
+    }
+    
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+    } 
 }
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul {
-    display: none; /* Cache le menu par défaut sur mobile */
-    flex-direction: column;
-    position: absolute;
-    top: 100%; /* Positionne le menu en dessous de la barre de navigation */
-    left: 0;
-    width: 100%;
-    background-color: #555555;
-}
-
-nav ul.active {
-    display: flex; /* Affiche le menu quand l'icône est cliquée */
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: left;
-    text-decoration: none;
-} 
-}
-
-
+    
+    
 /* Ajustement de la navigation pour les petits écrans */
 @media (max-width: 480px) {
     /* Positionnement du menu hamburger dans la barre de navigation */
-.nav-toggle {
-    display: block;
-    position: absolute;
-    top: 1px;
-    left: 15px; /* Positionne l'icône à gauche */
-    cursor: pointer;
-    z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
-}
-
-/* Icône hamburger en blanc */
-.nav-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white; /* Icône en blanc */
-}
-
-/* Positionnement de la navigation en pleine largeur */
-nav {
-    display: flex;
-    justify-content: center; /* Centre les éléments de navigation */
-    align-items: center;
-    position: relative;
-    background-color: #555555;
-    padding: 15px 0;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul {
-    display: none; /* Cache le menu par défaut sur mobile */
-    flex-direction: column;
-    position: absolute;
-    top: 100%; /* Positionne le menu en dessous de la barre de navigation */
-    left: 0;
-    width: 100%;
-    background-color: #555555;
-}
-
-nav ul.active {
-    display: flex; /* Affiche le menu quand l'icône est cliquée */
-}
-
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: left;
-    text-decoration: none;
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 15px; /* Positionne l'icône à gauche */
+        cursor: pointer;
+        z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
+    }
+    
+    /* Icône hamburger en blanc */
+    .nav-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: white; /* Icône en blanc */
+    }
+    
+    /* Positionnement de la navigation en pleine largeur */
+    nav {
+        display: flex;
+        justify-content: center; /* Centre les éléments de navigation */
+        align-items: center;
+        position: relative;
+        background-color: #555555;
+        padding: 15px 0;
+    }
+    
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul {
+        display: none; /* Cache le menu par défaut sur mobile */
+        flex-direction: column;
+        position: absolute;
+        top: 100%; /* Positionne le menu en dessous de la barre de navigation */
+        left: 0;
+        width: 100%;
+        background-color: #555555;
+    }
+    
+    nav ul.active {
+        display: flex; /* Affiche le menu quand l'icône est cliquée */                    
+    }
+    
+    nav ul li a {
+        display: block;
+        color: white;
+        text-align: left;
+        text-decoration: none;
+    } 
 } 
-}   

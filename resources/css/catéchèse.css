@@ -115,7 +115,6 @@ nav ul {
 nav ul li {
     margin: 0;
     padding: 0;
-    /*position: relative;*/
 }
 
 nav ul li a {
@@ -202,7 +201,7 @@ main {
     padding: 1em;
 }
 
-/* Footer */
+/* Sytle du Footer */
 footer {
     background-color: #555555;
     color: white;

@@ -444,4 +444,14 @@ footer {
         text-align: left;
         text-decoration: none;
     } 
+
+    footer {
+        background: #555555; 
+        color: white;
+        text-align: center;
+        /*padding: 0.2em;*/
+        /*position : fixed;*/
+        width: 100%;
+        bottom: 0;
+    }
 }   

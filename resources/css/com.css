@@ -91,16 +91,16 @@ header .image-container img {
     }
 }
 
-/* Navigation Styles */
-nav {
+/* Styles pour la navigation */
+/*nav {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     background-color: #555555;
-    padding: 15px 0;
-}
-
+    /*padding: 15px 0;
+} */
+ 
 nav ul {
     background-color: #555555;
     list-style-type: none;

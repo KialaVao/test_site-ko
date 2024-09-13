@@ -75,10 +75,6 @@ header .image-container img {
         font-size: 1.2em; /* Taille plus petite du titre */
     }
 
-    header h2 {
-        font-size: 1.2em; /* Taille plus petite du titre */
-    }
-
     header .image-container {
         top: 75%;
         left: 10%; /* Réajustement de la position de l'image */

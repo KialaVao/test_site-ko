@@ -462,35 +462,12 @@ footer {
     transition: transform 0.3s ease;
 }
 
-/*.text-center {
+.text-center {
     text-align: center;
     font-size: 1.5rem;
     padding: 20px;
     /*background-color: #f0f0f0;
     border: 1px solid #ccc;
-    border-radius: 8px;
-} */
+    border-radius: 8px; */
+} 
 
-.text-center {
-    text-align: center;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden; /* Pour que les bandes ne dépassent pas du conteneur */
-  }
-  
-  .color-band {
-    padding: 10px;
-    color: white;
-  }
-  
-  .red {
-    background-color: #ff6666;
-  }
-  
-  .blue {
-    background-color: #6699ff;
-  }
-  
-  .green {
-    background-color: #66ff66;
-  }

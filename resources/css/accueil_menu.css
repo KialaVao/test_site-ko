@@ -37,9 +37,7 @@ header .image-container img {
     header {
         padding: 3em 1em; /* Réduction du padding pour les écrans moyens */
     }
-    #parole-du-jour, #homelie {
-        font-size: 0.9rem; /* Réduction de la taille de police pour les écrans moyens */
-    }
+
 }
 
     /* Écrans petits (jusqu'à 768px) */
@@ -304,27 +302,6 @@ footer {
     border-radius: 8px;
 }
 
-/* Styles pour les sections Parole du jour et Homélie */
-#parole-du-jour, #homelie-content, #homelie {
-    background-color: #FAFAFA;
-    border-radius: 8px;
-    border: 2px solid #545454;
-    margin-top: 20px;
-    padding: 1em;
-    font-size: 1rem;
-}
-
-#parole-du-jour h4, #parole-du-jour h5 {
-    margin: 10px 0;
-    font-size: 1.5em;
-}
-
-#parole-du-jour p {
-    margin: 10px 0;
-    font-size: 1.2em;
-}
-
-
 /* Ajustement de la navigation pour les petits écrans */
 @media (max-width: 768px) {
         /* Positionnement du menu hamburger dans la barre de navigation */
@@ -474,4 +451,13 @@ footer {
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }

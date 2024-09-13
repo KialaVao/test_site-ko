@@ -453,16 +453,16 @@ footer {
     transition: transform 0.3s ease;
 }
 
-/*.text-center {
+.text-center {
     text-align: center;
     font-size: 1rem;
     padding: 20px;
-    /*background-color: #f0f0f0;
+    /*background-color: #f0f0f0;*/
     border: 1px solid #ccc;
     border-radius: 8px; 
-} */
+} 
 
-.banner {
+/*.banner {
     position: relative;
     width: 90%;
     height: 300px;
@@ -494,7 +494,7 @@ footer {
     opacity: 0.3;
   }
   
-  /* Formes diagonales supplémentaires */
+  /* Formes diagonales supplémentaires 
   .banner::before, .banner::after {
     content: '';
     position: absolute;
@@ -515,4 +515,4 @@ footer {
     bottom: -50%;
     right: -100%;
     transform: rotate(-25deg);
-  }
+  } */

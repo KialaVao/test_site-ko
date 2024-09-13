@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "2024-11-1": "Toussaint",
         "2024-11-17": "Messe du mois",
         "2024-11-24": "Christ Roi",
-        "2024-12-22": "Messe du mois",
+        "2024-12-15": "Messe du mois",
         "2024-12-25": "Noël",
         "2024-12-29": "Sainte Famille",
         "2025-1-1": "Sainte Marie,Mère de Dieu",

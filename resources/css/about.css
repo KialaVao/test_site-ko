@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #e1e1da;
 }
 
 /* Styles pour le header */
@@ -81,17 +82,17 @@ header .image-container img {
 }
 
 /* Styles pour la navigation */
-nav {
-    /*display: none;*/
+/*nav {
+    /*display: none;
     justify-content: center;
     align-items: center;
     background-color: #555555;
-    /*padding: 15px 0; */
+    /*padding: 15px 0; 
     position: relative;
-}
+}*/
 
 nav ul {
-    background-color: #555555;
+    background-color: #16567a;
     list-style-type: none;
     margin: 0;
     padding: 0;

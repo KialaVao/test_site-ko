@@ -82,15 +82,6 @@ header .image-container img {
 }
 
 /* Styles pour la navigation */
-/*nav {
-    /*display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: #555555;
-    /*padding: 15px 0; 
-    position: relative;
-}*/
-
 nav ul {
     background-color: #16567a;
     list-style-type: none;
@@ -187,24 +178,6 @@ nav ul li a, .dropbtn {
     }
 }
 
-/* Menu hamburger pour petits écrans
-.nav-toggle {
-    display: none;
-    position: absolute;
-    top: 1px;
-    left: 15px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.nav-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: white;
-}  */
-
 /* Styles du main */
 main {
     padding: 1em;
@@ -212,7 +185,7 @@ main {
 
 /* Styles du footer */
 footer {
-    background-color: #555555;
+    background-color: #16567a;
     color: white;
     text-align: center;
     padding: 0.2em;
@@ -278,8 +251,8 @@ footer {
 .text-block, .text-block2 {
     max-width: 600px;
     padding: 10px;
-    background-color: white;
-    border: 1px solid white;
+    background-color: #e1e1da;
+    border: 1px solid #e1e1da;
     border-radius: 8px;
 }
 
@@ -439,9 +412,7 @@ footer {
         display: flex; /* Affiche le menu quand l'icône est cliquée */
     }
 
-    nav ul li a {
-                                                
-                                                            
+    nav ul li a {                                             
         display: block;
         color: white;
         text-align: left;

@@ -11,7 +11,8 @@ header {
     background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
     background-size: cover; /* L'image couvre tout le header */
     background-position: center; /* Centre l'image dans le header */
-    color: white;
+    /*color: white;*/
+    color: black;
     padding: 5em 1em; /* Grand padding pour les grands écrans */
     text-align: center;
     position: relative;

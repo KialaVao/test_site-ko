@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #FAFAFA;
+    background-color: #fcfefd;
 }
 
 /* Styles du header */
@@ -97,7 +97,7 @@ header .image-container img {
 
 /* Styles de la navigation */
 nav ul {
-    background-color: #555555;
+    background-color: #16567a;
     list-style-type: none;
     margin: 0;
     padding: 0;

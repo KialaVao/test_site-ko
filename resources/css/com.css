@@ -91,18 +91,9 @@ header .image-container img {
     }
 }
 
-/* Styles pour la navigation */
-/*nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: #555555;
-    /*padding: 15px 0;
-} */
- 
+/* Styles pour la navigation */ 
 nav ul {
-    background-color: #555555;
+    background-color: #16567a;
     list-style-type: none;
     margin: 0;
     padding: 0;

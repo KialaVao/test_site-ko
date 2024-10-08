@@ -321,7 +321,7 @@ footer {
         justify-content: center; /* Centre les éléments de navigation */
         align-items: center;
         position: relative;
-        background-color: #555555;
+        background-color: #16567a;
         padding: 15px 0;
     }
 
@@ -339,7 +339,7 @@ footer {
         top: 100%; /* Positionne le menu en dessous de la barre de navigation */
         left: 0;
         width: 100%;
-        background-color: #555555;
+        background-color: #16567a;
     }
 
     nav ul.active {
@@ -382,7 +382,7 @@ footer {
         justify-content: center; /* Centre les éléments de navigation */
         align-items: center;
         position: relative;
-        background-color: #555555;
+        background-color: #16567a;
         padding: 15px 0;
     }
 
@@ -400,7 +400,7 @@ footer {
         top: 100%; /* Positionne le menu en dessous de la barre de navigation */
         left: 0;
         width: 100%;
-        background-color: #555555;
+        background-color: #16567a;
     }
 
     nav ul.active {

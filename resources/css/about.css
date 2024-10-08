@@ -220,7 +220,7 @@ footer {
 }
 
 .social-icon.facebook {
-    color: #2f4779; /* Facebook blue */
+    color: #0866ff; /* Facebook blue */
 }
 
 .social-icon.instagram {
@@ -311,8 +311,7 @@ footer {
     }
 
 /* Icône hamburger en blanc */
-    .nav-toggle span {
-                        
+    .nav-toggle span {             
         display: block;
         width: 25px;
         height: 3px;

@@ -175,11 +175,7 @@ nav ul li a, .dropbtn {
     }
 
     nav ul li a {
-        font-size: 16px; /* Taille du texte légèrement réduite */
-					   
-					 
-						 
-							  
+        font-size: 16px; /* Taille du texte légèrement réduite */		  
     }
 }
 
@@ -191,11 +187,7 @@ nav ul li a, .dropbtn {
 
     nav ul li a {
         padding: 8px 5px; /* Espacement réduit */
-        font-size: 12px; /* Réduction de la taille du texte */
-					   
-					 
-						 
-							  
+        font-size: 12px; /* Réduction de la taille du texte */					  
     }
 }
 
@@ -206,7 +198,7 @@ main {
 
 /* Styles du footer */
 footer {
-    background: #555555; 
+    background: #16567a; 
     color: white;
     text-align: center;
     padding: 0.2em;
@@ -242,7 +234,7 @@ footer {
 
 /* Couleurs spécifiques aux réseaux sociaux */
 .social-icon.facebook {
-    color: #2f4779;
+    color: #45afe1;
 }
 
 .social-icon.instagram {
@@ -299,13 +291,13 @@ footer {
 .text-block {
     max-width: 1000px;
     padding: 0;
-    background-color: #FAFAFA;
+    background-color: #fcfefd;
     border-radius: 8px;
 }
 
 /* Styles pour les sections Parole du jour et Homélie */
 #parole-du-jour, #homelie-content, #homelie {
-    background-color: #FAFAFA;
+    background-color: #fcfefd;
     border-radius: 8px;
     border: 2px solid #545454;
     margin-top: 20px;

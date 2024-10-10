@@ -45,7 +45,7 @@ header .image-container img {
     }
     
     header .image-container {
-            /*top: 40%; /* Positionnement de l'image pour les petits écrans */
+        top: 75%; /* Positionnement de l'image pour les petits écrans */
         left: 5%;
         transform: translateY(-50%);
     }

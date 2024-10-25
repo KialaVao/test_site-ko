@@ -92,14 +92,6 @@ header .image-container img {
 }
 
 /* Styles de la navigation */
-/*nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: #555555;
-    padding: 15px 0;
-}*/
 
 nav ul {
     background-color: #16567a;

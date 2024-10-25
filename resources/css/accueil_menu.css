@@ -77,7 +77,7 @@ header .image-container img {
 
     header .image-container {
         top: 75%;
-        left: 10%; /* Réajustement de la position de l'image */
+        left: 9%; /* Réajustement de la position de l'image */
     }
 
     header .image-container img {

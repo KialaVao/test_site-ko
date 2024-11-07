@@ -450,67 +450,64 @@ footer {
     transform: scale(1.1);
 }
 
-/* Styles pour le lightbox */
-.lightbox {
-    display: none;
+/* Style de l'image miniature */
+.thumbnail {
+    width: 200px; /* Taille de la miniature */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Styles de la modal */
+.modal {
+    display: none; /* Cachée par défaut */
     position: fixed;
-    z-index: 1000;
-    padding-top: 100px;
+    z-index: 1;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0,0,0,0.8); /* Fond semi-transparent */
+    align-items: center;
+    justify-content: center;
 }
 
-.lightbox-content {
-    margin: auto;
-    display: block;
-    max-width: 80%;
-    max-height: 80%;
+/* Afficher la modal lorsque l'ID est ciblé */
+.modal:target {
+    display: flex;
 }
 
+/* Contenu de la modal */
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Bouton de fermeture */
 .close {
     position: absolute;
-    top: 15px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover, 
-.close:focus {
-    color: #bbb;
+    top: -10px;
+    right: -10px;
+    background: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 50%;
     text-decoration: none;
-    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-/* Style de base pour la fenêtre pop-up */
-.popup {
-    display: none; /* Masqué par défaut */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    width: 300px;
-    text-align: center;
-    position: relative;
-}
-
-.popup-content h2 {
-    margin-top: 0;
+.close:hover {
+    background: #f1f1f1;
 }

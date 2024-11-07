@@ -452,7 +452,9 @@ footer {
 
 /* Style de l'image miniature */
 .thumbnail {
-    width: 200px; /* Taille de la miniature */
+    /*width: 200px; /* Taille de la miniature */
+    width: 75%;
+    height: 75%;
     cursor: pointer;
     transition: transform 0.3s;
 }

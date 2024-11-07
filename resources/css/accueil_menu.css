@@ -453,8 +453,6 @@ footer {
 /* Style de l'image miniature */
 .thumbnail {
     width: 75%; /* Taille de la miniature */
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
     transition: transform 0.3s;
 }

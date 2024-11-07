@@ -446,9 +446,9 @@ footer {
     transition: transform 0.3s ease;
 } */
 
-.Izahay img:hover {
+/*.Izahay img:hover {
     transform: scale(1.1);
-}
+} */
 
 /* Style de l'image miniature */
 .thumbnail {

@@ -431,34 +431,19 @@ footer {
     }
 }   
 
-/*.Izahay {
-    display: flex;
-    justify-content: center; /* Centre horizontalement 
-    align-items: center; /* Centre verticalement 
-    height: 100%; /* S'assure que l'élément parent a une hauteur suffisante 
-} */
-
-/*.Izahay img {
-    width: 75%;
-    height: 75%;
-    object-fit: cover;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-} */
-
-/*.Izahay img:hover {
-    transform: scale(1.1);
-} */
 
 /* Style de l'image miniature */
+.thumbnail-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Optionnel, pour centrer verticalement par rapport à la fenêtre */
+}
+
 .thumbnail {
     width: 75%; /* Taille de la miniature */
     cursor: pointer;
     transition: transform 0.3s;
-}
-
-.thumbnail:hover {
-    transform: scale(1.05);
 }
 
 /* Styles de la modal */

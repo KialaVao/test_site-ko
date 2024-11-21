@@ -514,11 +514,11 @@ section#members {
     }
 } 
 
-.annonce {
+/*.annonce {
     display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    height: 100%; /* S'assure que l'élément parent a une hauteur suffisante */
+    justify-content: center; /* Centre horizontalement 
+    align-items: center; /* Centre verticalement 
+    height: 100%; /* S'assure que l'élément parent a une hauteur suffisante 
 }
 
 .annonce img {
@@ -527,6 +527,22 @@ section#members {
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
+}*/
+
+/* Style de l'image miniature */
+.thumbnail-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Optionnel, pour centrer verticalement par rapport à la fenêtre */
+}
+
+.thumbnail {
+    width: 75%; /* Taille de la miniature */
+    cursor: pointer;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;
+    transition: transform 0.3s;
 }
 
 /* Styles de la modal */

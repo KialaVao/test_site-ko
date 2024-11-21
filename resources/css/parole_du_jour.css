@@ -25,7 +25,7 @@ header .image-container {
 }
 
 header .image-container img {
-    max-width: 75px; /* Taille par défaut de l'image */
+    max-width: 100px; /* Taille par défaut de l'image */
     height: auto;
     border: 1px solid black;
 }

@@ -415,6 +415,10 @@ footer {
 
 }   
 
+.image-container {
+    text-align: center; /* Center align the text and image within the container */
+}
+
 /* Style de l'image miniature */
 .thumbnail-container {
     display: flex;

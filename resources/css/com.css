@@ -514,12 +514,16 @@ section#members {
     }
 } 
 
-.Annonce {
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    height: 100%; /* S'assure que l'élément parent a une hauteur suffisante */
+.image-container {
+    text-align: center; /* Center align the text and image within the container */
 }
+
+/*.Annonce {
+    display: flex;
+    /*justify-content: center; /* Centre horizontalement */
+    /*align-items: center; /* Centre verticalement */
+    /*height: 100%; /* S'assure que l'élément parent a une hauteur suffisante */
+/*}*/
 
 .Annonce img {
     width: 25%;

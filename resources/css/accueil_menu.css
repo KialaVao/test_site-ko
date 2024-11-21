@@ -441,7 +441,6 @@ footer {
 .thumbnail {
     width: 75%; /* Taille de la miniature */
     cursor: pointer;
-    justify-content: center;
     transition: transform 0.3s;
 }
 

@@ -413,11 +413,11 @@ footer {
         text-decoration: none;
     } 
 
-    .Izahay {
+   /* .Izahay {
         display: flex;
-        justify-content: center; /* Centre horizontalement */
-        align-items: center; /* Centre verticalement */
-        height: 100%; /* S'assure que l'élément parent a une hauteur suffisante */
+        justify-content: center; /* Centre horizontalement 
+        align-items: center; /* Centre verticalement 
+        height: 100%; /* S'assure que l'élément parent a une hauteur suffisante 
     }
     
     .Izahay img {
@@ -426,9 +426,8 @@ footer {
         object-fit: cover;
         cursor: pointer;
         transition: transform 0.3s ease;
-    }
+    } */
 }   
-
 
 /* Style de l'image miniature */
 .thumbnail-container {

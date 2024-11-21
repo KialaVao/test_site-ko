@@ -255,6 +255,7 @@ footer {
     flex: 1;
     min-width: 200px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* Text blocks */
@@ -263,13 +264,7 @@ footer {
     padding: 0;
     background-color: #fcfefd;
     border-radius: 8px;
-    text-align: center;
 }
-
-/*.text-block2 {
-    border: 1px solid #e1e1da;
-    font-size: 1rem;
-}*/
 
 /* Thumbnail images */
 .thumbnail-container {

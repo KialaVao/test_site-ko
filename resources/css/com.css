@@ -514,84 +514,18 @@ section#members {
     }
 } 
 
-/*.annonce {
+.Annonce {
     display: flex;
-    justify-content: center; /* Centre horizontalement 
-    align-items: center; /* Centre verticalement 
-    height: 100%; /* S'assure que l'élément parent a une hauteur suffisante 
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100%; /* S'assure que l'élément parent a une hauteur suffisante */
 }
 
-.annonce img {
+.Annonce img {
     width: 25%;
     height: 25%;
     object-fit: cover;
     cursor: pointer;
     transition: transform 0.3s ease;
-}*/
-
-/* Style de l'image miniature */
-.thumbnail-container {
-    display: flex;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    height: 100vh; /* Optionnel, pour centrer verticalement par rapport à la fenêtre */
 }
 
-.thumbnail {
-    width: 75%; /* Taille de la miniature */
-    cursor: pointer;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center;
-    transition: transform 0.3s;
-}
-
-/* Styles de la modal */
-.modal {
-    display: none; /* Cachée par défaut */
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 25%;
-    height: 25%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.8); /* Fond semi-transparent */
-    align-items: center;
-    justify-content: center;
-}
-
-/* Afficher la modal lorsque l'ID est ciblé */
-.modal:target {
-    display: flex;
-}
-
-/* Contenu de la modal */
-.modal-content {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
-}
-
-.modal-content img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-}
-
-/* Bouton de fermeture */
-.close {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background: #fff;
-    color: #333;
-    padding: 5px 10px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.close:hover {
-    background: #f1f1f1;
-}

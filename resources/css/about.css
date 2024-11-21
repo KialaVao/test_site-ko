@@ -89,7 +89,6 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center; /* Centre les éléments */
-    /*width: 100%; /* Prend toute la largeur disponible */
     box-sizing: border-box; /* Gère les marges et padding */
 }
 
@@ -149,7 +148,6 @@ nav ul li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    /*padding: 14px 16px; */
     text-decoration: none;
 }
 
@@ -296,6 +294,7 @@ footer {
     margin-top: 10px;
     font-size: 14px;
     color: #333;
+    font-weight: bold;
 }
 
 /* Ajustement de la navigation pour les petits écrans */

@@ -25,7 +25,7 @@ header .image-container {
 }
 
 header .image-container img {
-    max-width: 75px; /* Taille par défaut de l'image */
+    max-width: 100px; /* Taille par défaut de l'image */
     height: auto;
     border: 1px solid black;
 }
@@ -95,14 +95,12 @@ header .image-container img {
 
 /* Styles de la navigation */
 nav ul {
-    /*background-color: #555555;*/
     background-color: #16567a;
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center; /* Centre les éléments */
-    /*width: 100%; /* Prend toute la largeur disponible */
     box-sizing: border-box; /* Gère les marges et padding */
 }
 

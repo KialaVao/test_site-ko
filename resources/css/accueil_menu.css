@@ -20,6 +20,7 @@ header {
 /* Image dans le header */
 header .image-container {
     position: absolute;
+    top: 75%;
     left: 7%;
     transform: translateY(-50%);
 }
@@ -49,7 +50,7 @@ header .image-container img {
     header .image-container {
         top: 75%; /* Positionnement de l'image pour les petits écrans */
         left: 5%;
-        /*transform: translateY(-50%);*/
+        transform: translateY(-50%);
     }
 
     header .image-container img {

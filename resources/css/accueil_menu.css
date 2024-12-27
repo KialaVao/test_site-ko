@@ -21,7 +21,7 @@ header {
 header .image-container {
     position: absolute;
     top: 75%;
-    left: 7%;
+    /*left: 7%;*/
     transform: translateY(-50%);
 }
 

@@ -516,9 +516,6 @@ section#members {
 
 .image-container {
     text-align: center; /* Center align the text and image within the container */
-    max-width: 100px;
-    height: auto;
-    border: 1px solid black;
 }
 
 .Annonce img {

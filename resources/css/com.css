@@ -23,7 +23,7 @@ header .image-container {
 }
 
 header .image-container img {
-    max-width: 100px;
+    max-width: 75px;
     height: auto;
     border: 1px solid black;
 }

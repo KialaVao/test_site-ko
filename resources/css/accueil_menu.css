@@ -20,7 +20,6 @@ header {
 /* Image dans le header */
 header .image-container {
     position: absolute;
-    /*top: 75%;*/
     left: 7%;
     transform: translateY(-50%);
 }
@@ -38,25 +37,6 @@ header .image-container img {
     header {
         padding: 3em 1em; /* Réduction du padding pour les écrans moyens */
     }
-
-/*    header .image-container {
-        top: 50%; /* Positionnement de l'image pour les petits écrans 
-        left: 3%;
-        transform: translateY(-50%);
-    }
-
-    header .image-container img {
-        max-width: 60px; /* Réduction de la taille de l'image 
-    }
-
-    .content-row {
-        flex-direction: column; /* Les éléments se disposent en colonne sur petits écrans 
-    }
-
-    .map-container iframe {
-        height: 200%; /* Ajustement de la taille de la carte 
-    }*/
-
 }
 
     /* Écrans petits (jusqu'à 768px) */

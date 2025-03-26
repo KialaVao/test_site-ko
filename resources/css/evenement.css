@@ -652,24 +652,3 @@ footer {
         text-decoration: none;
     } 
 }  
-
-/*Gallerie photos*/
-.container {
-    position: relative;
-    width: 300px;
-    height: 200px;
-}
-  
-  .Photo 1,
-  .Photo 2 
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-}
-  
-  .Photo 2 {
-    opacity: 0.7; /* Pour voir les deux images en même temps */
-}

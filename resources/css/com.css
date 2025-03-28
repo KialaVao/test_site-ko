@@ -506,11 +506,7 @@ section#members {
     } 
 
     .annonce img {
-        width: 75%;
-        /*height: 75%;*/
-        object-fit: cover;
-        cursor: pointer;
-        transition: transform 0.3s ease;
+        max-width: 90%;
     }
 } 
 
@@ -518,12 +514,18 @@ section#members {
     text-align: center; /* Center align the text and image within the container */
 }
 
-.annonce img {
-    width: 25%;
-    cursor: pointer;
+.annonce {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    transition: transform 0.3s;
+    text-align: center;
 }
+
+.annonce img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 

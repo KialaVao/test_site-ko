@@ -518,7 +518,7 @@ section#members {
     text-align: center; /* Center align the text and image within the container */
 }
 
-.Annonce img {
+.annonce img {
     width: 25%;
     height: 25%;
     object-fit: cover;

@@ -507,7 +507,7 @@ section#members {
 
     .annonce img {
         width: 75%;
-        height: 75%;
+        /*height: 75%;*/
         object-fit: cover;
         cursor: pointer;
         transition: transform 0.3s ease;
@@ -520,9 +520,10 @@ section#members {
 
 .annonce img {
     width: 25%;
-    height: 25%;
-    object-fit: cover;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
 }
 

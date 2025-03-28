@@ -517,7 +517,13 @@ section#members {
 .annonce {
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1em; /* pour éviter que l'image touche les bords */
 }
 
 .annonce img {

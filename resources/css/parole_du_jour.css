@@ -37,7 +37,7 @@ header .image-container img {
     header {
         padding: 3em 1em; /* Réduction du padding pour les écrans moyens */
     }
-    #parole-du-jour, #homelie {
+    #parole-du-jour {
         font-size: 0.9rem; /* Réduction de la taille de police pour les écrans moyens */
     }
 }
@@ -167,6 +167,17 @@ nav ul li a, .dropbtn {
 }
 
 /* Navigation responsive */
+
+/* Écrans moyens (jusqu'à 1200px) */
+@media (max-width: 1200px) {
+    nav ul {
+        justify-content: space-around; /* Répartit les éléments avec un espace égal */
+    }
+
+    nav ul li a {
+        font-size: 20px; 		  
+    }
+}
 
 /* Petits écrans (jusqu'à 768px) */
 @media (max-width: 768px) {

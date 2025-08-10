@@ -295,8 +295,8 @@ footer {
     border-radius: 8px;
 }
 
-/* Styles pour les sections Parole du jour et Homélie */
-#parole-du-jour, #homelie-content, #homelie {
+/* Styles pour les sections Parole du jour */
+#parole-du-jour {
     background-color: #fcfefd;
     border-radius: 8px;
     border: 2px solid #e1e1da;

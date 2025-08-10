@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "2025-11-16": "Messe du mois",
         "2025-12-21": "Messe du mois",
         "2025-12-25": "Noël",
+        "2026-1-4": "Épiphanie",
         "2026-1-18": "Messe du mois et Fête de Bonne Année",
         "2026-2-15": "Messe du mois",
         "2026-2-18": "Mercredi des cendres",

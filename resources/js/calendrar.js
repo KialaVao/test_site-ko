@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "2025-11-2": "Toussaint / Conseil National ANCMF-J2",
         "2025-11-16": "Messe du mois",
         "2025-11-25": "Christ Roi",
+        "2025-12-21": "Messe du mois",
         "2025-12-25": "Noël",
         "2026-1-4": "Épiphanie",
         "2026-1-18": "Messe du mois / Bonne Année",

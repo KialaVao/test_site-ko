@@ -25,7 +25,14 @@ document.addEventListener('DOMContentLoaded', function () {
         "2026-2-15": "Messe du mois",
         "2026-2-18": "Mecredi des cendres",
         "2026-3-15": "Messe du mois",
-        "2026-3-29": "Dimanche des Rameaux"
+        "2026-3-29": "Dimanche des Rameaux",
+        "2026-4-6": "Pâques",
+        "2026-4-12": "Fête de la Miséricorde",
+        "2026-4-19": "Messe du mois",
+        "2026-5-14": "Ascension",
+        "2026-5-17": "Messe du mois",
+        "2026-5-29": "Pentecôte",
+        "2026-6-21": "Messe du mois"
     };
 
     const daysOfWeek = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];

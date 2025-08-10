@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "2026-1-4": "Épiphanie",
         "2026-1-18": "Messe du mois / Bonne Année",
         "2026-2-15": "Messe du mois",
-        "2026-2-18": "Mecredi des cendres"
+        "2026-2-18": "Mecredi des cendres",
         "2026-3-15": "Messe du mois",
         "2026-3-29": "Dimanche des Rameaux"
     };

@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const today = new Date();
 
     const catholicEvents = {
-        "2024-8-15": "Assomption de Marie",
-        "2024-9-15": "Messe du mois",
-        "2024-10-20": "Messe du mois",
-        "2024-11-1": "Toussaint",
+        "2025-8-15": "Assomption de Marie",
+        "2025-9-28": "Rentrée Pastorale",
+        "2025-10-19": "Messe du mois",
+        "2025-11-1": "Toussaint / Conseil National ANCMF-J1",
         "2024-11-17": "Messe du mois",
         "2024-11-24": "Christ Roi",
         "2024-12-15": "Recollection de l'Avent",

@@ -18,11 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "2025-9-28": "Rentrée Pastorale",
         "2025-10-19": "Messe du mois",
         "2025-11-1": "Toussaint / Conseil National ANCMF-J1",
-        "2024-11-17": "Messe du mois",
-        "2024-11-24": "Christ Roi",
-        "2024-12-15": "Recollection de l'Avent",
-        "2025-12-25": "Noël",
-
+        "2025-12-25": "Noël"
     };
 
     const daysOfWeek = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];

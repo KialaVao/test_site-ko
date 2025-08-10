@@ -34,7 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
         "2026-5-14": "Ascension",
         "2026-5-17": "Messe du mois",
         "2026-5-29": "Pentecôte",
-        "2026-6-21": "Messe du mois"
+        "2026-6-21": "Messe du mois",
+        "2026-8-15": "Assomption de Marie"
     };
 
     const daysOfWeek = ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"];

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "2025-9-28": "Rentrée Pastorale",
         "2025-10-19": "Messe du mois",
         "2025-11-1": "Toussaint / Conseil National ANCMF-J1",
-        "2025-11-2": "Toussaint / Conseil National ANCMF-J1",
+        "2025-11-2": "Toussaint / Conseil National ANCMF-J2",
         "2025-12-25": "Noël",
         "2026-1-4": "Épiphanie",
         "2026-1-18": "Messe du mois / Bonne Année",

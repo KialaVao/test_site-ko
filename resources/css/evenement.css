@@ -330,19 +330,19 @@ footer {
 
 
 
-/*.album-sidebar {
-    position: fixed;              /* reste collé à l'écran 
-    right: 0;                     /* à droite 
-    top: 50%;                     /* centré verticalement 
+.album-sidebar {
+    position: fixed;              /* reste collé à l'écran */
+    right: 0;                     /* à droite */
+    top: 50%;                     /* centré verticalement */
     transform: translateY(-50%);
-    background-color: #2f6f4e;    /* couleur de fond 
+    background-color: #2f6f4e;    /* couleur de fond */
     z-index: 1000;
     border-radius: 8px 0 0 8px;
     box-shadow: -2px 2px 8px rgba(0,0,0,0.2);
     overflow: hidden;
-}*/
+}
 
-/*.album-sidebar a {
+.album-sidebar a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -365,8 +365,8 @@ footer {
 }
 
 .album-sidebar a:hover {
-    background-color: #245a3d; /* un peu plus foncé au survol 
-}*/
+    background-color: #245a3d; /* un peu plus foncé au survol */
+}
 
 
 :root{

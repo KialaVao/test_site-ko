@@ -299,21 +299,41 @@ footer {
 }
 
 /* Bloc de texte */
-.text-block {
+/*.text-block {
     max-width: 1000px;
     padding: 0;
     background-color: #fcfefd;
     border-radius: 8px;
+}*/
+
+.text-block {
+    width: 100%;
+    max-width: none; /* Supprime la limite de largeur */
+    padding: 0;
+    background-color: #fcfefd;
+    border-radius: 8px;
+    margin: 0; /* Supprime les marges automatiques */
 }
 
 /* Styles pour les sections Parole du jour */
-#parole-du-jour {
+/*#parole-du-jour {
     background-color: #fcfefd;
     border-radius: 8px;
     border: 2px solid #e1e1da;
     margin-top: 20px;
     padding: 1em;
     font-size: 1rem;
+}*/
+
+#parole-du-jour {
+    background-color: #fcfefd;
+    border-radius: 8px;
+    border: 2px solid #e1e1da;
+    margin-top: 20px;
+    padding: 2em;
+    font-size: 1.2rem;
+    width: 100%;
+    box-sizing: border-box; /* Pour inclure padding/bordure dans la largeur */
 }
 
 #parole-du-jour h4, #parole-du-jour h5 {

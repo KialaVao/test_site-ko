@@ -213,6 +213,7 @@ footer {
     color: white;
     text-align: center;
     padding: 0.2em;
+    position: fixed;
     width: 100%;
     bottom: 0;
 }
@@ -299,59 +300,13 @@ footer {
 }
 
 /* Bloc de texte */
-/*.text-block {
-    max-width: 1000px;
-    padding: 0;
-    background-color: #fcfefd;
-    border-radius: 8px;
-}*/
-
-/*.text-block {
-    width: 100%;
-    max-width: none; /* Supprime la limite de largeur 
-    padding: 0;
-    background-color: #fcfefd;
-    border-radius: 8px;
-    margin: 0; /* Supprime les marges automatiques 
-}*/
-
-/* Styles pour les sections Parole du jour */
-/*#parole-du-jour {
-    background-color: #fcfefd;
-    border-radius: 8px;
-    border: 2px solid #e1e1da;
-    margin-top: 20px;
-    padding: 1em;
-    font-size: 1rem;
-}*/
-
-/*#parole-du-jour {
-    background-color: #fcfefd;
-    border-radius: 8px;
-    border: 2px solid #e1e1da;
-    margin-top: 20px;
-    padding: 2em;
-    font-size: 1.2rem;
-    width: 100%;
-    box-sizing: border-box; /* Pour inclure padding/bordure dans la largeur 
-}
-
-/*#parole-du-jour h4, #parole-du-jour h5 {
-    margin: 10px 0;
-    font-size: 1.5em;
-}
-
-/*#parole-du-jour p {
-    margin: 10px 0;
-    font-size: 1.2em;
-}*/
-
 .text-block {
     width: 100%;
     max-width: none;
     margin: 0;
 }
 
+/* Styles pour les sections Parole du jour */
 #parole-du-jour {
     width: 100%;
     box-sizing: border-box;

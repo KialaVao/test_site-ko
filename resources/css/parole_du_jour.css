@@ -306,14 +306,14 @@ footer {
     border-radius: 8px;
 }*/
 
-.text-block {
+/*.text-block {
     width: 100%;
-    max-width: none; /* Supprime la limite de largeur */
+    max-width: none; /* Supprime la limite de largeur 
     padding: 0;
     background-color: #fcfefd;
     border-radius: 8px;
-    margin: 0; /* Supprime les marges automatiques */
-}
+    margin: 0; /* Supprime les marges automatiques 
+}*/
 
 /* Styles pour les sections Parole du jour */
 /*#parole-du-jour {

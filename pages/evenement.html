@@ -45,8 +45,8 @@
   </nav>
 
   <main>
-    <section class="content-row">
-      <!-- Colonne calendrier -->
+  <!--  <section class="content-row">
+       Colonne calendrier 
       <div class="calendar-container">
         <h2>Calendrier de nos événements</h2>
         <div class="calendar-header">
@@ -55,8 +55,31 @@
           <button id="nextMonth">Suivant</button>
         </div>
         <div id="calendar" class="calendar"></div>
-      </div>
+      </div> -->
 
+    <!-- Section pour le calendrier -->
+        <div class="content-row">
+            <div class="calendar-container">
+                <h2>Calendrier de nos événements</h2>
+                <div class="calendar-header">
+                    <button id="prevMonth">Précédent</button>
+                    <h2 id="monthYear"></h2>
+                    <button id="nextMonth">Suivant</button>
+                </div>
+                <div class="calendar" id="calendar"></div>
+                    <script src="../resources/js/calendrar.js"></script>
+
+                    <div id="eventPopup" class="popup">
+                        <div class="popup-content">
+                            <span class="close">&times;</span>
+                            <h2 id="popupTitle"></h2>
+                            <p id="popupDescription"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                
       <!-- Colonne albums -->
       <div class="gallery-column">
         <!-- ALBUM 1 -->
@@ -95,13 +118,6 @@
           <div class="gallery-strip">
             <a href="../resources/img/Noel 2024/Noel2.jpg" data-lightbox="album-noel" data-title="Noël 2024 - 1">
               <img loading="lazy" src="../resources/img/Noel 2024/Noel2.jpg" alt="Noël 2024">
-            </a>
-            <!-- ajoute 2 autres images si tu veux 3 colonnes -->
-            <a href="../resources/img/Noel 2024/Noel1.jpg" data-lightbox="album-noel" data-title="Noël 2024 - 2">
-              <img loading="lazy" src="../resources/img/Noel 2024/Noel1.jpg" alt="Noël 2024">
-            </a>
-            <a href="../resources/img/Noel 2024/Noel3.jpg" data-lightbox="album-noel" data-title="Noël 2024 - 3">
-              <img loading="lazy" src="../resources/img/Noel 2024/Noel3.jpg" alt="Noël 2024">
             </a>
           </div>
         </section>

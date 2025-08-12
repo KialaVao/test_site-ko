@@ -1,197 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evenements</title>
-    <link rel="icon" type="image/jpg" href="../resources/img/LOGO MALAGASY RENNES.jpg"> <!-- Ligne ajoutée pour le favicon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Lightbox2 CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evenements</title>
 
-    <!-- Lightbox2 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script> 
+  <link rel="icon" type="image/jpg" href="../resources/img/LOGO MALAGASY RENNES.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <script src="../resources/js/gallery.js"></script>
-    <script defer src="../resources/js/menu.js"></script> <!-- Ajoutez votre script JS ici -->
-    
-    <link rel="stylesheet" media="screen, print, handheld" type="text/css" href="../resources/css/evenement.css">
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Ton CSS -->
+  <link rel="stylesheet" href="../resources/css/evenement.css">
 </head>
 <body>
-    <header>
-        <h1>Eglizy Katolika Malagasy eto Rennes sy ny manodidina</h1>
-        <div class="image-container">
-            <a href="./accueil.html">
-                <img src="../resources/img/LOGO MALAGASY RENNES.jpg" alt="logo-KTOrennes" class="image">
-            </a>
-        </div>
-    </header>
+  <header>
+    <h1>Eglizy Katolika Malagasy eto Rennes sy ny manodidina</h1>
+    <div class="image-container">
+      <a href="./accueil.html">
+        <img src="../resources/img/LOGO MALAGASY RENNES.jpg" alt="logo-KTOrennes" class="image">
+      </a>
+    </div>
+  </header>
 
-    <nav>
-        <div class="nav-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        
-        <ul>
-            <li><a href="./accueil.html">Accueil</a></li>
-            <li><a href="./parole_du_jour.html">Parole du Jour</a></li>
-            <li><a href="./about.html">À propos de nous</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropbtn">Conseil Pastoral &#9662;</a>
-                <ul class="dropdown-content">
-                    <li><a href="./liturgie.html">Liturgie</a></li>
-                    <li><a href="./catechèse.html">Education</a></li>
-                    <li><a href="./com.html">Communication</a></li>
-                    <li><a href="./gestion.html">Gestion</a></li>
-                </ul>
-            </li>
-            <li><a href="./evenement.html">Evenements</a></li>
-            <li><a href="./contact.html">Contacts</a></li>
+  <nav>
+    <div class="nav-toggle"><span></span><span></span><span></span></div>
+    <ul>
+      <li><a href="./accueil.html">Accueil</a></li>
+      <li><a href="./parole_du_jour.html">Parole du Jour</a></li>
+      <li><a href="./about.html">À propos de nous</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropbtn">Conseil Pastoral &#9662;</a>
+        <ul class="dropdown-content">
+          <li><a href="./liturgie.html">Liturgie</a></li>
+          <li><a href="./catechèse.html">Education</a></li>
+          <li><a href="./com.html">Communication</a></li>
+          <li><a href="./gestion.html">Gestion</a></li>
         </ul>
-    </nav>
+      </li>
+      <li><a href="./evenement.html">Evenements</a></li>
+      <li><a href="./contact.html">Contacts</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <section>
-            <!--<div class="text-block">
-                  Section pour l'affichage les actualités 
-                <div class="events-container2">
-                    <div class="event2" onclick="openModal('eventModal1')">
-                        <div class="event-date2"> Le DIMANCHE 28 SEPTEMBRE 2025 à 10h30 - 26me Dimanche des Temps Ordinaire – Année C </div>
-                        <div class="event-title2"> Messe à L'Eglise Saint Jean l'Évangeliste Saint Malo à Rennes </div>
-                        <p> Nous allons célébrer notre messe habituelle dans notre Eglise Saint Etienne à Rennes.
-                            Lors de la célébration, nous aurons le plaisir d'assisster au Baptême d'Anya Marie.
-                            A la fin de la messe, nous partagerons un petit goûter à notre habitude, donc n'oubliez pas de ramener les "fait-maison"</p>
-                        <div class="event-location2">Eglise Saint Etienne, 08 Carrefour Jouaust, 35000 RENNES </div>
-                    </div>
-                </div>
-            </div> -->
-
-            <!-- Section pour le calendrier -->
-            <div class="content-row">
-                <div class="calendar-container">
-                    <h2>Calendrier de nos événements</h2>
-                    <div class="calendar-header">
-                        <button id="prevMonth">Précédent</button>
-                        <h2 id="monthYear"></h2>
-                        <button id="nextMonth">Suivant</button>
-                    </div>
-                    <div class="calendar" id="calendar"></div>
-                    <script src="../resources/js/calendrar.js"></script>
-
-                    <div id="eventPopup" class="popup">
-                        <div class="popup-content">
-                            <span class="close">&times;</span>
-                            <h2 id="popupTitle"></h2>
-                            <p id="popupDescription"></p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="text-block">
-
-            <!-- Section pour l'affichage des images -->
-                <!-- <h2>Galerie de photos</h2>
-                    <div class="gallery-container">
-                        <div class="gallery-item">
-                            <img src="../resources/img/albumJuin2024/photo1.jpeg" alt="Photo 1">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../resources/img/albumJuin2024/photo2.jpeg" alt="Photo 2">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../resources/img/albumJuin2024/photo3.jpeg" alt="Photo 3">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../resources/img/albumJuin2024/photo4.jpeg" alt="Photo 4">
-                        </div>
-                    </div> 
-
-                    <div class="gallery-container">
-                        <div class="gallery-item">
-                            <img src="../resources/img/Noel 2024/Noel1.jpg" alt="Noel 1">
-                        </div>
-                        <div class="gallery-item">
-                            <img src="../resources/img/Noel 2024/Noel2.jpg" alt="Noel 2">
-                        </div>
-                    </div> -->
-
-                <!-- Bouton vertical masqué qui se révèle au survol -->
-                    <a class="album-cta" href="LIEN_VERS_TON_ALBUM" target="_blank" rel="noopener">
-                        <span>VOIR<br>L’ALBUM-PHOTOS</span>
-                        <i class="fas fa-ellipsis-v" aria-hidden="true"></i>
-                    </a>
-                </div>
-
-                <section class="gallery-hero">
-                    <div class="gallery-header">
-                        <h2 class="gallery-title">
-                            <a href="https://ton-lien-d-album" target="_blank" rel="noopener">
-                            Fanonkafana ny Communauté Malagasy de Rennes
-                            </a>
-                            </h2>
-                        </div>
-
-                    <div class="album-teaser">
-                        <div class="album-photos"> 
-                            <div class="gallery-strip">
-                                <img src="../resources/img/albumJuin2024/photo1.jpeg" alt="Photo 1">
-                                <img src="../resources/img/albumJuin2024/photo2.jpeg" alt="Photo 2">
-                                <img src="../resources/img/albumJuin2024/photo3.jpeg" alt="Photo 3">
-                                <img src="../resources/img/albumJuin2024/photo4.jpeg" alt="Photo 4">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="gallery-hero">
-                    <div class="gallery-header">
-                        <h2 class="gallery-title">
-                            <a href="https://ton-lien-d-album" target="_blank" rel="noopener">
-                            Noël 2024
-                            </a>
-                            </h2>
-                        </div>
-
-                    <div class="gallery-strip">
-                        <!-- <img src="../resources/img/Noel 2024/Noel1.jpg" alt="Noel 1"> -->
-                        <img src="../resources/img/Noel 2024/Noel2.jpg" alt="Noel 2">
-                    </div>
-                </section>
-
-                <!-- Teaser album photos -->
-                <div class="album-teaser">
-                    <div class="album-photos">
-                        <!-- Mets 6–8 miniatures (peu lourdes). Elles sont floutées/estompées par CSS. -->
-                        <!-- <img src="../resources/img/albumJuin2024/photo1.jpeg" alt="Photo 1">
-                        <img src="../resources/img/albumJuin2024/photo2.jpeg" alt="Photo 2">
-                        <img src="../resources/img/albumJuin2024/photo3.jpeg" alt="Photo 3">
-                        <img src="../resources/img/albumJuin2024/photo4.jpeg" alt="Photo 4">
-                        <div class="album-fade"></div> 
-                    </div> -->
-
-
-                <!-- Section pour l'affichage de l'image en grand -->
-                    <div class="lightbox" id="lightbox">
-                        <span class="close">&times;</span>
-                        <img class="lightbox-content" id="lightbox-image">
-                        <a class="prev" id="prev">&#10094;</a>
-                        <a class="next" id="next">&#10095;</a>
-                    </div>
-                    <script src="../resources/js/gallery.js"></script>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="social-media-icons">
-            <a href="https://www.facebook.com/profile.php?id=61556191906769" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/kto_malagasy_rennes" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+  <main>
+    <section class="content-row">
+      <!-- Colonne calendrier -->
+      <div class="calendar-container">
+        <h2>Calendrier de nos événements</h2>
+        <div class="calendar-header">
+          <button id="prevMonth">Précédent</button>
+          <h2 id="monthYear"></h2>
+          <button id="nextMonth">Suivant</button>
         </div>
-        <p>&copy; 2025 KTO Malagasy Rennes. Tous droits réservés.</p>
-    </footer>
+        <div id="calendar" class="calendar"></div>
+      </div>
+
+      <!-- Colonne albums -->
+      <div class="gallery-column">
+        <!-- ALBUM 1 -->
+        <section class="gallery-hero">
+          <div class="gallery-header">
+            <h2 class="gallery-title">
+              <a href="https://ton-lien-d-album-1" target="_blank" rel="noopener">
+                Fanokafana ny Communauté Malagasy de Rennes
+              </a>
+            </h2>
+          </div>
+
+          <div class="gallery-strip">
+            <a href="../resources/img/albumJuin2024/photo1.jpeg" data-lightbox="album-juin" data-title="Fanokafana - 1">
+              <img loading="lazy" src="../resources/img/albumJuin2024/photo1.jpeg" alt="Fanokafana 1">
+            </a>
+            <a href="../resources/img/albumJuin2024/photo2.jpeg" data-lightbox="album-juin" data-title="Fanokafana - 2">
+              <img loading="lazy" src="../resources/img/albumJuin2024/photo2.jpeg" alt="Fanokafana 2">
+            </a>
+            <a href="../resources/img/albumJuin2024/photo3.jpeg" data-lightbox="album-juin" data-title="Fanokafana - 3">
+              <img loading="lazy" src="../resources/img/albumJuin2024/photo3.jpeg" alt="Fanokafana 3">
+            </a>
+          </div>
+        </section>
+
+        <!-- ALBUM 2 -->
+        <section class="gallery-hero">
+          <div class="gallery-header">
+            <h2 class="gallery-title">
+              <a href="https://ton-lien-d-album-2" target="_blank" rel="noopener">
+                Noël 2024
+              </a>
+            </h2>
+          </div>
+
+          <div class="gallery-strip">
+            <a href="../resources/img/Noel 2024/Noel2.jpg" data-lightbox="album-noel" data-title="Noël 2024 - 1">
+              <img loading="lazy" src="../resources/img/Noel 2024/Noel2.jpg" alt="Noël 2024">
+            </a>
+            <!-- ajoute 2 autres images si tu veux 3 colonnes -->
+            <a href="../resources/img/Noel 2024/Noel1.jpg" data-lightbox="album-noel" data-title="Noël 2024 - 2">
+              <img loading="lazy" src="../resources/img/Noel 2024/Noel1.jpg" alt="Noël 2024">
+            </a>
+            <a href="../resources/img/Noel 2024/Noel3.jpg" data-lightbox="album-noel" data-title="Noël 2024 - 3">
+              <img loading="lazy" src="../resources/img/Noel 2024/Noel3.jpg" alt="Noël 2024">
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-media-icons">
+      <a href="https://www.facebook.com/profile.php?id=61556191906769" target="_blank" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/kto_malagasy_rennes" target="_blank" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2025 KTO Malagasy Rennes. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Scripts en bas -->
+  <script src="../resources/js/calendrar.js"></script>
+  <script defer src="../resources/js/menu.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>

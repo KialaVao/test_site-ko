@@ -325,7 +325,7 @@ footer {
     font-size: 1rem;
 }*/
 
-#parole-du-jour {
+/*#parole-du-jour {
     background-color: #fcfefd;
     border-radius: 8px;
     border: 2px solid #e1e1da;
@@ -333,17 +333,34 @@ footer {
     padding: 2em;
     font-size: 1.2rem;
     width: 100%;
-    box-sizing: border-box; /* Pour inclure padding/bordure dans la largeur */
+    box-sizing: border-box; /* Pour inclure padding/bordure dans la largeur 
 }
 
-#parole-du-jour h4, #parole-du-jour h5 {
+/*#parole-du-jour h4, #parole-du-jour h5 {
     margin: 10px 0;
     font-size: 1.5em;
 }
 
-#parole-du-jour p {
+/*#parole-du-jour p {
     margin: 10px 0;
     font-size: 1.2em;
+}*/
+
+.text-block {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+#parole-du-jour {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: justify;   /* étire le texte */
+    hyphens: auto;         /* coupe les mots si nécessaire */
+}
+
+#parole-du-jour br {
+    display: none; /* supprime les retours à la ligne forcés */
 }
 
 

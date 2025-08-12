@@ -370,99 +370,96 @@ footer {
 
 
 :root{
-  --album-accent:#2f6f4e;    /* vert du panneau */
-  --album-accent-hover:#245a3d;
+  --green:#2f6f4e;             /* vert du bandeau */
+  --green-soft:#2f6f4e33;      /* vert très clair pour les filets */
+  --title-color:#fff;
 }
 
-/* Conteneur fixé à droite, centré verticalement */
-.album-teaser{
-  position: fixed;
-  right: 0;
+/* bloc global */
+.gallery-hero{
+  max-width: 1250px;           /* largeur max du bloc */
+  margin: 40px auto 24px;      /* centré */
+  padding: 0 16px;             /* petite marge latérale */
+}
+
+/* en-tête avec filets à gauche/droite */
+.gallery-header{
+  position: relative;
+  text-align: center;
+  margin: 0 0 14px 0;
+  padding-top: 6px;
+}
+.gallery-header::before,
+.gallery-header::after{
+  content:"";
+  position:absolute;
   top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: stretch;
-  z-index: 1000;
-  box-shadow: -6px 10px 24px rgba(0,0,0,.15);
-  border-radius: 8px 0 0 8px;
-  overflow: hidden;
+  height: 2px;
+  width: 34%;
+  background: var(--green-soft);
+}
+.gallery-header::before{ left: 0; }
+.gallery-header::after{ right: 0; }
+
+/* titre vert centré + triangle */
+.gallery-title{
+  display: inline-block;
+  position: relative;
+  background: var(--green);
+  color: var(--title-color);
+  padding: 12px 28px;
+  border-radius: 4px;
+  font-size: clamp(1rem, .9rem + .6vw, 1.35rem);
+  font-weight: 800;
+  letter-spacing: .02em;
+  margin: 0;
+}
+.gallery-title a{
+  color: inherit;
+  text-decoration: none;
+}
+.gallery-title::after{
+  content:"";
+  position:absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 0; height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 10px solid var(--green);   /* petit triangle */
 }
 
-/* Bande d’aperçu à gauche (grille d’images) */
-.album-photos{
-  width: 420px;                 /* largeur du teaser */
-  height: 220px;                /* hauteur visible */
+/* bande d'images (3 colonnes) */
+.gallery-strip{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
-  gap: 0;
-  position: relative;
-  filter: grayscale(20%);
+  gap: 16px;
+  height: 320px;               /* ajuste la hauteur selon ton goût */
+  overflow: hidden;
 }
-
-.album-photos img{
+.gallery-strip img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  opacity: .55;                 /* rendu estompé comme sur le site */
-  filter: blur(0.3px);          /* léger flou */
+  object-fit: cover;           /* recadre proprement sans déformer */
+  display: block;
 }
 
-/* voile/fondu à gauche/droite pour un look éditorial */
-.album-fade{
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg,
-     rgba(255,255,255,.85) 0%, rgba(255,255,255,0) 14%, 
-     rgba(255,255,255,0) 86%, rgba(255,255,255,.85) 100%);
-  pointer-events: none;
+/* responsive */
+@media (max-width: 992px){
+  .gallery-header::before,
+  .gallery-header::after{ width: 28%; }
+  .gallery-strip{ height: 260px; }
 }
-
-/* Panneau vertical (bouton), initialement “caché” en partie */
-.album-cta{
-  width: 92px;                   /* largeur du panneau vert */
-  background: var(--album-accent);
-  color: #fff;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: .8rem .6rem;
-  gap: .5rem;
-  transform: translateX(55%);    /* -> MASQUÉ (dépasse à droite) */
-  transition: transform .35s ease, background .2s ease;
-  text-align: center;
-  font-weight: 700;
-  line-height: 1.1;
+@media (max-width: 680px){
+  .gallery-header::before,
+  .gallery-header::after{ display:none; } /* on cache les filets sur petit écran */
+  .gallery-strip{
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .gallery-strip img{ height: 220px; }
 }
-
-.album-cta span{
-  font-size: .86rem;
-  letter-spacing: .02em;
-}
-
-.album-cta i{ font-size: 1.1rem; }
-
-/* Interaction : on laisse affleurer le panneau, il glisse au survol */
-.album-teaser:hover .album-cta{
-  transform: translateX(0);      /* -> ENTIEREMENT VISIBLE */
-  background: var(--album-accent-hover);
-}
-.album-teaser:hover .album-photos img{ opacity: .75; }
-
-/* Mobile : réduire / simplifier */
-@media (max-width: 768px){
-  .album-photos{ width: 260px; height: 160px; }
-  .album-cta{ width: 80px; transform: translateX(35%); }
-}
-
-@media (max-width: 480px){
-  .album-photos{ display:none; } /* ne garder que le bouton sur très petit écran */
-  .album-cta{ transform: translateX(0); }
-}
-
-
 
 
 /* Styles pour le lightbox */

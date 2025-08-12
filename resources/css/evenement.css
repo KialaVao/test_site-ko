@@ -330,19 +330,19 @@ footer {
 
 
 
-.album-sidebar {
-    position: fixed;              /* reste collé à l'écran */
-    right: 0;                     /* à droite */
-    top: 50%;                     /* centré verticalement */
+/*.album-sidebar {
+    position: fixed;              /* reste collé à l'écran 
+    right: 0;                     /* à droite 
+    top: 50%;                     /* centré verticalement 
     transform: translateY(-50%);
-    background-color: #2f6f4e;    /* couleur de fond */
+    background-color: #2f6f4e;    /* couleur de fond 
     z-index: 1000;
     border-radius: 8px 0 0 8px;
     box-shadow: -2px 2px 8px rgba(0,0,0,0.2);
     overflow: hidden;
-}
+}*/
 
-.album-sidebar a {
+/*.album-sidebar a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -365,7 +365,101 @@ footer {
 }
 
 .album-sidebar a:hover {
-    background-color: #245a3d; /* un peu plus foncé au survol */
+    background-color: #245a3d; /* un peu plus foncé au survol 
+}*/
+
+
+:root{
+  --album-accent:#2f6f4e;    /* vert du panneau */
+  --album-accent-hover:#245a3d;
+}
+
+/* Conteneur fixé à droite, centré verticalement */
+.album-teaser{
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: stretch;
+  z-index: 1000;
+  box-shadow: -6px 10px 24px rgba(0,0,0,.15);
+  border-radius: 8px 0 0 8px;
+  overflow: hidden;
+}
+
+/* Bande d’aperçu à gauche (grille d’images) */
+.album-photos{
+  width: 420px;                 /* largeur du teaser */
+  height: 220px;                /* hauteur visible */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 0;
+  position: relative;
+  filter: grayscale(20%);
+}
+
+.album-photos img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .55;                 /* rendu estompé comme sur le site */
+  filter: blur(0.3px);          /* léger flou */
+}
+
+/* voile/fondu à gauche/droite pour un look éditorial */
+.album-fade{
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg,
+     rgba(255,255,255,.85) 0%, rgba(255,255,255,0) 14%, 
+     rgba(255,255,255,0) 86%, rgba(255,255,255,.85) 100%);
+  pointer-events: none;
+}
+
+/* Panneau vertical (bouton), initialement “caché” en partie */
+.album-cta{
+  width: 92px;                   /* largeur du panneau vert */
+  background: var(--album-accent);
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem .6rem;
+  gap: .5rem;
+  transform: translateX(55%);    /* -> MASQUÉ (dépasse à droite) */
+  transition: transform .35s ease, background .2s ease;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.album-cta span{
+  font-size: .86rem;
+  letter-spacing: .02em;
+}
+
+.album-cta i{ font-size: 1.1rem; }
+
+/* Interaction : on laisse affleurer le panneau, il glisse au survol */
+.album-teaser:hover .album-cta{
+  transform: translateX(0);      /* -> ENTIEREMENT VISIBLE */
+  background: var(--album-accent-hover);
+}
+.album-teaser:hover .album-photos img{ opacity: .75; }
+
+/* Mobile : réduire / simplifier */
+@media (max-width: 768px){
+  .album-photos{ width: 260px; height: 160px; }
+  .album-cta{ width: 80px; transform: translateX(35%); }
+}
+
+@media (max-width: 480px){
+  .album-photos{ display:none; } /* ne garder que le bouton sur très petit écran */
+  .album-cta{ transform: translateX(0); }
 }
 
 

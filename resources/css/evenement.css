@@ -385,7 +385,7 @@ footer {
   width: 0; height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 10px solid var(--green);   /* petit triangle */
+  border-top: 10px solid var(--blue);   /* petit triangle */
 }
 
 /* bande d'images (3 colonnes) */

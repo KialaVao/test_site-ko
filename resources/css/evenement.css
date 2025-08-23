@@ -363,7 +363,7 @@ footer {
 .gallery-title{
   display: inline-block;
   position: relative;
-  background: var(--green);
+  background: var(--white);
   color: var(--title-color);
   padding: 12px 28px;
   border-radius: 4px;

@@ -328,9 +328,9 @@ footer {
 
 
 :root{
-  --green:#2f6f4e;             /* vert du bandeau */
-  --green-soft:#2f6f4e33;      /* vert très clair pour les filets */
-  --title-color:#fff;
+  --White:#fff;             /* vert du bandeau */
+  /*--green-soft:#2f6f4e33;      /* vert très clair pour les filets */
+  --title-color:#2f6f4e;
 }
 
 /* bloc global */
@@ -354,7 +354,7 @@ footer {
   top: 50%;
   height: 2px;
   width: 34%;
-  background: var(--green-soft);
+  /*background: var(--green-soft);*/
 }
 .gallery-header::before{ left: 0; }
 .gallery-header::after{ right: 0; }

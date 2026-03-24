@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const dates = [
-        "2026-03-15"
+        "2026-03-15",
         "2026-03-29",
         "2026-04-05",
         "2026-04-12",

@@ -19,9 +19,29 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
+    function formatDateFr(dateString) {
+        const date = new Date(dateString);
+        return date.toLocaleDateString("fr-FR", {
+            weekday: "long",
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        });
+    }
+
+    function getDateDuMoisActuel(listeDates) {
+        const today = new Date();
+        const moisActuel = today.getMonth() + 1;
+        const anneeActuelle = today.getFullYear();
+
+        return listeDates.find(date => {
+            const d = new Date(date);
+            return d.getMonth() + 1 === moisActuel && d.getFullYear() === anneeActuelle;
+        });
+    }
+
     async function fetchLecturesTitles(date) {
         const apiUrl = `https://api.aelf.org/v1/messes/${date}/${zone}`;
-        console.log("Fetching data from API:", apiUrl);
 
         try {
             const response = await fetch(apiUrl);
@@ -31,49 +51,37 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             const data = await response.json();
-            console.log(`Data received for ${date}:`, data);
 
             if (data.messes && data.messes.length > 0) {
                 const messe = data.messes[0];
                 const lectures = messe.lectures || [];
 
-                const titres = lectures.map(lecture => {
-                    return `<li><strong>${lecture.type}</strong> : ${lecture.titre}</li>`;
-                }).join("");
+                const titres = lectures.map(lecture => `
+                    <li><strong>${lecture.type}</strong> : ${lecture.titre}</li>
+                `).join("");
 
-                return `
+                container.innerHTML = `
                     <div class="jour-lecture">
-                        <h3>${date}</h3>
+                        <h3>${formatDateFr(date)}</h3>
                         <ul>
                             ${titres}
                         </ul>
                     </div>
                 `;
             } else {
-                return `
-                    <div class="jour-lecture">
-                        <h3>${date}</h3>
-                        <p>Aucune messe trouvée pour cette date.</p>
-                    </div>
-                `;
+                container.innerHTML = "<p>Aucune messe trouvée pour ce mois.</p>";
             }
         } catch (error) {
-            console.error(`Erreur pour la date ${date}:`, error);
-            return `
-                <div class="jour-lecture">
-                    <h3>${date}</h3>
-                    <p>Erreur de chargement.</p>
-                </div>
-            `;
+            console.error(error);
+            container.innerHTML = "<p>Erreur de chargement.</p>";
         }
     }
 
-    async function loadAllLectures() {
-        container.innerHTML = "<p>Chargement des lectures...</p>";
+    const dateDuMois = getDateDuMoisActuel(dates);
 
-        const results = await Promise.all(dates.map(date => fetchLecturesTitles(date)));
-        container.innerHTML = results.join("");
+    if (dateDuMois) {
+        fetchLecturesTitles(dateDuMois);
+    } else {
+        container.innerHTML = "<p>Aucune lecture prévue pour ce mois.</p>";
     }
-
-    loadAllLectures();
 });

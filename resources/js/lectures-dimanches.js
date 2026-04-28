@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const dates = [
+/*document.addEventListener("DOMContentLoaded", function () {
+   const dates = [
         "2026-03-29",
         "2026-04-05",
         "2026-04-12",
@@ -9,7 +9,17 @@ document.addEventListener("DOMContentLoaded", function () {
         "2026-05-29",
         "2026-06-21",
         "2026-08-15"
-    ];
+    ];*/
+
+document.addEventListener("DOMContentLoaded", function () {
+    const zone = "romain";
+    const container = document.getElementById("lectures-dimanches");
+
+    if (!container) {
+        console.error("L'élément avec l'id 'lectures-dimanches' est introuvable.");
+        return;
+    }
+    
 
     const zone = "romain";
     const container = document.getElementById("lectures-dimanches");

@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .join(" ");
     }
 
-
     function traduireType(type) {
         const correspondances = {
             lecture_1: "1re lecture",
@@ -106,14 +105,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return resultat;
     }
 
-    /*function construireLigneLecture(lecture) {
-        const type = traduireType(lecture.type);
-        const titre = lecture.titre || "Sans titre";
-        const reference = lecture.ref ? ` — ${lecture.ref}` : "";
-
-        return `<li><strong>${type}</strong> : ${titre}${reference}</li>`;
-    }*/
-
     function construireLigneLecture(lecture) {
         const type = traduireType(lecture.type);
         const titre = lecture.titre && lecture.titre.trim() !== "" ? lecture.titre : "";
@@ -130,10 +121,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (reference) {
             return `<li><strong>${type}</strong> : ${reference}</li>`;
         }
-
+        
         return "";
     }
-
 
     function getProchaineDate() {
         const today = new Date();

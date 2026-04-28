@@ -7,9 +7,9 @@ body {
 
 /* Styles du header */
 header {
-    background-image: url('../img/interieur2.jpg'); /* Assurez-vous de fournir le bon chemin vers l'image */
-    background-size: cover; /* Pour s'assurer que l'image couvre tout le header */
-    background-position: center; /* Pour centrer l'image */
+    background-image: url('../img/interieur2.jpg');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 5em 1em;
     text-align: center;
@@ -28,84 +28,83 @@ header .image-container img {
     border: 1px solid black;
 }
 
-
 /* Media queries pour différentes tailles d'écran */
 
 /* Écrans moyens (jusqu'à 1200px) */
 @media (max-width: 1200px) {
     header {
-         padding: 3em 1em; /* Réduction du padding pour les écrans moyens */
-    }
-}
-    
-/* Écrans petits (jusqu'à 768px) */
-@media (max-width: 768px) {
-    header {
-        padding: 1em 1em; /* Réduction supplémentaire du padding */
-    }
-    
-    header .image-container {
-        top: 75%; /* Positionnement de l'image pour les petits écrans */
-        left: 5%;
-        transform: translateY(-50%);
-    }
-    
-    header .image-container img {
-        max-width: 47px; /* Réduction de la taille de l'image */
-    }
-    
-    .content-row {
-        flex-direction: column; /* Les éléments se disposent en colonne sur petits écrans */
-    }
-    
-    .map-container iframe {
-        height: 200%; /* Ajustement de la taille de la carte */
-    }
-}
-    
-/* Écrans très petits (jusqu'à 480px) */
-@media (max-width: 480px) {
-    header {
-        padding: 1em 1em; /* Réduction supplémentaire du padding */
-    }
-    
-    header h1 {
-        font-size: 1.2em; /* Taille plus petite du titre */
-    }
-    
-    header .image-container {
-        top: 75%;
-        left: 9%; /* Réajustement de la position de l'image */
-    }
-    
-    header .image-container img {
-        max-width: 30px; /* Taille plus petite de l'image */
-    }
-    
-    .map-container iframe {
-        height: 150px; /* Ajustement de la hauteur de l'iframe */
-    }
-    
-    .social-media-icons a {
-        font-size: 1.5em; /* Taille des icônes réduite */
+        padding: 3em 1em;
     }
 }
 
-/* Styles pour la navigation */ 
+/* Écrans petits (jusqu'à 768px) */
+@media (max-width: 768px) {
+    header {
+        padding: 1em 1em;
+    }
+
+    header .image-container {
+        top: 75%;
+        left: 5%;
+        transform: translateY(-50%);
+    }
+
+    header .image-container img {
+        max-width: 47px;
+    }
+
+    .content-row {
+        flex-direction: column;
+    }
+
+    .map-container iframe {
+        height: 200%;
+    }
+}
+
+/* Écrans très petits (jusqu'à 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 1em 1em;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header .image-container {
+        top: 75%;
+        left: 9%;
+    }
+
+    header .image-container img {
+        max-width: 30px;
+    }
+
+    .map-container iframe {
+        height: 150px;
+    }
+
+    .social-media-icons a {
+        font-size: 1.5em;
+    }
+}
+
+/* Styles pour la navigation */
 nav ul {
     background-color: #16567a;
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Centre les éléments */
-    /*width: 100%; /* Prend toute la largeur disponible */
-    box-sizing: border-box; /* Gère les marges et padding */
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 nav ul li {
     margin: 0;
     padding: 0;
+    float: left;
 }
 
 nav ul li a {
@@ -117,7 +116,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #111; 
+    background-color: #111;
 }
 
 /* Menu déroulant */
@@ -125,7 +124,7 @@ nav ul li.dropdown {
     display: inline-block;
 }
 
-nav ul .dropdown-content {						 
+nav ul .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -150,40 +149,33 @@ nav ul .dropdown:hover .dropdown-content {
     display: block;
 }
 
-nav ul li {	 
-    float: left;			  
-}
-
-nav ul li a, .dropbtn {
+nav ul li a,
+.dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    /*padding: 14px 16px; */
     text-decoration: none;
 }
 
 /* Navigation responsive */
-
-/* Petits écrans (jusqu'à 768px) */
 @media (max-width: 768px) {
     nav ul {
-        justify-content: space-around; /* Répartit les éléments avec un espace égal */
+        justify-content: space-around;
     }
 
     nav ul li a {
-        font-size: 16px; /* Taille du texte légèrement réduite */
+        font-size: 16px;
     }
 }
 
-/* Très petits écrans (jusqu'à 480px) */
 @media (max-width: 480px) {
     nav ul {
-        justify-content: space-between; /* Gère l'espacement pour les très petits écrans */
+        justify-content: space-between;
     }
 
     nav ul li a {
-        padding: 8px 5px; /* Espacement réduit */
-        font-size: 12px; /* Réduction de la taille du texte */
+        padding: 8px 5px;
+        font-size: 12px;
     }
 }
 
@@ -204,93 +196,91 @@ footer {
 
 /* Container with centered margins */
 .margin-container {
-    width: 100%; /* Largeur du conteneur */
-    margin: 0 auto; /* Marges automatiques à gauche et à droite */
-    text-align: center; /* Centre le texte à l'intérieur du conteneur */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .margin-container a {
     display: inline-block;
     color: white;
-    margin: 0 10px; /* Espacement entre les liens */
+    margin: 0 10px;
 }
 
 .social-media-icons {
-   /* text-align: center; */
     margin-top: 0;
 }
 
 .social-media-icons a {
     text-decoration: none;
-    color: white; /* Icon color */
-    margin: 0 10px; /* Spacing between icons */
-    font-size: 2em; /* Icon size */
-} 
+    color: white;
+    margin: 0 10px;
+    font-size: 2em;
+}
 
 /* Couleurs spécifiques aux réseaux sociaux */
 .social-icon.facebook {
-    color: #0866ff; /* Facebook blue */
+    color: #0866ff;
 }
 
 .social-icon.instagram {
-    color: #E1306C; /* Instagram pink */
+    color: #E1306C;
 }
 
 /* Hover effects */
 .social-icon.facebook:hover {
-    color: #213153; /* Darker Facebook blue */
+    color: #213153;
 }
 
 .social-icon.instagram:hover {
-    color: #C13584; /* Darker Instagram pink */
+    color: #C13584;
 }
 
-/* Media queries pour différentes tailles d'écran */
 @media (max-width: 480px) {
-#contact {
-    position: static;
-    width: 100px;
-    right: 50px;
-    margin: 0 1em;
-    box-shadow: none;
-    padding: 0;
-}
-        
-form {
-    padding: 1em;
+    #contact {
+        position: static;
+        width: 100px;
+        right: 50px;
+        margin: 0 1em;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    form {
+        padding: 1em;
     }
 }
 
 /* Flexbox styles */
 .content-row {
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: flex-start; /* Align items to the start */
-    gap: 10px; /* Space between items */
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .content-row > div {
-    flex: 1; /* Ensure items take equal space */
-    min-width: 200px; /* Ensure a minimum width for each item */
-    margin-bottom: 10px; /* Add bottom margin for spacing when items wrap */
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 10px;
 }
 
 /* Style for the text block */
 .text-block {
-    max-width: 500px; /* Set a max-width for the text block */
-    padding: 0px; /* Add some padding */
-    background-color: white; /* Optional: Add a background color */
-    border: 1px solid white; /* Optional: Add a border */
-    border-radius: 8px; /* Optional: Add rounded corners */
+    max-width: 500px;
+    padding: 0;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
 }
 
-text-block2 {
-    max-width: 500px; /* Set a max-width for the text block */
-    padding: 0px; /* Add some padding */
-    background-color: white; /* Optional: Add a background color */
-    border: 1px solid #e1e1da; /* Optional: Add a border */
-    border-radius: 8px; /* Optional: Add rounded corners */
+.text-block2 {
+    max-width: 500px;
+    padding: 0;
+    background-color: white;
+    border: 1px solid #e1e1da;
+    border-radius: 8px;
     font-size: 1rem;
 }
 
@@ -306,13 +296,16 @@ form label {
     font-weight: bold;
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
     padding: 0.5em;
     border-radius: 8px;
     border: 1px solid #ccc;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
 }
 
@@ -329,47 +322,41 @@ form button:hover {
 
 #contact {
     position: absolute;
-    top: 400px; /* Ajustez selon vos besoins */
-    right: 100px; /* Ajustez selon vos besoins */
-    width: 500px; /* Ajustez selon vos besoins */
+    top: 400px;
+    right: 100px;
+    width: 500px;
     background: #fff;
     padding: 2em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
 
-/* Styles pour le conteneur de l'image miniature */
-.thumbnail-container {
-    display: flex;
-    /*justify-content: center; /* Centrer l'image horizontalement */
-    align-items: center; /* Centrer l'image verticalement */
-    margin: 20px; /* Ajouter de la marge autour du conteneur */
-}
-
-/* Styles pour l'image miniature ronde */
-section#members {
-    padding: 2em;
-    text-align: center;
-}
-
+/* Styles pour le conteneur des miniatures */
 .thumbnail-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Espacement entre les figures */
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+section #members {
+    padding: 2em;
+    text-align: center;
 }
 
 .thumbnail-figure {
-    flex: 1 1 100px; /* Flex-grow, flex-shrink, flex-basis */
-    max-width: 100px; /* Taille maximale pour les grands écrans */
+    flex: 1 1 100px;
+    max-width: 100px;
     text-align: center;
     margin: 10px;
 }
 
 .thumbnail {
-    width: 100%; /* L'image occupe 100% de la largeur de son conteneur */
-    height: auto; /* Conserve les proportions de l'image */
-    border-radius: 50%; /* Donne une forme circulaire à l'image si nécessaire */
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 /* Styles pour petits écrans */
@@ -381,137 +368,115 @@ section#members {
 
 @media (max-width: 480px) {
     .thumbnail-container {
-        grid-template-columns: 1fr; /* Une colonne sur les très petits écrans */
+        grid-template-columns: 1fr;
     }
 }
 
 /* Ajustement de la navigation pour les petits écrans */
 @media (max-width: 768px) {
-/* Positionnement du menu hamburger dans la barre de navigation */
     .nav-toggle {
         display: block;
         position: absolute;
         top: 1px;
-        left: 15px; /* Positionne l'icône à gauche */
+        left: 15px;
         cursor: pointer;
-        z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
+        z-index: 1000;
     }
-    
-/* Icône hamburger en blanc */
+
     .nav-toggle span {
         display: block;
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        background-color: white; /* Icône en blanc */
+        background-color: white;
     }
-    
-/* Positionnement de la navigation en pleine largeur */
+
     nav {
         display: flex;
-        justify-content: center; /* Centre les éléments de navigation */
+        justify-content: center;
         align-items: center;
         position: relative;
         background-color: #16567a;
         padding: 15px 0;
     }
-    
+
     nav ul {
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    nav ul {
-        display: none; /* Cache le menu par défaut sur mobile */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 100%; /* Positionne le menu en dessous de la barre de navigation */
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: #16567a;
     }
-    
+
     nav ul.active {
-        display: flex; /* Affiche le menu quand l'icône est cliquée */
+        display: flex;
     }
-    
+
     nav ul li a {
         display: block;
         color: white;
         text-align: left;
         text-decoration: none;
-    } 
+    }
 }
-    
-    
-/* Ajustement de la navigation pour les petits écrans */
+
 @media (max-width: 480px) {
-    /* Positionnement du menu hamburger dans la barre de navigation */
     .nav-toggle {
         display: block;
         position: absolute;
         top: 1px;
-        left: 15px; /* Positionne l'icône à gauche */
+        left: 15px;
         cursor: pointer;
-        z-index: 1000; /* S'assure que le bouton est au-dessus du contenu */
+        z-index: 1000;
     }
-    
-    /* Icône hamburger en blanc */
+
     .nav-toggle span {
         display: block;
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        background-color: white; /* Icône en blanc */
+        background-color: white;
     }
-    
-    /* Positionnement de la navigation en pleine largeur */
+
     nav {
         display: flex;
-        justify-content: center; /* Centre les éléments de navigation */
+        justify-content: center;
         align-items: center;
         position: relative;
         background-color: #16567a;
         padding: 15px 0;
     }
-    
+
     nav ul {
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    
-    nav ul {
-        display: none; /* Cache le menu par défaut sur mobile */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 100%; /* Positionne le menu en dessous de la barre de navigation */
+        top: 100%;
         left: 0;
         width: 100%;
         background-color: #16567a;
     }
-    
+
     nav ul.active {
-        display: flex; /* Affiche le menu quand l'icône est cliquée */                    
+        display: flex;
     }
-    
+
     nav ul li a {
         display: block;
         color: white;
         text-align: left;
         text-decoration: none;
-    } 
+    }
 
     .annonce img {
         max-width: 90%;
     }
-} 
+}
 
 .image-container {
-    text-align: center; /* Center align the text and image within the container */
+    text-align: center;
 }
 
 .annonce {
@@ -523,7 +488,7 @@ section#members {
     max-width: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    padding: 1em; /* pour éviter que l'image touche les bords */
+    padding: 1em;
 }
 
 .annonce img {
@@ -535,3 +500,26 @@ section#members {
     transition: transform 0.3s ease;
 }
 
+/* Section Nouvelles et Annonces */
+#news {
+    text-align: center;
+    padding: 2em 1em;
+}
+
+#news h2 {
+    margin-bottom: 1em;
+}
+
+#news article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#news p {
+    margin: 1em 0;
+    line-height: 1.6;
+}
+
+.annonce-espace {
+    margin-top: 2em;
+}

@@ -502,7 +502,7 @@ section #members {
 
 /* Section Nouvelles et Annonces */
 #news {
-    text-align: center;
+    text-align: left;
     padding: 2em 1em;
 }
 

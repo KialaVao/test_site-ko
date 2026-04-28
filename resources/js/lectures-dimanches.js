@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "2026-04-05": "Pâques",
         "2026-04-12": "Fête de la Miséricorde",
         "2026-04-19": "Messe du mois",
-        "2026-05-14": "Ascension",
+        "2026-5-14": "Ascension",
         "2026-05-17": "Messe du mois",
         "2026-05-29": "Pentecôte",
         "2026-06-21": "Messe du mois",

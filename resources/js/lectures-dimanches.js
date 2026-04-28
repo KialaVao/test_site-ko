@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const reference = lecture.ref && lecture.ref.trim() !== "" ? lecture.ref : "";
 
         if (titre && reference) {
-            return `<li><strong>${type}</strong> : ${titre} — ${reference}</li>`;
+            return `<li><strong>${type}</strong> : ${titre} - ${reference}</li>`;
         }
 
         if (titre) {
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (reference) {
             return `<li><strong>${type}</strong> : ${reference}</li>`;
         }
-        
+
         return "";
     }
 

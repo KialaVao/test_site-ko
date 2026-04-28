@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
     const dates = [
-        "2026-03-15",
         "2026-03-29",
         "2026-04-05",
         "2026-04-12",
@@ -30,15 +29,50 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    function getDateDuMoisActuel(listeDates) {
-        const today = new Date();
-        const moisActuel = today.getMonth() + 1;
-        const anneeActuelle = today.getFullYear();
+    function garderUneDateParMois(listeDates) {
+        const moisDejaAjoutes = new Set();
 
-        return listeDates.find(date => {
-            const d = new Date(date);
-            return d.getMonth() + 1 === moisActuel && d.getFullYear() === anneeActuelle;
+        return listeDates.filter(date => {
+            const mois = date.slice(0, 7);
+            if (moisDejaAjoutes.has(mois)) {
+                return false;
+            }
+            moisDejaAjoutes.add(mois);
+            return true;
         });
+    }
+
+    function traduireType(type) {
+        const correspondances = {
+            lecture_1: "1re lecture",
+            psaume: "Psaume",
+            lecture_2: "2e lecture",
+            epitre: "Épître",
+            evangile: "Évangile"
+        };
+
+        return correspondances[type] || type;
+    }
+
+    function selectionnerLecturesPrincipales(lectures) {
+        const resultat = [];
+
+        const lecture1 = lectures.find(l => l.type === "lecture_1" && l.titre);
+        const psaume = lectures.find(l => l.type === "psaume" && l.titre);
+        const lecture2 = lectures.find(l => l.type === "lecture_2" && l.titre);
+        const epitre = lectures.find(l => l.type === "epitre" && l.titre);
+        const evangile = lectures.find(l => l.type === "evangile" && l.titre);
+
+        if (lecture1) resultat.push(lecture1);
+        if (psaume) resultat.push(psaume);
+        if (lecture2) {
+            resultat.push(lecture2);
+        } else if (epitre) {
+            resultat.push(epitre);
+        }
+        if (evangile) resultat.push(evangile);
+
+        return resultat;
     }
 
     async function fetchLecturesTitles(date) {
@@ -55,13 +89,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (data.messes && data.messes.length > 0) {
                 const messe = data.messes[0];
-                const lectures = messe.lectures || [];
+                const lectures = selectionnerLecturesPrincipales(messe.lectures || []);
+
+                if (lectures.length === 0) {
+                    return `
+                        <div class="jour-lecture">
+                            <h3>${formatDateFr(date)}</h3>
+                            <p>Aucun titre de lecture disponible.</p>
+                        </div>
+                    `;
+                }
 
                 const titres = lectures.map(lecture => `
-                    <li><strong>${lecture.type}</strong> : ${lecture.titre}</li>
+                    <li><strong>${traduireType(lecture.type)}</strong> : ${lecture.titre}</li>
                 `).join("");
 
-                container.innerHTML = `
+                return `
                     <div class="jour-lecture">
                         <h3>${formatDateFr(date)}</h3>
                         <ul>
@@ -70,19 +113,32 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                 `;
             } else {
-                container.innerHTML = "<p>Aucune messe trouvée pour ce mois.</p>";
+                return `
+                    <div class="jour-lecture">
+                        <h3>${formatDateFr(date)}</h3>
+                        <p>Aucune messe trouvée pour cette date.</p>
+                    </div>
+                `;
             }
         } catch (error) {
-            console.error(error);
-            container.innerHTML = "<p>Erreur de chargement.</p>";
+            console.error(`Erreur pour la date ${date}:`, error);
+            return `
+                <div class="jour-lecture">
+                    <h3>${formatDateFr(date)}</h3>
+                    <p>Erreur de chargement.</p>
+                </div>
+            `;
         }
     }
 
-    const dateDuMois = getDateDuMoisActuel(dates);
+    async function loadLectures() {
+        container.innerHTML = "<p>Chargement des lectures...</p>";
 
-    if (dateDuMois) {
-        fetchLecturesTitles(dateDuMois);
-    } else {
-        container.innerHTML = "<p>Aucune lecture prévue pour ce mois.</p>";
+        const datesFiltrees = garderUneDateParMois(dates);
+        const results = await Promise.all(datesFiltrees.map(date => fetchLecturesTitles(date)));
+
+        container.innerHTML = results.join("");
     }
+
+    loadLectures();
 });

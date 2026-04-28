@@ -100,44 +100,31 @@ document.addEventListener("DOMContentLoaded", function () {
         return `<li><strong>${type}</strong> : ${titre}${reference}</li>`;
     }
 
-    function getDateLaPlusProche() {
+    function getProchaineDate() {
         const today = new Date();
         today.setHours(0, 0, 0, 0);
 
-        const datesNormalisees = Object.keys(catholicEvents).map(normalizeDate);
-
-        let dateLaPlusProche = null;
-        let ecartMinimum = Infinity;
+        const datesNormalisees = Object.keys(catholicEvents)
+            .map(normalizeDate)
+            .sort((a, b) => new Date(a) - new Date(b));
 
         for (const date of datesNormalisees) {
             const eventDate = new Date(date);
             eventDate.setHours(0, 0, 0, 0);
 
-            const ecart = Math.abs(eventDate.getTime() - today.getTime());
-
-           /* if (ecart < ecartMinimum) {
-             *   ecartMinimum = ecart;
-              *  dateLaPlusProche = date;
-            }*/
-
-            if (
-                ecart < ecartMinimum ||
-                (ecart === ecartMinimum && eventDate >= today)
-                ) {
-                ecartMinimum = ecart;
-                dateLaPlusProche = date;
+            if (eventDate >= today) {
+                return date;
             }
-
         }
 
-        return dateLaPlusProche;
+        return null;
     }
 
     async function loadLectures() {
-        const date = getDateLaPlusProche();
+        const date = getProchaineDate();
 
         if (!date) {
-            container.innerHTML = "<p>Aucune date disponible dans le calendrier.</p>";
+            container.innerHTML = "<p>Aucune prochaine date disponible dans le calendrier.</p>";
             return;
         }
 

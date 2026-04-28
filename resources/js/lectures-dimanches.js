@@ -115,10 +115,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const ecart = Math.abs(eventDate.getTime() - today.getTime());
 
-            if (ecart < ecartMinimum) {
+           /* if (ecart < ecartMinimum) {
+             *   ecartMinimum = ecart;
+              *  dateLaPlusProche = date;
+            }*/
+
+            if (
+                ecart < ecartMinimum ||
+                (ecart === ecartMinimum && eventDate >= today)
+                ) {
                 ecartMinimum = ecart;
                 dateLaPlusProche = date;
             }
+
         }
 
         return dateLaPlusProche;

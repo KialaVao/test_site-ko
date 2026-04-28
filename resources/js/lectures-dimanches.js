@@ -47,15 +47,32 @@ document.addEventListener("DOMContentLoaded", function () {
         return `${year}-${parseInt(month, 10)}-${parseInt(day, 10)}`;
     }
 
-    function formatDateFr(dateString) {
-        const date = new Date(dateString);
+    /*function formatDateFr(dateString) {
+      *  const date = new Date(dateString);
         return date.toLocaleDateString("fr-FR", {
             weekday: "long",
             day: "numeric",
             month: "long",
             year: "numeric"
         });
+    }*/
+
+    function formatDateFr(dateString) {
+    const date = new Date(dateString);
+    const options = {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    };
+
+    const texte = date.toLocaleDateString("fr-FR", options);
+    return texte
+        .split(" ")
+        .map((mot, index) => index === 0 ? mot.charAt(0).toUpperCase() + mot.slice(1) : mot)
+        .join(" ");
     }
+
 
     function traduireType(type) {
         const correspondances = {

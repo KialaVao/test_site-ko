@@ -227,6 +227,11 @@ footer {
     color: #E1306C;
 }
 
+.gmail-contact i {
+    margin-right: 8px;
+    color: #EA4335;
+}
+
 /* Hover effects */
 .social-icon.facebook:hover {
     color: #213153;
@@ -341,7 +346,7 @@ form button:hover {
     margin: 20px;
 }
 
-section #members {
+section #membres {
     padding: 2em;
     text-align: center;
 }
@@ -503,7 +508,7 @@ section #members {
 /* Section Nouvelles et Annonces */
 #news {
     text-align: left;
-    padding: 2em 1em;
+    padding: 2em;
 }
 
 #news h2 {

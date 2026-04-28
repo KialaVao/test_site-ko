@@ -8,29 +8,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const catholicEvents = {
-        "2025-8-15": "Assomption de Marie",
-        "2025-9-28": "Rentrée Pastorale",
+        "2025-08-15": "Assomption de Marie",
+        "2025-09-28": "Rentrée Pastorale",
         "2025-10-19": "Messe du mois",
-        "2025-11-1": "Toussaint / Conseil National ANCMF-J1",
-        "2025-11-2": "Toussaint / Conseil National ANCMF-J2",
+        "2025-11-01": "Toussaint / Conseil National ANCMF-J1",
+        "2025-11-02": "Toussaint / Conseil National ANCMF-J2",
         "2025-11-16": "Messe du mois",
         "2025-11-25": "Christ Roi",
         "2025-12-21": "Messe du mois",
         "2025-12-25": "Noël",
-        "2026-1-4": "Épiphanie",
-        "2026-1-18": "Messe du mois / Bonne Année",
-        "2026-2-15": "Messe du mois",
-        "2026-2-18": "Mercredi des cendres",
-        "2026-3-15": "Messe du mois",
-        "2026-3-29": "Dimanche des Rameaux",
-        "2026-4-5": "Pâques",
-        "2026-4-12": "Fête de la Miséricorde",
-        "2026-4-19": "Messe du mois",
-        "2026-5-14": "Ascension",
-        "2026-5-17": "Messe du mois",
-        "2026-5-29": "Pentecôte",
-        "2026-6-21": "Messe du mois",
-        "2026-8-15": "Assomption de Marie"
+        "2026-01-04": "Épiphanie",
+        "2026-01-18": "Messe du mois / Bonne Année",
+        "2026-02-15": "Messe du mois",
+        "2026-02-18": "Mercredi des cendres",
+        "2026-03-15": "Messe du mois",
+        "2026-03-29": "Dimanche des Rameaux",
+        "2026-04-05": "Pâques",
+        "2026-04-12": "Fête de la Miséricorde",
+        "2026-04-19": "Messe du mois",
+        "2026-05-14": "Ascension",
+        "2026-05-17": "Messe du mois",
+        "2026-05-29": "Pentecôte",
+        "2026-06-21": "Messe du mois",
+        "2026-08-15": "Assomption de Marie"
     };
 
     function pad(num) {
@@ -46,16 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const [year, month, day] = dateString.split("-");
         return `${year}-${parseInt(month, 10)}-${parseInt(day, 10)}`;
     }
-
-    /*function formatDateFr(dateString) {
-      *  const date = new Date(dateString);
-        return date.toLocaleDateString("fr-FR", {
-            weekday: "long",
-            day: "numeric",
-            month: "long",
-            year: "numeric"
-        });
-    }*/
 
     function formatDateFr(dateString) {
     const date = new Date(dateString);
@@ -183,8 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             container.innerHTML = `
                 <div class="jour-lecture">
-                    <h3>${formatDateFr(date)}</h3>
-                    <p><strong>${eventName}</strong></p>
+                    <h3>${formatDateFr(date)} : ${eventName}</h3>
                     <ul>
                         ${titres}
                     </ul>

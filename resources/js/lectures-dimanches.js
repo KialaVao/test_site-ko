@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
     
-
     const zone = "romain";
     const container = document.getElementById("lectures-dimanches");
 

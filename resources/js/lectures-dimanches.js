@@ -76,6 +76,13 @@ document.addEventListener("DOMContentLoaded", function () {
         return correspondances[type] || type;
     }
 
+    function hasContent(lecture) {
+        return lecture && (
+            (lecture.titre && lecture.titre.trim() !== "") ||
+            (lecture.ref && lecture.ref.trim() !== "")
+        );
+    }
+
     function selectionnerLecturesPrincipales(lectures) {
         const resultat = [];
 
@@ -99,13 +106,34 @@ document.addEventListener("DOMContentLoaded", function () {
         return resultat;
     }
 
-    function construireLigneLecture(lecture) {
+    /*function construireLigneLecture(lecture) {
         const type = traduireType(lecture.type);
         const titre = lecture.titre || "Sans titre";
         const reference = lecture.ref ? ` — ${lecture.ref}` : "";
 
         return `<li><strong>${type}</strong> : ${titre}${reference}</li>`;
+    }*/
+
+    function construireLigneLecture(lecture) {
+        const type = traduireType(lecture.type);
+        const titre = lecture.titre && lecture.titre.trim() !== "" ? lecture.titre : "";
+        const reference = lecture.ref && lecture.ref.trim() !== "" ? lecture.ref : "";
+
+        if (titre && reference) {
+            return `<li><strong>${type}</strong> : ${titre} — ${reference}</li>`;
+        }
+
+        if (titre) {
+            return `<li><strong>${type}</strong> : ${titre}</li>`;
+        }
+
+        if (reference) {
+            return `<li><strong>${type}</strong> : ${reference}</li>`;
+        }
+
+        return "";
     }
+
 
     function getProchaineDate() {
         const today = new Date();
@@ -161,8 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (lectures.length === 0) {
                 container.innerHTML = `
                     <div class="jour-lecture">
-                        <h3>${formatDateFr(date)}</h3>
-                        <p><strong>${eventName}</strong></p>
+                        <h3>${formatDateFr(date)} : ${eventName} </h3>
                         <p>Aucune lecture disponible.</p>
                     </div>
                 `;

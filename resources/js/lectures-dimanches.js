@@ -20,12 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
     
-    const zone = "romain";
-    const container = document.getElementById("lectures-dimanches");
+    function getNextSundayDate() {
+        const today = new Date();
+        const day = today.getDay(); // 0 = dimanche
+        const diff = day === 0 ? 0 : 7 - day;
 
-    if (!container) {
-        console.error("L'élément avec l'id 'lectures-dimanches' est introuvable.");
-        return;
+        today.setDate(today.getDate() + diff);
+
+        const year = today.getFullYear();
+        const month = String(today.getMonth() + 1).padStart(2, "0");
+        const date = String(today.getDate()).padStart(2, "0");
+
+        return `${year}-${month}-${date}`;
     }
 
     function formatDateFr(dateString) {

@@ -281,9 +281,16 @@ document.addEventListener("DOMContentLoaded", function () {
         return messes.find(m => /jour/i.test(m.nom || "")) || messes[messes.length - 1];
     }
 
+    // L'AELF met des guillemets seulement sur certains titres : on les ajoute partout
+    // (  = espace insécable, pour que « et » ne se retrouvent pas seuls en bout de ligne)
+    function ajouterGuillemets(titre) {
+        if (titre.startsWith("«")) return titre;
+        return `« ${titre} »`;
+    }
+
     function construireLigneLecture(lecture) {
         const type = traduireType(lecture.type);
-        const titre = lecture.titre && lecture.titre.trim() !== "" ? lecture.titre : "";
+        const titre = lecture.titre && lecture.titre.trim() !== "" ? ajouterGuillemets(lecture.titre.trim()) : "";
         const reference = lecture.ref && lecture.ref.trim() !== "" ? lecture.ref : "";
 
         if (titre && reference) return `<li><strong>${type}</strong> : ${titre} - ${reference}</li>`;
